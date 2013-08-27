@@ -1,1 +1,19 @@
-this is main game
+<!doctype html>
+<html>
+    <head>
+        <script src='http://127.0.0.1:5000/socket.io/socket.io.js'></script>
+        <script src='client.js'></script>
+    </head>
+    <body>
+        <div>
+            <p>CHAT GROUP APP</p>
+            <input type='text' id='username' value='username' onClick='this.value=""'/>
+            <button id='join' onClick='join()'>JOIN</button>
+            </br>
+            <textarea readonly id='log' rows='10' cols='60'></textarea>
+            </br>
+            <input type='text' id='chatbox' value='message...' onClick='this.value=""'/>
+            <button id='send' onClick='send()'>SEND</button>            
+        </div>
+    </body>
+</html>
