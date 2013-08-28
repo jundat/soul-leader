@@ -1,19 +1,31 @@
-<!doctype html>
-<html>
+﻿<html>
     <head>
-        <script src='http://127.0.0.1:5000/socket.io/socket.io.js'></script>
-        <script src='client.js'></script>
+        <style type="text/css">
+			body {
+				background-image:url('images/bg.jpg');
+				background-color:#cccccc;
+				background-repeat:no-repeat;
+				background-position: center top; 
+			}
+		
+            #canvas-container {
+			   width: 100%;
+			   text-align:center;
+			   padding-top: 8px;
+			}
+
+			canvas {
+			   display: inline;
+			}
+        </style>
     </head>
     <body>
-        <div>
-            <p>CHAT GROUP APP</p>
-            <input type='text' id='username' value='username' onClick='this.value=""'/>
-            <button id='join' onClick='join()'>JOIN</button>
-            </br>
-            <textarea readonly id='log' rows='10' cols='60'></textarea>
-            </br>
-            <input type='text' id='chatbox' value='message...' onClick='this.value=""'/>
-            <button id='send' onClick='send()'>SEND</button>            
-        </div>
+        <div id="canvas-container">
+		   <canvas id="homeCanvas" width="1000" height="600" >CANVAS</canvas>
+		</div>
+		
+		<script src='http://127.0.0.1:5000/socket.io/socket.io.js'></script>
+		<script src='client.js'></script>
+		<script src='game.js'></script>
     </body>
 </html>

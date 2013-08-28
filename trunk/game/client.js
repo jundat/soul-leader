@@ -11,19 +11,27 @@ function debug(msg) {
     }
 }
 
+//handle event ------------------------------------------------------------
+
+//hello when start connect
 socket.on('greeting', function(data) {
 	debug(data);
 })
 
+//new user join
 socket.on('new-user', function(data) {
     debug('new-user');
 	document.getElementById('log').value += '\n' + data + ' joined group!';
 })
 
+//receive a message
 socket.on('msg', function(data) {
     debug('msg');
     document.getElementById('log').value += '\n' + data.username + ': ' + data.msg;
 })
+
+
+//public functions -------------------------------------------------------
 
 function join() {
     debug('join');
@@ -36,3 +44,5 @@ function send() {
     var msg = document.getElementById('chatbox').value;
     socket.emit('msg', {username: username, msg: msg});
 }
+
+
