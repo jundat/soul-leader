@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TIEUNUN-PC</Machine>
+    <WindowsUser>10520_000</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>66F4461DBA09EEDFBE70D5DE8B125C2AD7FE11B96A658B7F92465147226D0255</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>17e46b02-4fdc-418f-aa3b-46df546df0b4_1.0.0.0_neutral__qz4ek909mye4g</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>17e46b02-4fdc-418f-aa3b-46df546df0b4_qz4ek909mye4g!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>17e46b02-4fdc-418f-aa3b-46df546df0b4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=10520_000</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-31T15:00:32.307</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-08-31T19:33:29.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\imgBgGame.png">
+      <PackagePath>images\imgBgGame.png</PackagePath>
+      <Modified>2013-08-30T21:58:21.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\map.png">
+      <PackagePath>images\map.png</PackagePath>
+      <Modified>2012-05-05T06:05:15.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\player.png">
+      <PackagePath>images\player.png</PackagePath>
+      <Modified>2013-08-30T23:42:44.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\ball.png">
+      <PackagePath>images\ball.png</PackagePath>
+      <Modified>2013-08-31T02:44:03.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\ball.js">
+      <PackagePath>js\ball.js</PackagePath>
+      <Modified>2013-08-31T19:33:23.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-08-31T19:33:20.573</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\map.js">
+      <PackagePath>js\map.js</PackagePath>
+      <Modified>2013-08-31T19:26:21.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\Player.js">
+      <PackagePath>js\Player.js</PackagePath>
+      <Modified>2013-08-31T01:46:42.944</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-08-31T15:00:31.215</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20602</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
