@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TIEUNUN-PC</Machine>
+    <WindowsUser>10520_000</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\imgBgGame.png">
+      <PackagePath>images\imgBgGame.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\map.png">
+      <PackagePath>images\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\player.png">
+      <PackagePath>images\player.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\images\ball.png">
+      <PackagePath>images\ball.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\ball.js">
+      <PackagePath>js\ball.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\map.js">
+      <PackagePath>js\map.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\js\Player.js">
+      <PackagePath>js\Player.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Documents\Visual Studio 2012\Projects\Soul-Leader\Soul-Leader\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20602</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
