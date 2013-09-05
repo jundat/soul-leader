@@ -1,0 +1,31 @@
+﻿Hướng dẫn những bước cơ bản để có thể code FW Codeigniter.
++ Chuẩn bị:
+	- Down CodeIgniter(ver 2.1.4): www.codeigniter.com 
+	- Down Xampp và cài đặt xampp.
++ Bắt đầu:
+- Vào trong xampp tạo project Web_UI_Game và copy toàn bộ codeigniter(vừa down) vào trong Web_UI_Game của Xampp: C:\xampp\htdocs\Web_UI_Game.
+- Tạo csdl: http://localhost/phpmyadmin tạo csdl có tên: datawebgunny
++ Cấu hình:
+- Cấu hình cơ sở dữ liệu: C:\xampp\htdocs\Web_UI_Game\application\config\database.php
+
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = 'datawebgunny';
+$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = TRUE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
+
+
+=> OK là xong cơ bản: xem kết quả có đúng không:
+
+http://localhost/Web_UI_Game/index.php
+Hiện : Welcome to CodeIgniter....(ĐÚNG).
