@@ -32,5 +32,13 @@ class Mhome extends CI_Model{
         return $query->row_array();
     }
     
+    // lay tin tuc moi nhat
+    function get_last_news(){
+        $this->db->where('news_del', 0);
+        $this->db->order_by('news_post', 'desc');
+        $this->db->limit(4);
+        $query = $this->db->get('news');
+        return $query->result_array();
+    }
 } 
  ?>
