@@ -7,7 +7,7 @@
 <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
 <title>Trang chủ</title>
 <!-- start: pages css here -->
-<link rel="stylesheet" href="<?php echo $path; ?>css/themes/default.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $path; ?>css/stylesheet.css" type="text/css" media="screen"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/menu.css"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/footer.css"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/style.css"/>
@@ -62,15 +62,7 @@
 			
 			<!-- Begin block navigation_navigation -->
 			<ul id="nav">
-				<li class="Hilite"><a class="TrangChu" href="#">Trang chủ</a></li>
-				<li style="z-index: 903;" class="HasChild"><a class="TinTuc" href="#">Tin tức</a></li>
-				<li class="HasChild" style="z-index: 904;"><a class="GioiThieu" href="#">Giới thiệu</a></li>
-				<li class="HasChild" style="z-index: 900;"><a class="HuongDan" href="#">Hướng dẫn</a></li>
-				<li class="Blank"></li>
-				<li class=""><a class="CuaHang" href="#">Cửa hàng</a></li>
-				<li class="HasChild" style="z-index: 900;"><a class="HoTro" href="#">Hỗ trợ</a></li>
-				<li class="HasChild" style="z-index: 901;"><a class="ThuVien" href="#">Thư viện</a></li>
-				<li class=""><a class="DienDan notTrack" href="#">Diễn đàn</a></li>
+				<?php $this->load->view('frontend/menu');?>
 			</ul>
 			<!-- End block navigation_navigation -->
 			
