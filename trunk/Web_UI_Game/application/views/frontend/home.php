@@ -89,24 +89,68 @@
 				<!--mainContent-->
 				<div id="mainContent">
 					<div id="insideMainContent">
-						<!-- block tin -->
+						<!-- block tin tuc -->
 						<div class="BlockNews">
 							<div id="boxTab_3" class="BlockTinTuc">
-								<ul class="Tab fixPNG"></ul> 
-								<a class="News" >Tin tức</a>
+								<ul class="Tab fixPNG">
+                                    <li class="">
+                                        <a title="Tin mới" rel="" href="<?php echo $frontend; ?>news">
+                                            <span>Tin mới</span>
+                                        </a>
+                                    </li> 
+                                        
+                                    <li  class="">
+                                        <a title="Hướng dẫn" rel="" href="<?php echo $frontend ?>guide">
+                                            <span>Hướng dẫn</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li  class="">
+                                        <a title="Cộng đồng" rel="" href="<?php echo $frontend; ?>forum">
+                                            <span>Cộng đồng</span>
+                                        </a>
+                                    </li>
+                                    
+                                  </ul>  
+								<a class="News" href="<?php $frontend ?>news">Tin tức</a>
+                                <a class="ViewMore" title="Xem thêm" href="<?php echo $frontend; ?>news">Xem thêm</a>
 								<ul class="ListNews" id="MTkzNTZ8NHxuZXdzfDUwMnxob21lLWFiMnx0aW4tdHVjfFBIUA">
-									<li>
-										<a href="#" class="New">This is the news in Top</a>
-										<div class="DetailNews">
-											<p>Ga vang se tong hop tin tuc gan day cho ban</p>
-										</div>
-									</li>
-									<li><a href="#">Tin 1st</a></li>
-									<li><a href="#">Tin 2nd</a></li>
-									<li><a href="#">Tin 3rd</a></li>
-									<li><a href="#">Tin 4th</a></li>
-									<li><a href="#">Tin 5th</a></li>
-									<li><a href="#">Tin 6th</a></li>
+    									<?php  
+                                        foreach ($lastnews as $lnew) {
+                                            if($lnew['news_id'] % 2 == 0){
+                                                echo '
+                                            <li class="li-post-box">
+                                                 <a href="'.$frontend.'new_detail/'.$lnew['news_id'].'">
+                                                    <img src="'.$frontendimg.$lnew['news_image'].'" 
+                                                    alt="'.$lnew['news_image'].'" >
+                                                 </a>
+                                                 <h2>
+                                                    <a title="'.$lnew['news_name'].'" href="'.$frontend.'new_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
+                                                </h2>
+                                                <h3>
+                                                    <p>'. word_limiter($lnew['news_content'],15).'.... </p>
+                                                </h3>
+                                            </li>';                                    
+                                            
+                                            }else {
+                                                 echo '                                
+                                            <li class="li-post-box li-post-box-sp">
+                                                 <a href="'.$frontend.'new_detail/'.$lnew['news_id'].'">
+                                                    <img src="'.$frontendimg.$lnew['news_image'].'" 
+                                                    alt="'.$lnew['news_image'].'" >
+                                                 </a>
+                                                 <h2>
+                                                    <a title="'.$lnew['news_name'].'" href="'.$frontend.'new_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
+                                                </h2>
+                                                <h3>
+                                                    <p>'. word_limiter($lnew['news_content'],15).'.... </p>
+                                                </h3>
+                                            </li>';
+                                            }                               
+                                            
+                                           
+                                        }
+                                ?> 
 								</ul>
 							</div>
 						</div>
