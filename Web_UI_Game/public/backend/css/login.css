@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+	body{background: #2077BC;}
+	#boxlogin{background: url('../images/login.png') no-repeat;
+	 width: 700px; height: 227px; margin: 220px 0px 300px 300px; color: white;
+	 position: relative;font-family: Arial, Helvetica, sans-serif;}
+	h1, h2{position: absolute;font-size: 17px; margin: 18px 18px;}
+	#txtname{position: absolute; margin: 80px 110px; }
+	#txtpass{position: absolute; margin: 110px 110px;}
+	.text{ font-size: 12px; }
+	#boxname{margin-left: 11px;}
+	#boxpass{margin-left: 14px;}
+	#thongbao{position: absolute; margin: 140px 110px; width: 200px; color: #FF6600; font-size: 12px}    
+	#button{ position: absolute;margin: 185px 285px; width: 100px; height: 27px;padding-left: 0px;
+	 background: none; border: none; color: white; font-size: 15px; font-weight: bold}
