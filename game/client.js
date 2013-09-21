@@ -1,7 +1,8 @@
 //CLIENT CODE
-//var io = require('socket.io');
 
+var io = require('socket.io');
 var socket = io.connect('127.0.0.1:5000');
+
 var username;
 var DEBUG = false;
 
@@ -14,9 +15,11 @@ function debug(msg) {
 //handle event ------------------------------------------------------------
 
 //hello when start connect
-socket.on('greeting', function(data) {
-	debug(data);
-})
+socket.on('greeting', 
+    function(data) {
+	   debug(data);
+    }
+);
 
 //new user join
 socket.on('new-user', function(data) {
@@ -31,7 +34,7 @@ socket.on('msg', function(data) {
 })
 
 
-//public functions -------------------------------------------------------
+//send event -------------------------------------------------------
 
 function join() {
     debug('join');
@@ -42,7 +45,9 @@ function join() {
 function send() {
     debug('send');
     var msg = document.getElementById('chatbox').value;
-    socket.emit('msg', {username: username, msg: msg});
+    var obj = {
+        username: username, msg: msg
+    };
+    socket.emit('msg', obj);
 }
-
 
