@@ -1,0 +1,1949 @@
+
+a:link, a:visited {
+    color: #0045FF;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+#static {
+    margin: 10px 0 0;
+    min-height: 600px;
+    overflow: hidden;
+    width: 618px;
+}
+.StaticOuter {
+    min-height: 600px;
+    overflow: hidden;
+}
+.StaticOuter a:link, .StaticOuter a:visited {
+    color: #0045FF;
+    text-decoration: underline;
+}
+.StaticOuter a:hover {
+    text-decoration: none;
+}
+.StaticInner {
+    overflow: hidden;
+}
+.StaticInner h3 {
+    background: url("images/bgtitle01.jpg") no-repeat scroll center top transparent;
+    color: #336600;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 12px 0 13px;
+    text-align: center;
+}
+.StaticMain {
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+    padding: 0 2px 0 0;
+    width: 580px;
+}
+.StaticTopPanel {
+    height: 50px;
+    margin: 20px 20px 0 85px;
+    overflow: hidden;
+}
+.StaticTopPanel h2.TitleMain {
+    color: #B23600;
+    float: left;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: capitalize;
+    width: 490px;
+}
+#breadcrumbs {
+    color: #666666;
+    float: left;
+    font-size: 11px;
+    margin-left: 20px;
+    text-transform: none;
+}
+#breadcrumbs a:link, #breadcrumbs a:visited {
+    color: #565656;
+    text-decoration: underline;
+}
+#breadcrumbs span, #breadcrumbs a:hover {
+    color: #565656;
+    text-decoration: none;
+}
+ul#tabHeader {
+    background: url("../images/gioithieu/tab_bg.gif") repeat-x scroll left bottom transparent;
+    height: 27px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.BoxLogin input.TextPass {
+    margin: 5px 8px 0 0;
+}
+ul#tabHeader li {
+    border: medium none !important;
+    display: inline;
+    font-weight: bolder;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0;
+}
+ul#tabHeader li a:link, ul#tabHeader li a:visited {
+    background: url("../images/news/tab-cor1-left.gif") no-repeat scroll left bottom transparent;
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    margin: 0 1px;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+}
+ul#tabHeader li.ui-tabs-selected a:link, ul#tabHeader li.ui-tabs-selected a:visited {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left bottom transparent;
+    color: #6D4C40;
+}
+ul#tabHeader li a span {
+    background: url("../images/news/tab-cor2-right.gif") no-repeat scroll right top transparent;
+    color: #6D4C40;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 23px;
+    padding: 3px 10px 0 0;
+}
+ul#tabHeader li a:hover {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left top transparent;
+}
+ul#tabHeader li a:hover span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+}
+ul#tabHeader li.ui-tabs-selected a:link span, ul#tabHeader li.ui-tabs-selected a:visited span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+    font-weight: bolder;
+    padding: 14px 10px 0 0;
+}
+ul#tabHeader li.Active a:link, ul#tabHeader li.Active a:visited {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left top transparent;
+    color: #BC3461;
+}
+ul#tabHeader li.Active a:link span, ul#tabHeader li.Active a:visited span, ul#tabHeader li.Active a:hover span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+    font-weight: bolder;
+}
+ul#tabHeaderSmall {
+    background: url("../images/gioithieu/tab_bg.gif") repeat-x scroll left bottom transparent;
+    height: 27px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+ul#tabHeaderSmall li {
+    border: medium none !important;
+    display: inline;
+    font-weight: bolder;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0;
+}
+ul#tabHeaderSmall li a:link, ul#tabHeaderSmall li a:visited {
+    background: url("../images/news/tab-cor1-left.gif") no-repeat scroll left bottom transparent;
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    margin: 0 1px;
+    padding: 0 0 0 5px;
+    text-decoration: none;
+}
+ul#tabHeaderSmall li.ui-tabs-selected a:link, ul#tabHeaderSmall li.ui-tabs-selected a:visited {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left bottom transparent;
+    color: #6D4C40;
+}
+ul#tabHeaderSmall li a span {
+    background: url("../images/news/tab-cor2-right.gif") no-repeat scroll right top transparent;
+    color: #6D4C40;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 23px;
+    padding: 3px 5px 0 0;
+}
+ul#tabHeaderSmall li a:hover {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left top transparent;
+}
+ul#tabHeaderSmall li a:hover span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+}
+ul#tabHeaderSmall li.ui-tabs-selected a:link span, ul#tabHeaderSmall li.ui-tabs-selected a:visited span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+    font-weight: bolder;
+    padding: 14px 5px 0 0;
+}
+ul#tabHeaderSmall li.Active a:link, ul#tabHeaderSmall li.Active a:visited {
+    background: url("../images/news/tab-cor1-left-over.gif") no-repeat scroll left top transparent;
+    color: #BC3461;
+}
+ul#tabHeaderSmall li.Active a:link span, ul#tabHeaderSmall li.Active a:visited span, ul#tabHeaderSmall li.Active a:hover span {
+    background: url("../images/news/tab-cor2-right-over.gif") no-repeat scroll right top transparent;
+    color: #BC3461;
+    font-weight: bolder;
+}
+ul.AnchorLink {
+    margin: 0 auto 20px;
+    overflow: hidden;
+    width: 475px;
+}
+ul.AnchorLink li {
+    background: url("../images/content/icon.gif") no-repeat scroll 0 4px transparent;
+    float: left;
+    font-weight: bolder;
+    padding: 0 0 5px 15px;
+    width: 220px;
+}
+ul.AnchorLink li a:link, ul.AnchorLink li a:visited {
+    color: #CC3300;
+    text-decoration: none;
+}
+ul.AnchorLink li a:hover {
+    color: #707A05;
+    text-decoration: none;
+}
+ul.AnchorLink li a.Active:link, ul.AnchorLink li a.Active:visited, ul.AnchorLink li a.Active:hover {
+    color: #707A05;
+}
+.ContentBlock {
+    clear: both;
+    margin-bottom: 20px;
+}
+.ContentBlock p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.ContentBlock p.TextCenter {
+    text-align: center;
+}
+.StaticMain h4 {
+    background: url("../images/gioithieu/icon_h4.png") no-repeat scroll left 4px transparent;
+    color: #B23600;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 5px;
+    padding: 4px 0 2px 28px;
+}
+.ContentH4 {
+    margin: 0 0 20px 28px;
+}
+.ContentH4 p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.StaticMain h5 {
+    background: url("../images/gioithieu/icon_h5.png") no-repeat scroll left 0 transparent;
+    color: #0066CC;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 5px 28px;
+    padding: 0 0 0 22px;
+}
+.ContentH5 {
+    margin: 0 0 20px 52px;
+}
+.ContentH5 p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.StaticMain h6 {
+    background: url("../images/gioithieu/icon_h6.png") no-repeat scroll left 3px transparent;
+    color: #545454;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 5px 52px;
+    padding: 2px 0 2px 20px;
+}
+.ContentH6 {
+    margin: 0 0 20px 75px;
+}
+.ContentH6 p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.ImagesBlock {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ImagesH4 {
+    margin: 0 0 20px 30px;
+    text-align: center;
+}
+.ImagesH5 {
+    margin: 0 0 20px 45px;
+    text-align: center;
+}
+.ImagesH6 {
+    margin: 0 0 20px 60px;
+    text-align: center;
+}
+.FirstChar {
+    color: #3C3C3C;
+    float: left;
+    font-size: 40px;
+    line-height: 30px;
+    padding: 4px 4px 0 0;
+}
+.MyTable {
+    border-collapse: collapse;
+    margin: 0 auto 10px;
+}
+.MyTable thead tr th {
+    background: none repeat scroll 0 0 #695045;
+    border: 1px solid #BAB09F;
+    color: #FFFFFF;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+.OddRow {
+    background: none repeat scroll 0 0 #E7DBC8;
+}
+.EvenRow {
+    background: none repeat scroll 0 0 #F7EED5;
+}
+.MyTable tbody tr td {
+    border: 1px solid #BAB09F;
+    padding: 3px 5px;
+}
+.MyTable .HorzRight {
+    text-align: right !important;
+}
+.MyTable .HorzCenter {
+    text-align: center !important;
+}
+.MyTable .VeztTop {
+    vertical-align: top !important;
+}
+.NoticeBox {
+    background: none repeat scroll 0 0 #E7DBC8;
+    border: 1px solid #C7B08C;
+    padding: 10px;
+}
+.Legend {
+    background: none repeat scroll 0 0 #FF4BA9;
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    font-weight: bolder;
+    height: 20px;
+    margin: -22px 0 0;
+    padding: 0 15px;
+}
+.NoteContent {
+    overflow: hidden;
+    text-align: justify;
+    width: 100%;
+}
+.NoteContent ul.Icon {
+    margin: 10px 0 0;
+}
+.NoteContent ul.UpperAlpha {
+    margin: 10px 0 0;
+}
+.NoteContent ul.LowerAlpha {
+    margin: 10px 0 0;
+}
+.NoteContent ul.Decimal {
+    margin: 10px 0 0;
+}
+.PagingWrapper {
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 16px 0 15px;
+    width: 100%;
+}
+.PagingControl {
+    float: right;
+    left: -50%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.CenterWrapper {
+    left: 50%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.PagingControl span.PagingFirstPageLnk, .PagingControl span.PagingPrevPageLnk, .PagingControl span.PagingNextPageLnk, .PagingControl span.PagingLastPageLnk, .PagingControl a.PagingFirstPageLnk, .PagingControl a.PagingPrevPageLnk, .PagingControl a.PagingNextPageLnk, .PagingControl a.PagingLastPageLnk {
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding: 17px 0 0;
+    position: relative;
+    text-indent: -1000em;
+    width: 19px;
+}
+.PagingControl span.PagingFirstPageLnk, .PagingControl span.PagingPrevPageLnk, .PagingControl span.PagingNextPageLnk, .PagingControl span.PagingLastPageLnk {
+    opacity: 0.3;
+}
+.PagingControl span.PagingFirstPageLnk, .PagingControl a.PagingFirstPageLnk {
+    background: url("../images/gioithieu/bg-paging.gif") no-repeat scroll -40px 0 transparent;
+    margin: 0 5px 0 0;
+}
+.PagingControl span.PagingPrevPageLnk, .PagingControl a.PagingPrevPageLnk {
+    background: url("../images/gioithieu/bg-paging.gif") no-repeat scroll 0 0 transparent;
+    border-left: medium none;
+    margin: 0 5px 0 0;
+}
+.PagingControl span.PagingNextPageLnk, .PagingControl a.PagingNextPageLnk {
+    background: url("../images/gioithieu/bg-paging.gif") no-repeat scroll -20px 0 transparent;
+    border-right: medium none;
+    margin: 0 5px;
+}
+.PagingControl span.PagingLastPageLnk, .PagingControl a.PagingLastPageLnk {
+    background: url("../images/gioithieu/bg-paging.gif") no-repeat scroll -60px 0 transparent;
+}
+.PagingControl ul.PageList {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.PagingControl ul.PageList li {
+    border-right: 1px solid #C5B38F;
+    float: left;
+    height: 16px;
+    margin: 0 2px;
+    overflow: hidden;
+    padding: 0;
+}
+.PagingControl ul.PageList li span {
+    color: #856200;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 18px;
+    padding: 0 7px;
+    text-align: center;
+}
+.PagingControl ul.PageList li a {
+    color: #856200;
+    display: block;
+    float: left;
+    font-size: 11px;
+    height: 18px;
+    padding: 0 7px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.PagingControl ul.PageList li a:hover {
+    color: #4A3800;
+    text-decoration: none;
+}
+ul.NewsList {
+    font-size: 13px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+ul.NewsList li {
+    border-bottom: 1px solid #CFC6A9;
+    display: block;
+    height: 20px;
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 4px;
+    position: relative;
+}
+ul.NewsList li .TextNews {
+    padding: 1px 0 0;
+    text-align: left;
+}
+ul.NewsList li .TextNews img.Cate {
+    display: none;
+    float: left;
+    margin: 1px 10px 0 0;
+}
+ul.NewsList li .TextNews a:link, ul.NewsList li .TextNews a:visited {
+    border: medium none;
+    color: #000000;
+    padding: 1px 0;
+    text-decoration: none;
+}
+ul.NewsList li .TextNews a:hover {
+    border: medium none;
+    color: #246949;
+    text-decoration: none;
+}
+ul.NewsList li .TextNews a img {
+    display: inline;
+}
+ul.NewsList li.New .TextNews a:link, ul.NewsList li.New .TextNews a:visited {
+    border: medium none;
+    color: #000000;
+    font-weight: bold;
+    padding: 1px 0;
+    text-decoration: none;
+}
+ul.NewsList li.New .TextNews a:hover {
+    border: medium none;
+    color: #246949;
+    text-decoration: none;
+}
+ul.NewsList li .TextDate {
+    color: #000000;
+    padding: 3px 0 0;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    top: 1px;
+    white-space: nowrap;
+}
+.BoxSearch {
+    border: 1px solid #999999;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    padding: 10px;
+    width: 95%;
+}
+.BoxSearch .BlockFormItem {
+    float: left;
+    overflow: hidden;
+    width: 86%;
+}
+.BoxSearch .FormItem {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.BoxSearch .FormItem label {
+    float: left;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 0;
+}
+.BoxSearch .FormItem select, .BoxSearch .FormItem input.TextInput {
+    color: #4D4D4D;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    outline: medium none;
+    padding: 2px 0 2px 3px;
+    width: 149px;
+}
+.BoxSearch .FormItem select {
+    width: 151px;
+}
+.BoxSearch .FormItem input.TextInput {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #666666;
+}
+.BoxSearch .FormItem input.TextInputAlt {
+    width: 117px;
+}
+.BoxSearch .FormItem img {
+    display: block;
+    float: left;
+    width: 25px;
+}
+.BoxSearch input.SubmitBtn {
+    background: url("../images/gioithieu/button_tim.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    float: right;
+    font-size: 0;
+    height: 24px;
+    margin: 0;
+    text-indent: -9999px;
+    width: 68px;
+}
+p.TextCenter {
+    text-align: center;
+}
+div.TextCenter {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ContentBlock img {
+    text-align: center;
+}
+.Strong01 {
+    color: #04709C;
+    font-weight: bolder;
+}
+.RedText {
+    color: #B83400;
+    font-weight: bolder;
+}
+.TextFont15 {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.TextFont16 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.TextFont17 {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.NoBorderImg {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 0;
+}
+.BorderImg {
+    border: 1px solid #868162;
+    padding: 3px;
+}
+.ImgLeft {
+    float: left;
+    margin: 0 10px 5px 0;
+}
+.ImgRight {
+    float: right;
+    margin: 0 0 5px 10px;
+}
+a .BorderImg01 {
+    border: 3px solid #00251A;
+}
+a:hover .BorderImg01 {
+    border: 3px solid #10100D;
+}
+a .BorderImg02 {
+    border: 1px solid #00251A;
+}
+a:hover .BorderImg02 {
+    border: 1px solid #10100D;
+}
+ul.Decimal {
+    margin: 0 0 10px 25px;
+}
+ul.Decimal li {
+    list-style-type: decimal;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+ul.UpperAlpha {
+    margin: 0 0 10px 25px;
+}
+ul.UpperAlpha li {
+    list-style-type: upper-alpha;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+ul.LowerAlpha {
+    margin: 0 0 10px 25px;
+}
+ul.LowerAlpha li {
+    list-style-type: lower-alpha;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+ul.Icon {
+    margin: 0 0 10px 5px;
+}
+ul.Icon li {
+    background: url("../images/content/icon_person.gif") no-repeat scroll 0 2px transparent;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: justify;
+}
+ul.Icon li ul.LowerAlpha li {
+    background: none repeat scroll 0 0 transparent;
+    list-style-type: lower-alpha;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+ul.Dash {
+    margin: 0 0 10px 5px;
+}
+ul.Dash li {
+    background: url("../images/content/icon_dash.gif") no-repeat scroll 0 2px transparent;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: justify;
+}
+ul.Disc {
+    margin: 0 0 10px 15px;
+}
+ul.Disc li {
+    background: none repeat scroll 0 0 transparent;
+    list-style-type: disc;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: justify;
+}
+ul.Decimal li ul {
+    padding-top: 5px;
+}
+ul.UpperAlpha li ul {
+    padding-top: 5px;
+}
+ul.LowerAlpha li ul {
+    padding-top: 5px;
+}
+ul.Icon li ul {
+    padding-top: 5px;
+}
+ul.Dash li ul {
+    padding-top: 5px;
+}
+ul.Disc li ul {
+    padding-top: 5px;
+}
+.BlockListNews {
+    overflow: hidden;
+    width: 100%;
+}
+.CommentBox {
+    background: url("../images/bg-content.png") repeat-y scroll left top transparent;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 41px 10px;
+    width: 535px;
+}
+.CommentBox .CommentFormItem {
+    overflow: hidden;
+    padding: 0 0 5px;
+    position: relative;
+    width: 100%;
+}
+.CommentBox .CommentFormItem label {
+    color: #000000;
+    float: left;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px 10px 0 0;
+    text-align: right;
+    width: 160px;
+}
+.CommentBox .CommentFormItem label span.RequiredAsterik {
+    color: #FF0000;
+}
+.CommentBox .CommentFormItem input.CommentTextInput, .CommentBox .CommentFormItem textarea.CommentTextArea {
+    background: none repeat scroll 0 0 #E5E0BB;
+    border: 1px solid #C7C198;
+    color: #000000;
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    padding: 3px 0 3px 4px;
+    width: 359px;
+}
+.CommentBox .CommentFormItem textarea.CommentTextArea {
+    height: 136px;
+    overflow: auto;
+}
+.CommentBox .CommentFormItem input.CommentCaptcha {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 100px;
+}
+.CommentFormBtnWrapper {
+    overflow: hidden;
+    padding: 0 0 0 170px;
+}
+.CommentFormBtnWrapper a.FormBtn {
+    margin: 0 5px 0 0;
+}
+a.FormBtn:link, a.FormBtn:visited {
+    background: url("../images/gioithieu/bg_button_right.gif") no-repeat scroll right center transparent;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+a.FormBtn:hover {
+    text-decoration: none;
+}
+a.FormBtn span {
+    background: url("../images/gioithieu/bg_button_left.gif") no-repeat scroll left center transparent;
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bolder;
+    padding: 3px 10px;
+    text-align: center;
+}
+.CommentBox .CommentEmotionBox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    bottom: 5px;
+    float: left;
+    height: 115px;
+    left: 0;
+    margin: 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+    width: 490px;
+}
+.CommentBox .EmotionBoxExpanded {
+    width: 490px;
+}
+.CommentBox .EmotionBoxCollapsed {
+    width: 160px;
+}
+.CommentBox .CommentEmotionBox ul.CommentEmotionList {
+    float: left;
+    height: 115px;
+    overflow: hidden;
+}
+.CommentBox .CommentEmotionBox ul.CommentEmotionList li {
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    margin: 7px 3px;
+    padding: 0;
+    width: 24px;
+}
+.CommentBox .CommentEmotionBox a.CommentEmotionBtn {
+    background: url("../images/gioithieu/emoticon_bar.gif") no-repeat scroll left -113px transparent;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 113px 0 0;
+    position: absolute;
+    right: 0;
+    text-indent: -1000em;
+    top: 0;
+    width: 5px;
+}
+.CommentBox .CommentEmotionBox a.CommentEmotionBtnCollapsed {
+    background-position: 0 0;
+}
+.CommentListSection {
+    border: 1px solid #C7C198;
+    height: 380px;
+    margin: 20px 0 0;
+    overflow: auto;
+    padding: 10px;
+    width: 513px;
+}
+.CommentListSection dl.CommentList {
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 95%;
+}
+.CommentListSection dl.CommentList dt {
+    border-top: 1px solid #C7C198;
+    color: #2F2F2F;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 10px 0 0;
+}
+.CommentListSection dl.CommentList dt#CommentFirstItem {
+    border-top: medium none;
+    padding: 0;
+}
+.CommentListSection dl.CommentList dd.CommentText {
+    color: #2F2F2F;
+    font-size: 12px;
+    padding: 4px 0 10px;
+}
+.CommentListSection dl.CommentList dd.CommentBtn {
+    overflow: hidden;
+    padding: 0 0 20px;
+    width: 100%;
+}
+.CommentListSection dl.CommentList dd.CommentBtn a.FormBtn {
+    float: right;
+    width: 55px;
+}
+.CommentListSection dl.CommentList dd.CommentBtn a.FormBtn span {
+    float: right;
+    padding: 3px 10px 5px;
+}
+.BlockSign {
+    border-top: 1px solid #CFC6A9;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-top: 5px;
+    width: 100%;
+}
+.BlockSign .ShowComment {
+    background: url("../images/gioithieu/icon_binhluan.gif") no-repeat scroll 0 3px transparent;
+    float: left;
+    padding: 0 0 0 20px;
+    width: 150px;
+}
+.BlockSign .ShowComment a:link, .BlockSign .ShowComment a:visited {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+.BlockSign .ShowComment a:hover {
+    color: #B00000;
+}
+.BlockSign .Author {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+    text-transform: inherit;
+}
+.BlockListNews {
+    background: url("../images/bg-content.png") repeat-y scroll left top transparent;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 22px 10px;
+    position: relative;
+    width: 565px;
+}
+.BlockListNews h4 {
+    background: url("../images/gioithieu/bg_other_news.gif") no-repeat scroll left 1px transparent;
+    color: #6B4012;
+    font-size: 13px;
+    font-weight: bolder;
+    height: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 6px 0 5px 35px;
+}
+.BlockListNews a.ViewMore:link, .BlockListNews a.ViewMore:visited {
+    background: url("../images/gioithieu/icon_more.gif") no-repeat scroll right 7px transparent;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 16px;
+    padding: 0 5px 0 0;
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+    text-indent: -999px;
+    top: 5px;
+    z-index: 5;
+}
+.BlockListNews a.ViewMore:hover {
+    color: #CECFDD;
+    text-decoration: none;
+}
+.BlockListNews ul.ListNews {
+    overflow: hidden;
+    padding: 10px;
+    width: 95%;
+}
+.BlockListNews ul.ListNews li {
+    background: url("..//images/gioithieu/icon_line_news.gif") no-repeat scroll left 4px transparent;
+    border-bottom: 1px dotted #CFC6A9;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 4px 10px 4px 15px;
+    width: 96%;
+}
+.BlockListNews ul.ListNews li.New {
+    background: url("..//images/gioithieu/icon_line_news.gif") no-repeat scroll left 4px #F0EEDB;
+}
+.BlockListNews ul.ListNews li a:link, .BlockListNews ul.ListNews li a:visited {
+    color: #6B4012;
+    float: left;
+    text-decoration: none;
+}
+.BlockListNews ul.ListNews li a:hover {
+    color: #B23600;
+    text-decoration: none;
+}
+.BlockListNews ul.ListNews li .Date {
+    color: #3C3C3C;
+    float: right;
+    text-align: right;
+    width: 75px;
+}
+.BlockNameEvent {
+    clear: both;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.BlockNameEvent h3.DetailNews {
+    color: #336600;
+    float: left;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 2px 0;
+    text-align: left;
+}
+.DateDetails {
+    float: right;
+    padding-top: 5px;
+    text-align: right;
+    width: 80px;
+}
+.DateDetailsEvent {
+    float: right;
+    text-align: right;
+    width: 180px;
+}
+.TitleEventNews {
+    background: url("../images/gioithieu/icon_line_news.gif") no-repeat scroll left 0 transparent;
+    color: #4C448A;
+    float: left;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 5px 0 12px 32px;
+    text-align: left;
+}
+.MenuFooter {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    display: inline;
+    left: 0;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.MenuFooter .MenuFooterLeft {
+    background: url("../images/gioithieu/bg-left.gif") no-repeat scroll 0 6px transparent;
+    float: left;
+    height: 42px;
+    width: 15px;
+}
+.MenuFooter .MenuFooterRight {
+    background: url("../images/gioithieu/bg-right.gif") no-repeat scroll 100% 6px transparent;
+    float: left;
+    height: 42px;
+    width: 15px;
+}
+.MenuFooter .MenuFooterCenter {
+    background: url("../images/gioithieu/bg.gif") repeat-x scroll 0 0 transparent;
+    float: left;
+    height: 42px;
+    width: 90%;
+}
+.MenuFooterWrapper {
+    margin: auto;
+    overflow: hidden;
+    width: 940px;
+}
+.MenuFooterChar {
+    background: url("../images/gioithieu/char.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 42px;
+    width: 43px;
+}
+.FooterLogin {
+    float: left;
+    margin: 14px 20px 0 18px;
+}
+.FooterLogin form.Login input {
+    float: left;
+    margin-right: 7px;
+    width: 100px;
+}
+.FooterLogin form.Login input.btn-submit {
+    background: url("../images/gioithieu/choingay.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 18px;
+    margin-top: 2px;
+    width: 63px;
+}
+.FooterLogin input.Login.btn-submit:hover {
+    background-position: 0 100%;
+}
+.FooterQuickLogin {
+    float: left;
+    margin: 10px 10px 0 0;
+}
+.FooterQuickLogin form input {
+    height: 28px;
+    width: 142px;
+}
+.FooterNav {
+    color: #FFFFFF;
+    float: left;
+    margin: 14px 20px 0 0;
+}
+.FooterNav a:link, .FooterNav a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.FooterNav a:hover {
+    color: #FFCC00;
+    text-decoration: none;
+}
+.FooterNav ul {
+    list-style: none outside none;
+}
+.FooterNav ul li {
+    float: left;
+    margin-right: 4px;
+}
+.FooterNav ul li.ftrangchu {
+    background: url("../images/gioithieu/trangchu.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    padding: 0 0 0 20px;
+}
+.FooterNav ul li.ftrangchu:hover {
+    background-position: 0 -20px;
+}
+.FooterNav ul li.fdangky {
+    background: url("../images/gioithieu/dangky.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    padding: 0 0 0 20px;
+}
+.FooterNav ul li.fdangky:hover {
+    background-position: 0 -20px;
+}
+.FooterNav ul li.fhuongdan {
+    background: url("../images/gioithieu/huongdan.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    padding: 0 0 0 20px;
+}
+.FooterNav ul li.fhuongdan:hover {
+    background-position: 0 -20px;
+}
+.FooterNav ul li.fdiendan {
+    background: url("../images/gioithieu/diendan.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    padding: 0 0 0 20px;
+}
+.FooterNav ul li.fdiendan:hover {
+    background-position: 0 -20px;
+}
+.FooterNav ul li.spacer {
+    background: url("../images/gioithieu/1.gif") no-repeat scroll 0 5px transparent;
+}
+.FooterTop {
+    background: url("../images/gioithieu/top.gif") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 22px;
+    margin: 12px 0 0;
+    overflow: hidden;
+    width: 35px;
+}
+.FooterTop:hover {
+    background-position: 0 100%;
+}
+.MenuFooter .FooterTop {
+    background: url("../images/gioithieu/top.gif") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 22px;
+    margin: 12px 0 0;
+    overflow: hidden;
+    width: 35px;
+}
+.MenuFooter .FooterTop:hover {
+    background-position: 0 100%;
+}
+body {
+    font: 13px/19px Tahoma,Arial,Verdana,sans-serif;
+    margin: 0;
+    min-width: 1000px;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, form, ul, ul li, ol, ol li, dl, dl dt, dl dd, blockquote {
+    margin: 0;
+    padding: 0;
+}
+ul, ul li, ol, ol li {
+    list-style: none outside none;
+}
+img {
+    border: medium none;
+}
+a {
+    outline: medium none;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+fieldset {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+fieldset legend {
+    display: none;
+}
+input, select, textarea {
+    font: 13px Tahoma,Arial,Verdana,sans-serif;
+}
+input[type="image"], input[type="submit"] {
+    outline: medium none;
+}
+input {
+    margin: -1px -2px;
+    vertical-align: baseline;
+}
+html > body input {
+    margin: 0;
+    vertical-align: text-bottom;
+}
+object, embed {
+    outline: medium none;
+}
+.Hidden {
+    display: none;
+}
+.Wrapper {
+    height: 1%;
+    overflow: visible;
+}
+html > body .Wrapper {
+    height: auto;
+    overflow: hidden;
+}
+.Clear {
+    clear: both;
+}
+ul#sidenav {
+    background: url("../images/gioithieu/menu-bottom.jpg") no-repeat scroll right bottom transparent;
+    border-top: medium none;
+    margin-left: 0;
+    margin-top: 13px;
+    overflow: hidden;
+    padding-bottom: 131px;
+    width: 202px;
+}
+ul#sidenav li.Off a:link, ul#sidenav li.Off a:visited, ul#sidenav li.Off a:hover {
+    background: url("../images/sub_sidenav_bg.gif") no-repeat scroll left top transparent;
+    color: #70583D;
+    cursor: default;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 18px;
+    width: 202px;
+}
+ul#sidenav li {
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 202px;
+}
+ul#sidenav li a, ul#sidenav li.HasChild a {
+    background: url("../images/gioithieu/left-nav.jpg") no-repeat scroll 0 0 #F5ECD8;
+    display: block;
+    height: 49px;
+    text-indent: -9999px;
+    width: 202px;
+}
+ul#sidenav li a.gioithieu:link, ul#sidenav li a.gioithieu:visited, ul#sidenav li.HasChild a.gioithieu:link, ul#sidenav li.HasChild a.gioithieu:visited {
+    background-position: 0 0;
+}
+ul#sidenav li a.gioithieu:hover, ul#sidenav li.HasChild a.gioithieu:hover {
+    background-position: -205px 0;
+    width: 202px;
+}
+ul#sidenav li.HasChild a.gioithieu.SlidePanelHandleActive:link, ul#sidenav li.HasChild.Active a.gioithieu:link, ul#sidenav li.HasChild.Active a.gioithieu:visited, ul#sidenav li.HasChild.Hilite a.gioithieu:link, ul#sidenav li.HasChild.Hilite a.gioithieu:visited, ul#sidenav li.HasChild a.gioithieu:hover {
+    background-position: -205px 0;
+    width: 202px;
+}
+ul#sidenav li a.huongdan:link, ul#sidenav li a.huongdan:visited, ul#sidenav li.HasChild a.huongdan:link, ul#sidenav li.HasChild a.huongdan:visited {
+    background-position: 0 -50px;
+}
+ul#sidenav li a.huongdan:hover, ul#sidenav li.HasChild a.huongdan:hover {
+    background-position: -205px -50px;
+    width: 202px;
+}
+ul#sidenav li.HasChild.Active a.huongdan:link, ul#sidenav li.HasChild.Active a.huongdan:visited, ul#sidenav li.HasChild.Hilite a.huongdan:link, ul#sidenav li.HasChild.Hilite a.huongdan:visited, ul#sidenav li.HasChild a.huongdan:hover {
+    background-position: -205px -50px;
+    width: 202px;
+}
+ul#sidenav li a.nhiemvu:link, ul#sidenav li a.nhiemvu:visited, ul#sidenav li.HasChild a.nhiemvu:link, ul#sidenav li.HasChild a.nhiemvu:visited {
+    background-position: 0 -150px;
+}
+ul#sidenav li a.nhiemvu:hover, ul#sidenav li.HasChild a.nhiemvu:hover {
+    background-position: -205px -150px;
+    width: 202px;
+}
+ul#sidenav li a.dactrung:link, ul#sidenav li a.dactrung:visited, ul#sidenav li.HasChild a.dactrung:link, ul#sidenav li.HasChild a.dactrung:visited {
+    background-position: 0 -100px;
+}
+ul#sidenav li a.dactrung:hover, ul#sidenav li.HasChild a.dactrung:hover {
+    background-position: -205px -100px;
+    width: 202px;
+}
+ul#sidenav li a.tinhnang:link, ul#sidenav li a.tinhnang:visited, ul#sidenav li.HasChild a.tinhnang:link, ul#sidenav li.HasChild a.tinhnang:visited {
+    background-position: 0 -200px;
+}
+ul#sidenav li.HasChild a.tinhnang.SlidePanelHandleActive:link, ul#sidenav li a.tinhnang:hover, ul#sidenav li.HasChild a.tinhnang:hover {
+    background-position: -205px -200px;
+    width: 202px;
+}
+ul#sidenav li a.chongluadao:link, ul#sidenav li a.chongluadao:visited, ul#sidenav li.HasChild a.chongluadao:link, ul#sidenav li.HasChild a.chongluadao:visited {
+    background-position: 0 -250px;
+}
+ul#sidenav li.HasChild a.chongluadao.SlidePanelHandleActive:link, ul#sidenav li a.chongluadao:hover, ul#sidenav li.HasChild a.chongluadao:hover {
+    background-position: -205px -250px;
+    width: 202px;
+}
+ul#sidenav li.Active a:link, ul#sidenav li.Active a:visited, ul#sidenav li.Hilite a:link, ul#sidenav li.Hilite a:visited {
+    background-position: 0 bottom;
+    color: #B23600;
+    display: block;
+    text-decoration: none;
+}
+ul#sidenav li.HasChild a:hover {
+    color: #B9B9B9;
+}
+ul#sidenav li.HasChild.Active a.tinhnang:link, ul#sidenav li.HasChild.Active a.tinhnang:visited, ul#sidenav li.HasChild.Hilite a.tinhnang:link, ul#sidenav li.HasChild.Hilite a.tinhnang:visited, ul#sidenav li.HasChild a.tinhnang:hover {
+    background-position: -205px -200px;
+    width: 202px;
+}
+ul#sidenav li.HasChild.Active a.chongluadao:link, ul#sidenav li.HasChild.Active a.chongluadao:visited, ul#sidenav li.HasChild.Hilite a.chongluadao:link, ul#sidenav li.HasChild.Hilite a.chongluadao:visited, ul#sidenav li.HasChild a.chongluadao:hover {
+    background-position: -205px -250px;
+    width: 202px;
+}
+ul#sidenav li.Active a.nhiemvu:link, ul#sidenav li.HasChild.Active a.nhiemvu:visited, ul#sidenav li.HasChild.Hilite a.nhiemvu:link, ul#sidenav li.HasChild.Hilite a.nhiemvu:visited, ul#sidenav li.HasChild a.nhiemvu:hover {
+    background-position: -205px -150px;
+    height: 49px;
+    width: 202px;
+}
+ul#sidenav li.Hilite a.nhiemvu, ul#sidenav li.Hilite.Active a.nhiemvu {
+    background-position: -205px -150px;
+    height: 49px;
+    width: 202px;
+}
+ul#sidenav li.Hilite a.nhiemvu, ul#sidenav li.Hilite.Active a.nhiemvu {
+    background-position: -205px -150px;
+    height: 49px;
+    width: 202px;
+}
+ul#sidenav li.HasChild.Active a.huongdan:link, ul#sidenav li.HasChild.Active a.huongdan:visited, ul#sidenav li.HasChild.Hilite a.huongdan:link, ul#sidenav li.HasChild.Hilite a.huongdan:visited, ul#sidenav li.HasChild a.huongdan:hover {
+    background-position: -205px -50px;
+    width: 202px;
+}
+ul#sidenav li.HasChild a.dactrung.SlidePanelHandleActive:link, ul#sidenav li.HasChild.Active a.dactrung:link, ul#sidenav li.HasChild.Active a.dactrung:visited, ul#sidenav li.HasChild.Hilite a.dactrung:link, ul#sidenav li.HasChild.Hilite a.dactrung:visited, ul#sidenav li.HasChild a.dactrung:hover {
+    background-position: -205px -100px;
+    height: 49px;
+    width: 202px;
+}
+ul#sidenav li ul {
+    background: url("../images/gioithieu/left-sub.jpg") repeat-y scroll left center #F5ECD8;
+    clear: both;
+    display: none;
+    margin-left: 3px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 199px;
+}
+ul#sidenav li ul li {
+    margin: 0;
+}
+ul#sidenav li ul li.last {
+    border-bottom: medium none;
+    line-height: 18px;
+    width: 168px;
+}
+ul#sidenav li ul li a:link, ul#sidenav li ul li a:visited {
+    background: url("../images/gioithieu/icon_nav.jpg") no-repeat scroll left bottom transparent;
+    color: #333333;
+    display: block;
+    height: 19px;
+    margin: 0 0 0 5px;
+    padding: 8px 0 5px 15px;
+    text-decoration: none;
+    text-indent: 0;
+    width: 153px;
+}
+ul#sidenav li ul li a:hover {
+    color: #B23600;
+    display: block;
+}
+ul#sidenav li.Active ul li a.Off:link, ul#sidenav li.Active ul li a.Off:visited, ul#sidenav li.Active ul li a.Off:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    width: 150px;
+}
+ul#sidenav li.Active ul li a:link, ul#sidenav li.Active ul li a:visited {
+    background: none repeat scroll 0 0 transparent;
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 0 6px 35px;
+    width: 150px;
+}
+ul#sidenav li.Active ul li.HasChild a:link, ul#sidenav li.Active ul li.HasChild a:visited {
+    background: none repeat scroll 0 0 transparent;
+}
+ul#sidenav li.Active ul li.Active a:link, ul#sidenav li.Active ul li.Active a:visited, ul#sidenav li.Active ul li.Hilite a:link, ul#sidenav li.Active ul li.Hilite a:visited, ul#sidenav li.Active ul li a:hover {
+    background: none repeat scroll 0 0 transparent;
+}
+ul#sidenav li.HasChild.Active ul li a:link, ul#sidenav li.HasChild.Active ul li a:visited, ul#sidenav li.HasChild.Hilite ul li a:link, ul#sidenav li.HasChild.Hilite ul li a:visited {
+    background: url("../images/gioithieu/icon_nav.jpg") no-repeat scroll left center transparent;
+    display: block;
+    padding: 6px 6px 5px 15px;
+}
+ul#sidenav li.HasChild ul li.Active a:link, ul#sidenav li.HasChild ul li.Active a:visited, ul#sidenav li.HasChild ul li a:hover, ul#sidenav li.HasChild.Active ul li a:hover {
+    background: url("../images/gioithieu/icon_nav-over.jpg") no-repeat scroll left center transparent;
+    color: #E91818;
+    text-decoration: none;
+}
+ul#sidenav li.Active ul li.Active a.off:link, ul#sidenav li.Active ul li.Active a.off:visited, ul#sidenav li.Active ul li.Active a.off:hover {
+    color: #5D4832;
+}
+.SlidePanelHide {
+    display: none !important;
+}
+ul#sidemenu {
+    border: 1px solid #000000;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding-left: 12px;
+    width: 176px;
+}
+ul#sidemenu li.Off a:link, ul#sidemenu li.Off a:visited, ul#sidemenu li.Off a:hover {
+    color: #70583D;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 8px 5px 7px;
+    width: 170px;
+}
+ul#sidemenu li {
+    border-bottom: 1px solid #000000;
+    float: left;
+    font-size: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 165px;
+}
+ul#sidemenu li.last {
+    border-bottom: medium none;
+    float: left;
+    font-size: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 165px;
+}
+ul#sidemenu li a:link, ul#sidemenu li a:visited {
+    background: url("../images/gioithieu/icon_nav.jpg") no-repeat scroll left center transparent;
+    color: #000000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 17px;
+    line-height: 18px;
+    padding: 8px 5px 8px 18px;
+    text-decoration: none;
+}
+ul#sidemenu li.Active a:link, ul#sidemenu li.Active a:visited, ul#sidemenu li.Hilite a:link, ul#sidemenu li.Hilite a:visited {
+    background-position: 0 center;
+    color: #E91818;
+    display: block;
+    text-decoration: none;
+}
+ul#sidemenu li a:hover {
+    background-position: left center;
+    color: #B9B9B9;
+    display: block;
+    text-decoration: none;
+}
+ul#sidemenu li.HasChild a:link, ul#sidemenu li.HasChild a:visited {
+    background: url("../images/sub_sidenav_child01.gif") no-repeat scroll left top transparent;
+}
+ul#sidemenu li.HasChild.Active a:link, ul#sidemenu li.HasChild.Active a:visited, ul#sidemenu li.HasChild.Hilite a:link, ul#sidemenu li.HasChild.Hilite a:visited, ul#sidemenu li.HasChild a:hover {
+    background: url("../images/sub_sidenav_child01.gif") no-repeat scroll left bottom transparent;
+}
+ul#sidemenu li ul {
+    clear: both;
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+ul#sidemenu li.Active ul {
+    background: none repeat scroll 0 0 transparent;
+}
+ul#sidemenu li ul li {
+    background: url("../images/sub_sidenav_child.gif") no-repeat scroll left top transparent;
+    line-height: 18px;
+    width: 100%;
+}
+ul#sidemenu li.Active ul li a.Off:link, ul#sidemenu li.Active ul li a.Off:visited, ul#sidemenu li.Active ul li a.Off:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px 0 5px 35px;
+    width: 145px;
+}
+ul#sidemenu li.Active ul li a:link, ul#sidemenu li.Active ul li a:visited {
+    background: none repeat scroll 0 0 transparent;
+    color: #232323;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 0 6px 35px;
+    width: 145px;
+}
+ul#sidemenu li.Active ul li.HasChild a:link, ul#sidemenu li.Active ul li.HasChild a:visited {
+    background: none repeat scroll 0 0 transparent;
+}
+ul#sidemenu li.Active ul li.Active a:link, ul#sidemenu li.Active ul li.Active a:visited, ul#sidemenu li.Active ul li.Hilite a:link, ul#sidemenu li.Active ul li.Hilite a:visited, ul#sidemenu li.Active ul li a:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #9B2F00;
+}
+ul#sidemenu li.HasChild.Active ul li a:link, ul#sidemenu li.HasChild.Active ul li a:visited, ul#sidemenu li.HasChild.Hilite ul li a:link, ul#sidemenu li.HasChild.Hilite ul li a:visited, ul#sidemenu li.HasChild ul li a:hover {
+    background: url("../images/sub_sidenav_child.gif") no-repeat scroll left top transparent;
+}
+ul#sidemenu li.Active ul li.Active a.off:link, ul#sidemenu li.Active ul li.Active a.off:visited, ul#sidemenu li.Active ul li.Active a.off:hover {
+    color: #5D4832;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../images/gioithieu/bg-body.jpg") repeat-x scroll 0 40px #FBEFC9;
+    color: #333333;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+a:link, a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+a:hover {
+    color: #B23600;
+    text-decoration: none;
+}
+.text16 {
+    font-size: 16px;
+}
+.text42 {
+    font-size: 42px;
+}
+.textmau {
+    color: #808080;
+}
+.ImgRight {
+    float: right;
+}
+.ImgLeft {
+    float: left;
+}
+img {
+    border: medium none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#wrapperOut {
+    background: url("../images/gioithieu/bg-main.jpg") repeat-y scroll center top transparent;
+    width: 100%;
+}
+#wrapper {
+    background: url("../images/gioithieu/bg-wrapp-out-sub.jpg") no-repeat scroll center top transparent;
+    width: 100%;
+}
+#main {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
+#header {
+    display: block;
+    height: 241px;
+    width: 100%;
+}
+.Logo a:link, .Logo a:active, .Logo a:visited {
+    background: url("../images/gioithieu/logo-hd.png") no-repeat scroll 0 -5px transparent;
+    display: block;
+    height: 114px;
+    left: 346px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 223px;
+    z-index: 100;
+}
+.HomePage a:link, .HomePage a:visited {
+    background: url("../images/gioithieu/trangchugunny.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 50px;
+    margin-left: 725px;
+    margin-top: 10px;
+    width: 190px;
+}
+.HomePage a:hover {
+    background: url("../images/gioithieu/trangchugunny.gif") no-repeat scroll 0 -50px transparent;
+    display: inline-block;
+    height: 50px;
+    margin-left: 725px;
+    margin-top: 10px;
+    width: 190px;
+}
+#content {
+    background: url("../images/gioithieu/bg-bottom-content.jpg") no-repeat scroll center bottom transparent;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+#sidebar {
+    display: inline;
+    float: left;
+    margin: 38px 0 0 30px;
+    width: 202px;
+}
+#leftBottom {
+    background: url("../images/gioithieu/bg-left.jpg") repeat-y scroll right center transparent;
+}
+#innerSide {
+    width: 100%;
+}
+#innerSide .Trangchu {
+    background: url("../images/gioithieu/school.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 80px;
+    margin-left: 4px;
+    text-indent: -9999px;
+    width: 180px;
+}
+#innerSide .Trangchu:hover {
+    background: url("../images/gioithieu/school.png") no-repeat scroll 0 -80px transparent;
+}
+#mainContent {
+    float: left;
+    margin: 0;
+    width: 618px;
+}
+fieldset legend {
+    display: none;
+}
+.BoxLogin {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.FormLogin {
+    background: url("../images/gioithieu/bg-search-hd.jpg") no-repeat scroll right center transparent;
+    height: 33px;
+    margin-left: 108px;
+    margin-top: 17px;
+    width: 492px;
+}
+.FormLogin input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    display: inline;
+    float: left;
+    padding: 3px 0 6px 10px;
+    width: 175px;
+}
+#desBikip {
+    background: url("../images/gioithieu/bg-des.png") repeat scroll 0 0 transparent;
+    color: #336600;
+    height: 82px;
+    margin-left: 50px;
+    padding: 30px 25px 0;
+    text-align: center;
+    width: 474px;
+}
+input.TextAccount {
+    margin: 5px 8px 0 19px;
+}
+input.TextPass {
+    margin: 5px 10px 0 0;
+}
+input.BtSearch {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-top: 5px;
+    text-indent: -9999px;
+    width: 64px;
+}
+.GuideContent {
+    overflow: hidden;
+    padding: 0 20px;
+    width: 780px;
+}
+h2 {
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer {
+    background: url("../images/gioithieu/footer1.jpg") no-repeat scroll left bottom #FBEFC9;
+    height: 104px;
+    margin: 0 0 24px 100px;
+    overflow: hidden;
+    padding: 20px 0 0 186px;
+    width: 624px;
+}
+#footer p {
+    color: #8B7345;
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 30px;
+    text-align: left;
+    width: 400px;
+}
+a.fRating {
+    display: block;
+    float: right;
+    height: 74px;
+    margin: 8px 60px 0 0;
+    text-indent: -9999px;
+    top: 14px;
+    width: 151px;
+}
+a.fRating {
+    display: block;
+    float: right;
+    height: 74px;
+    margin: 8px 30px 0 0;
+    text-indent: -9999px;
+    top: 14px;
+    width: 151px;
+}
+.survey_popup {
+    background: url("../images/gunny_survey.jpg") no-repeat scroll 0 0 transparent;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 36px;
+    position: absolute;
+    width: 600px;
+    z-index: 1001;
+}
+#quickLinks {
+    float: right;
+    height: 410px;
+    position: fixed;
+    top: 640px;
+    vertical-align: bottom;
+    width: 100px;
+}
+#top {
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+}
+#quickLinks ul.LinkSupport {
+    overflow: hidden;
+    padding: 0 1px;
+    width: 100px;
+}
+#quickLinks ul.LinkSupport li {
+    float: left;
+    width: 100px;
+}
+#quickLinks ul.LinkSupport li a {
+    display: block;
+    text-indent: -9999px;
+}
+#quickLinks .SupportTop {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -1px transparent;
+    display: block;
+    height: 77px;
+    text-indent: -9999px;
+}
+#quickLinks ul.LinkSupport li a.Home {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -78px transparent;
+    height: 54px;
+}
+#quickLinks ul.LinkSupport li a.Home:hover {
+    background-position: -103px -78px;
+}
+#quickLinks ul.LinkSupport li a.Guide {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -130px transparent;
+    height: 54px;
+}
+#quickLinks ul.LinkSupport li a.Guide:hover {
+    background-position: -103px -132px;
+}
+#quickLinks ul.LinkSupport li a.Card {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -186px transparent;
+    height: 54px;
+}
+#quickLinks ul.LinkSupport li a.Card:hover {
+    background-position: -103px -186px;
+}
+#quickLinks ul.LinkSupport li a.Support {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -240px transparent;
+    height: 54px;
+}
+#quickLinks ul.LinkSupport li a.Support:hover {
+    background-position: -103px -240px;
+}
+#quickLinks ul.LinkSupport li a.Forum {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll -1px -294px transparent;
+    height: 54px;
+}
+#quickLinks ul.LinkSupport li a.Forum:hover {
+    background-position: -103px -294px;
+}
+#quickLinks a.ToppageSub {
+    background: url("../images/gioithieu/sidebar-right.gif") no-repeat scroll 0 -349px transparent;
+    display: block;
+    height: 60px;
+    text-indent: -9999px;
+    width: 101px;
+}
+#quickLinks a.ToppageSub:hover {
+    background-position: -102px -349px;
+}
+.quickreg {
+    background: none repeat scroll 0 0 transparent;
+    height: 410px;
+    padding: 0;
+    width: 440px;
+}
+.InviteLinkPopup {
+    background: url("../images/moibanbe.png") no-repeat scroll 0 0 transparent;
+    padding: 140px 0 0;
+}
+.InviteLinkPopup .SurveyClose {
+    background: url("../images/none.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    left: 560px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: 80px;
+    width: 40px;
+}
+.RegNewsPopup {
+    background: url("../images/bg-nhantin-popup.png") no-repeat scroll 0 0 transparent;
+    padding: 210px 0 0;
+}
+.RegNewsPopup .SurveyClose {
+    background: url("../images/none.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 42px;
+    left: 560px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: 85px;
+    width: 40px;
+}
+.SpamLinkPopup {
+    background: url("../images/spamlink.png") no-repeat scroll 0 0 transparent;
+    padding: 156px 0 0;
+}
+.survey_popuphome .SurveyClose {
+    background: url("../images/survey_close.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    left: 560px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: 7px;
+    width: 26px;
+}
+.SpamLinkPopup .SurveyClose {
+    background: url("../images/none.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+    left: 560px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999px;
+    top: 94px;
+    width: 40px;
+}
+.quickreg .SurveyClose {
+    background: url("../images/gioithieu/close1.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    left: 384px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 23px;
+    width: 25px;
+}
+.survey_popup .SurveyContent {
+    height: 445px;
+    overflow: hidden;
+    padding: 0 0 0 20px;
+    width: auto;
+}
+.quickreg .SurveyContent {
+    height: auto;
+}
+.LogoRoad {
+    background: url("../images/gioithieu/logo-7road.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    left: 107px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 49px;
+    width: 32px;
+    z-index: 2;
+}
+.LogoRoad a {
+    display: block;
+    height: 30px;
+    text-indent: -9999px;
+    width: 32px;
+}
+.LogoVNG {
+    background: url("../images/gioithieu/logo-vng.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 53px;
+    left: 46px;
+    position: absolute;
+    top: 39px;
+    width: 36px;
+    z-index: 1;
+}
+.LogoVNG a {
+    display: block;
+    height: 53px;
+    text-indent: -9999px;
+    width: 36px;
+}
+.BoxLogin input.BtSearch {
+    background: url("../images/bg-btn-playnow.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-top: 4px;
+    text-indent: -9999px;
+    width: 64px;
+}
+.BoxLogin input.BtSearch:hover {
+    background-position: 0 -25px;
+}
