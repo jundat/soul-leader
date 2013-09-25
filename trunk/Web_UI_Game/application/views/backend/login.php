@@ -1,16 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<!DOCTYPE html> 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Login page</title>
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url() ;?>public/backend/css/login.css">
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url(); ?>public/backend/css/login.css"/>
 </head>
 <body>
 	
-	<div id="boxlogin">	
-	<h1>Tinh yeu chien si</h1>
+	<div id="boxlogin">		
 		<?php echo form_open('admin', array('autocomplete'=>'off')) ;?>
 		<h1>Please login</h1>
 		<div id="txtname">
