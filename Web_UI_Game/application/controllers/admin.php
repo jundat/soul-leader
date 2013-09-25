@@ -1,8 +1,13 @@
 <?php
-
+if(!defined('BASEPATH')){
+        exit('No direct script access allowed');
+    }
 class Admin extends CI_Controller{
     function __construct() {
-        parent::__construct();
+        parent::__construct();                 
+        $this->load->library('form_validation');
+        $this->load->library('session');
+        $this->load->helper('url');
     }
     
     function index(){
@@ -13,7 +18,7 @@ class Admin extends CI_Controller{
         }else{
             extract($_POST);
             
-            $user_id = $this->madmin->login($username, $password);
+            $user_id = $this->Madmin->login($username, $password);
             if(!$user_id){
                 //login failed error
                 $this->session->set_flashdata('login_error', TRUE);
