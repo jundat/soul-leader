@@ -4,7 +4,8 @@ if(!defined('BASEPATH')){
     }
 class Admin extends CI_Controller{
     function __construct() {
-        parent::__construct();                 
+        parent::__construct();   
+        $this->load->model('Madmin');              
         $this->load->library('form_validation');
         $this->load->library('session');
         $this->load->helper('url');
