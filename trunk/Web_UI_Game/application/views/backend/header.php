@@ -1,14 +1,14 @@
 <p class="timer">
-    <!--<?php
+    <?php
         $timezone = "Asia/Ho_Chi_Minh";
         if(function_exists('data_controll_timezone_set')) 
             data_controll_timezone_set($timezone);
-            echo data('l');
+            echo date('l');
             echo '&nbsp;&nbsp;&nbsp;'.date('d/m/Y');
             echo '&nbsp;&nbsp;'.date('h:i A');
-     ?>--!>
+     ?>
 </p>
-<p>Tinh hinh ok</p>
+
 <div class="logo_text">
     <div class="logo">
         <a href="index.php"><img src="<?php echo base_url(); ?>public/backend/logo_backend.png" width="140" height="100"/></a>

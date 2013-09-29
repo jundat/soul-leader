@@ -20,9 +20,10 @@ class Admin extends CI_Controller{
             extract($_POST);
             
             $user_id = $this->Madmin->login($username, $password);
+            
             if(!$user_id){
                 //login failed error
-                $this->session->set_flashdata('login_error', TRUE);
+                $this->session->set_flashdata('login_error', TRUE);                
                 redirect('admin');
             }else{
                 //login in
@@ -102,6 +103,7 @@ class Admin extends CI_Controller{
             $this->load->view('backend/manager', $data);
         }
         else{
+            
             redirect('admin');
         }
     }
