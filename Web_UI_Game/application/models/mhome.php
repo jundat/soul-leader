@@ -19,9 +19,9 @@ class Mhome extends CI_Model{
     // lay tong so tin tuc
     function get_total_rows_news() {
         $this->db->select('news_id');
-        $this->db->where('news_del', 0);
+        $this->db->where('news_del',0);
         $query = $this->db->get('news');
-        return $query->num_rows();
+        return $query->num_rows();               
     }
     
     // lay tin tuc theo id
@@ -36,7 +36,7 @@ class Mhome extends CI_Model{
     function get_last_news(){
         $this->db->where('news_del', 0);
         $this->db->order_by('news_post', 'desc');
-        $this->db->limit(4);
+        $this->db->limit(2);
         $query = $this->db->get('news');
         return $query->result_array();
     }
