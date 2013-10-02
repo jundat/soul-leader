@@ -11,7 +11,7 @@
 
 <div class="logo_text">
     <div class="logo">
-        <a href="index.php"><img src="<?php echo base_url(); ?>public/backend/logo_backend.png" width="140" height="100"/></a>
+        <a href="index.php"><img src="<?php echo base_url(); ?>public/backend/images/logo_backend.png" width="140" height="100"/></a>
     </div>
     
     <div class="text">

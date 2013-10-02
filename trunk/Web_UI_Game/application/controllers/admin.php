@@ -9,6 +9,11 @@ class Admin extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->library('session');
         $this->load->helper('url');
+        $this->load->model('Mhome');
+        $this->load->helper('url');
+        $this->load->helper('text');
+        $this->load->library('table');
+        $this->load->helper('date');
     }
     
     function index(){
@@ -44,59 +49,61 @@ class Admin extends CI_Controller{
             $param = $this->uri->segment(4);
             $data['content'] = $action;
             $data['backend'] = base_url().'index.php/admin/manager/';
-            $data['backendimg'] = base_url().'public/backend/images';
+            $data['backendimg'] = base_url().'public/backend/images/';
+            
             switch($action){
-                case ' ':
+                case '':
                     $data['content'] =  'index';
                     break;
-                case 'func_remove_article' : 
-                    $this->Mhome->remove_article($param);
-                    $data['content'] = 'article';
+                case 'func_remove_news' : 
+                    $this->Mhome->remove_news($param);
+                    $data['content'] = 'news';
                     break;
-                case 'func_restore_article': 
-                    $this->Mhome->restore_article($param);
-                    $data['content'] = 'removed_article';
+                case 'func_restore_news': 
+                    $this->Mhome->restore_news($param);
+                    $data['content'] = 'removed_news';
                     break;
-                case 'func_save_add_article':
-                    if($this->Mhome->save_add_article()){
-                        $data['message'] = 'Article was added successfully';
+                case 'func_save_add_news':
+                    if($this->Mhome->save_add_news()){
+                        $data['message'] = 'news was added successfully';
                     }else{
-                        $data['message'] = 'Article was not added. Please Check and try again';
+                        $data['message'] = 'news was not added. Please Check and try again';
                     }
                     
-                    $data['content'] = 'article';
+                    $data['content'] = 'news';
                     break;
-                case 'func_save_edit_article': 
-                    if($this->Mhome->save_edit_article()){
-                        $data['message'] = 'Article was saved successfully';
+                case 'func_save_edit_news': 
+                    if($this->Mhome->save_edit_news()){
+                        $data['message'] = 'news was saved successfully';
                     }else{
-                        $data['message'] = 'Article was not saved.Please check and try again';
+                        $data['message'] = 'news was not saved.Please check and try again';
                     }
-                    $data['content'] = 'article';
+                    $data['content'] = 'news';
                     break;
-                case 'func_delete_article':
-                    $this->Mhome->delete_article($param);
-                    $data['content'] = 'removed_article';
+                case 'func_delete_news':
+                    $this->Mhome->delete_news($param);
+                    $data['content'] = 'removed_news';
                     break;
             }
             
             switch($data['content']){
-                case 'article':
+                case 'news':
+                    // pagination start
                     $this->load->library('pagination');
-                    $config['base_url'] = base_url().'index.php/admin/manager/article/';
-                    
+                    $config['base_url'] = base_url().'index.php/admin/manager/news/';                    
                     $config['total_rows'] = $this->Mhome->get_total_rows_news();
                     // $config['use_page_numbers'] = TRUE;//hien thi so trag dung
                     $config['per_page'] = 5;
                     $config['uri_segment'] = 4;
+                    
                     $this->pagination->initialize($config);
                     $data['news'] = $this->Mhome->get_news($config['per_page'], $param);
                     break;
-                case 'remove_article':
-                    $data['removed_article'] = $this->Mhome->get_removed_news();
+                case 'remove_news':
+                    $data['removed_news'] = $this->Mhome->get_removed_news();
                     break;
-                case 'edit_article':
-                    $data['article'] = $this->Mhome->get_article($param);
+                case 'edit_news':
+                    $data['news'] = $this->Mhome->get_news_id($param);
                     break;
                     
             }
