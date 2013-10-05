@@ -7,7 +7,7 @@ var CPlayer = cc.Sprite.extend({
         this._super();
         var size = cc.Director.getInstance().getWinSize();
         this.schedule(this.update);
-        this.initWithFile("res/xvn/Player.png");
+        this.initWithFile(s_tPlayer);
         this.setAnchorPoint(cc.p(0.5, 0.5));
     },
 
@@ -25,36 +25,21 @@ var CPlayer = cc.Sprite.extend({
         var dirY = Math.sin(this.m_fAngle);
 
         var size = this.m_ball.getBoundingBox();
-        var startX = this.getPosition().x + dirX * size.width * 2;
+        var startX = this.getPosition().x + dirX * size.width * 2 ;
         var startY = this.getPosition().y + dirY * size.height * 2;
 
         this.m_ball.setVisible(true);
         this.m_ball.set(startX, startY, dirX, dirY, distance, power);
-        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.5);
-        var backSprite = cc.CallFunc.create(
+        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
+        var initSprite = cc.CallFunc.create(
         function () {
-            this.initWithFile("res/xvn/Player.png");
+            this.initWithFile(s_tPlayer);
         },
         this);
-        this.runAction(cc.Sequence.create(animate, backSprite));
+        this.runAction(cc.Sequence.create(animate, initSprite));
     },
 
-    /*
-    contain: function (x, y) {
-        var rect = this.getBoundingBox();
-        var isContain = true;
-        if (x > rect.x + rect.width)
-            isContain = false;
-        if (x < rect.x)
-            isContain = false;
-        if (y > rect.y + rect.height)
-            isContain = false;
-        if (y < rect.y)
-            isContain = false;
-        return isContain;
-    }, */
-
-    checkCollision: function () {
+    updateCollision: function () {
         var rPlayer = this.getBoundingBox();
         //var rBall = this.m_ball.getBoundingBox();
         var rBall = new cc.Rect(this.m_ball.getPosition().x - this.m_ball.getBoundingBox().width / 2 + 7.5, this.m_ball.getPosition().y - this.m_ball.getBoundingBox().height / 2 + 7.5, this.m_ball.getBoundingBox().width - 15, this.m_ball.getBoundingBox().height - 15);
@@ -66,29 +51,29 @@ var CPlayer = cc.Sprite.extend({
                 var a = 0;
             var layer = scene.getChildByTag(0);
 
-            var effect = new cc.Sprite();
-            effect.setAnchorPoint(cc.p(0.5, 0.5));
+            var explosionEffect = new cc.Sprite();
+            explosionEffect.setAnchorPoint(cc.p(0.5, 0.5));
 
             var effectAnimate = FactoryAnimate.getInstance().createAnimate("res/xvn/explosion.plist", "explosion_", 35, 0.015);
-            var doneEffect = cc.CallFunc.create(
+            var removeEffect = cc.CallFunc.create(
                 function () {
-                    layer.removeChild(effect);
+                    layer.removeChild(explosionEffect);
                 },
                 this);
-            effect.runAction(cc.Sequence.create(effectAnimate, doneEffect));
-            effect.setPosition(cc.p(this.m_ball.getPosition().x, this.m_ball.getPosition().y));
+            explosionEffect.runAction(cc.Sequence.create(effectAnimate, removeEffect));
+            explosionEffect.setPosition(cc.p(this.m_ball.getPosition().x, this.m_ball.getPosition().y));
 
-            layer.addChild(effect);
+            layer.addChild(explosionEffect);
             this.m_ball.setPosition(cc.p(-200, -200));
             this.m_ball.setVisible(false);
             this.m_iHP -= this.m_ball.m_fDam;
-            var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.5);
-            var backSprite = cc.CallFunc.create(
+            var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
+            var initSprite = cc.CallFunc.create(
             function () {
-                this.initWithFile("res/xvn/Player.png");
+                this.initWithFile(s_tPlayer);
             },
             this);
-            this.runAction(cc.Sequence.create(animate, backSprite));
+            this.runAction(cc.Sequence.create(animate, initSprite));
         }
     }
 });
