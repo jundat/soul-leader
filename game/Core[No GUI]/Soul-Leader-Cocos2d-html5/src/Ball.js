@@ -12,7 +12,7 @@ var CBall = cc.Sprite.extend({
     m_eType: Enum.EBall.Blue,
     ctor: function () {
         this._super();
-        this.initWithFile("res/xvn/Ball/Ball-blue.png");
+        this.initWithFile(s_tBallBlue);
         this.setVisible(false);
         this.setAnchorPoint(cc.p(0.5, 0.5));
         this.m_fSpeed = cc.p(0, 0);
@@ -40,22 +40,22 @@ var CBall = cc.Sprite.extend({
         switch (type) {
             case Enum.EBall.Blue:
                 m_eType = type;
-                this.initWithFile("res/xvn/Ball/Ball-blue.png");
+                this.initWithFile(s_tBallBlue);
                 this.m_fDam = 1;
                 break;
             case Enum.EBall.Green:
                 m_eType = type;
-                this.initWithFile("res/xvn/Ball/Ball-green.png");
+                this.initWithFile(s_tBallGreen);
                 this.m_fDam = 2;
                 break;
             case Enum.EBall.Red:
                 m_eType = type;
-                this.initWithFile("res/xvn/Ball/Ball-red.png");
+                this.initWithFile(s_tBallRed);
                 this.m_fDam = 3;
                 break;
             case Enum.EBall.Yellow:
                 m_eType = type;
-                this.initWithFile("res/xvn/Ball/Ball-yellow.png");
+                this.initWithFile(s_tBallYellow);
                 this.m_fDam = 4;
                 break;
         }

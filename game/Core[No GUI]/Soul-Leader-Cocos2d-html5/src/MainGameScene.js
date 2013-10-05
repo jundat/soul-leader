@@ -50,7 +50,7 @@ var MainGame = cc.LayerColor.extend({
         this.schedule(this.update);
 
         //background
-        this.m_sBG = cc.Sprite.create("res/xvn/Background.png");
+        this.m_sBG = cc.Sprite.create(s_tBackground);
         this.m_sBG.setPosition(cc.p(size.width / 2, size.height / 2));
         this.m_sBG.setAnchorPoint(cc.p(0.5, 0.5));
         this.addChild(this.m_sBG);
@@ -103,14 +103,14 @@ var MainGame = cc.LayerColor.extend({
         cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/Ball/Player.plist");
         cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/explosion.plist");
 
-        var _sBluePowerBar = cc.Sprite.create("res/xvn/blue_power_bar.png");
+        var _sBluePowerBar = cc.Sprite.create(s_tPowerBar);
         _sBluePowerBar.setScale(0.25);
         _sBluePowerBar.setScaleX(-0.25);
         _sBluePowerBar.setPosition(cc.p(300, 300));
         this.addChild(_sBluePowerBar);
 
 
-        var p = cc.Sprite.create("res/xvn/red_power_bar.png");
+        var p = cc.Sprite.create(s_tPowerBar2);
         this.m_sRedPowerBar = cc.ProgressTimer.create(p);
         this.m_sRedPowerBar.setType(cc.PROGRESS_TIMER_TYPE_RADIAL);
         this.m_sRedPowerBar.setReverseDirection(true);
@@ -120,12 +120,12 @@ var MainGame = cc.LayerColor.extend({
         this.m_sRedPowerBar.setPosition(cc.p(300, 300));
         this.addChild(this.m_sRedPowerBar);
 
-        this.m_sHealthBar1 = cc.Sprite.create("res/xvn/green_health_bar.png");
+        this.m_sHealthBar1 = cc.Sprite.create(s_tHealthBar);
         this.m_sHealthBar1.setPosition(cc.p(130, 470));
         this.m_sHealthBar1.setAnchorPoint(cc.p(0.0, 0.5));
         this.m_sHealthBar1.setScaleY(5);
 
-        this.m_sHealthBar2 = cc.Sprite.create("res/xvn/green_health_bar.png");
+        this.m_sHealthBar2 = cc.Sprite.create(s_tHealthBar);
         this.m_sHealthBar2.setPosition(cc.p(1020, 470));
         this.m_sHealthBar2.setAnchorPoint(cc.p(0.0, 0.5));
         this.m_sHealthBar2.setScaleY(5);
@@ -138,29 +138,29 @@ var MainGame = cc.LayerColor.extend({
 
     menuSetting: function () {
         var menuItem1 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-blue.png",
-            "res/xvn/Ball/Ball-blue-Selected.png",
+            s_tBallBlue,
+            s_tBallBlueSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Blue);
             },
             this);
         var menuItem2 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-green.png",
-            "res/xvn/Ball/Ball-green-Selected.png",
+            s_tBallGreen,
+            s_tBallGreenSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Green);
             },
             this);
         var menuItem3 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-red.png",
-            "res/xvn/Ball/Ball-red-Selected.png",
+            s_tBallRed,
+            s_tBallRedSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Red);
             },
             this);
         var menuItem4 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-yellow.png",
-            "res/xvn/Ball/Ball-yellow-Selected.png",
+            s_tBallYellow,
+            s_tBallYellowSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Yellow);
             },
@@ -182,8 +182,8 @@ var MainGame = cc.LayerColor.extend({
     },
 
     update: function (dt) {
-        this.m_player1.checkCollision();
-        this.m_player2.checkCollision();
+        this.m_player1.updateCollision();
+        this.m_player2.updateCollision();
 
         this.m_ball.update();
         if (this.isPower)
@@ -198,7 +198,7 @@ var MainGame = cc.LayerColor.extend({
         }
 
         this.m_sRedPowerBar.setPercentage(this.m_fPower * 50 / this._fMaxPower);
-        //this.m_redHealthBar.setPercentage(this.m_power * 4);
+
         this.m_sHealthBar1.setScaleX(this.m_player1.m_iHP);
         this.m_sHealthBar2.setScaleX(this.m_player2.m_iHP);
 
