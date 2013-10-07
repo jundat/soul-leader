@@ -14,13 +14,14 @@
 		<h1>Please login</h1>
 		<div id="txtname">
 			<span class="text">Username:</span> 
-			<?php echo form_input(array('id'=>'boxname', 'name'=>'username', 'size'=>30)) ; ?>
-		
+			<?php echo form_input(array('id'=>'boxname', 'name'=>'username', 'size'=>30)) ; ?>	
+            
 		</div>
 
 		<div id="txtpass">
 			<span class="text">Password:</span> 
 			<?php echo form_password(array('id'=>'boxpass', 'name'=>'password', 'size'=>30));?>
+            
 		
 		</div>
 
@@ -28,9 +29,11 @@
 			<?php
 			if (($this->session->flashdata('login_error'))){
 				echo 'You entered an incorerect username or password';
-			}
-			else{
-			 echo validation_errors() ;}?>
+                
+			} else{
+			     echo validation_errors();
+            }
+            ?>
 		</div>        
 		<?php echo form_submit(array('name'=>'submit', 'value'=>'login', 'id'=>'button')) ;?>		
 		<?php echo form_close() ;?>
