@@ -8,21 +8,21 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url(); ?>public/backend/css/admin.css"/>
 </head>
 <body>
+
     <div id="wrapper">
         <div id="header">
             <?php $this->load->view('backend/header'); ?>
         </div>
+        
         <div id="menu">
             <?php $this->load->view('backend/menu'); ?>            
         </div>
         <div id="content">
             <?php $this->load->view('backend/'.$content); ?>
         </div>
-        <div class="clear">
-        </div>
         <div id="footer">
             <?php $this->load->view('backend/footer'); ?>
-        </div>
+        </div>            
     </div>
 </body>
 </html>
