@@ -45,7 +45,9 @@
             'src/Ball.js',
             'src/Enum.js',
             'src/FactoryAnimate.js',
-
+            'src/ComputerBall.js',
+            'src/Computer.js',
+            'src/client.js',
             'src/myApp.js'//add your own files in order here
             
         ]
