@@ -291,6 +291,7 @@
     <Content Include="src\myApp.js" />
     <Content Include="src\Player.js" />
     <Content Include="src\resource.js" />
+    <Content Include="src\socket.io.js" />
     <None Include="Soul-Leader-Cocos2d-html5_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
