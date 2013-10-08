@@ -24,16 +24,17 @@
  THE SOFTWARE.
  ****************************************************************************/
 function Enum() { }
+Enum.ETurn = {
+    Player: 0,
+    Computer: 1
+}
 Enum.EBall = {
     Blue: 0,
     Green: 1,
     Red: 2,
     Yellow: 3
 }
-Enum.ETurn = {
-    Player1: 0,
-    Player2: 1
-}
+
 
 
 
@@ -42,7 +43,7 @@ var MainGame = cc.LayerColor.extend({
     isPower: false,
     _fMaxPower: 25,
     m_fPlusPower: 15,
-    m_eTurn: Enum = Enum.ETurn.Player1,
+    m_eTurn: 0,
     init: function () {
         this._super(new cc.Color4B(255, 0, 0, 255));
         var size = cc.Director.getInstance().getWinSize();
@@ -50,7 +51,7 @@ var MainGame = cc.LayerColor.extend({
         this.schedule(this.update);
 
         //background
-        this.m_sBG = cc.Sprite.create("res/xvn/Background.png");
+        this.m_sBG = cc.Sprite.create(s_tBackground);
         this.m_sBG.setPosition(cc.p(size.width / 2, size.height / 2));
         this.m_sBG.setAnchorPoint(cc.p(0.5, 0.5));
         this.addChild(this.m_sBG);
@@ -59,27 +60,32 @@ var MainGame = cc.LayerColor.extend({
         this.m_ball = new CBall();
         this.addChild(this.m_ball);
 
-        //player1
-        this.m_player1 = new CPlayer();
-        this.m_player1.setPosition(cc.p(200, 100));
-        this.m_player1.init(this.m_ball);
-        this.addChild(this.m_player1);
+        //computer ball
+        this.m_computerBall = new CBall();
+        this.addChild(this.m_computerBall);
 
-        //player2
-        this.m_player2 = new CPlayer();
-        this.m_player2.setPosition(cc.p(1100, 100));
-        this.m_player2.init(this.m_ball);
-        this.m_player2.setScaleX(-1);
-        this.addChild(this.m_player2);
 
-        //heal point player 1 label
-        this.m_lPoint1 = cc.LabelTTF.create(this.m_player1.m_iHP.toString(), "Arial", 38);
+        //player
+        this.m_player = new CPlayer();
+        this.m_player.setPosition(cc.p(200, 100));
+        this.m_player.init(this.m_ball);
+        this.addChild(this.m_player);
+
+        //computer
+        this.m_computer = new Computer();
+        this.m_computer.setPosition(cc.p(1100, 100));
+        this.m_computer.init(this.m_computerBall);
+        this.m_computer.setScaleX(-1);
+        this.addChild(this.m_computer);
+
+        //heal point player label
+        this.m_lPoint1 = cc.LabelTTF.create(this.m_player.m_iHP.toString(), "Arial", 38);
         this.m_lPoint1.setPosition(cc.p(200, 500));
         this.m_lPoint1.setFontFillColor(new cc.Color3B(255, 0, 0))
         this.addChild(this.m_lPoint1);
 
-        //heal point player 2 label
-        this.m_lPoint2 = cc.LabelTTF.create(this.m_player2.m_iHP.toString(), "Arial", 38);
+        //heal point computer label
+        this.m_lPoint2 = cc.LabelTTF.create(this.m_computer.m_iHP.toString(), "Arial", 38);
         this.m_lPoint2.setPosition(cc.p(1100, 500));
         this.m_lPoint2.setFontFillColor(new cc.Color3B(255, 0, 0))
         this.addChild(this.m_lPoint2);
@@ -103,14 +109,14 @@ var MainGame = cc.LayerColor.extend({
         cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/Ball/Player.plist");
         cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/explosion.plist");
 
-        var _sBluePowerBar = cc.Sprite.create("res/xvn/blue_power_bar.png");
+        var _sBluePowerBar = cc.Sprite.create(s_tPowerBar);
         _sBluePowerBar.setScale(0.25);
         _sBluePowerBar.setScaleX(-0.25);
         _sBluePowerBar.setPosition(cc.p(300, 300));
         this.addChild(_sBluePowerBar);
 
 
-        var p = cc.Sprite.create("res/xvn/red_power_bar.png");
+        var p = cc.Sprite.create(s_tPowerBar2);
         this.m_sRedPowerBar = cc.ProgressTimer.create(p);
         this.m_sRedPowerBar.setType(cc.PROGRESS_TIMER_TYPE_RADIAL);
         this.m_sRedPowerBar.setReverseDirection(true);
@@ -120,12 +126,12 @@ var MainGame = cc.LayerColor.extend({
         this.m_sRedPowerBar.setPosition(cc.p(300, 300));
         this.addChild(this.m_sRedPowerBar);
 
-        this.m_sHealthBar1 = cc.Sprite.create("res/xvn/green_health_bar.png");
+        this.m_sHealthBar1 = cc.Sprite.create(s_tHealthBar);
         this.m_sHealthBar1.setPosition(cc.p(130, 470));
         this.m_sHealthBar1.setAnchorPoint(cc.p(0.0, 0.5));
         this.m_sHealthBar1.setScaleY(5);
 
-        this.m_sHealthBar2 = cc.Sprite.create("res/xvn/green_health_bar.png");
+        this.m_sHealthBar2 = cc.Sprite.create(s_tHealthBar);
         this.m_sHealthBar2.setPosition(cc.p(1020, 470));
         this.m_sHealthBar2.setAnchorPoint(cc.p(0.0, 0.5));
         this.m_sHealthBar2.setScaleY(5);
@@ -138,29 +144,29 @@ var MainGame = cc.LayerColor.extend({
 
     menuSetting: function () {
         var menuItem1 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-blue.png",
-            "res/xvn/Ball/Ball-blue-Selected.png",
+            s_tBallBlue,
+            s_tBallBlueSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Blue);
             },
             this);
         var menuItem2 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-green.png",
-            "res/xvn/Ball/Ball-green-Selected.png",
+            s_tBallGreen,
+            s_tBallGreenSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Green);
             },
             this);
         var menuItem3 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-red.png",
-            "res/xvn/Ball/Ball-red-Selected.png",
+            s_tBallRed,
+            s_tBallRedSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Red);
             },
             this);
         var menuItem4 = cc.MenuItemImage.create(
-            "res/xvn/Ball/Ball-yellow.png",
-            "res/xvn/Ball/Ball-yellow-Selected.png",
+            s_tBallYellow,
+            s_tBallYellowSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Yellow);
             },
@@ -182,10 +188,16 @@ var MainGame = cc.LayerColor.extend({
     },
 
     update: function (dt) {
-        this.m_player1.checkCollision();
-        this.m_player2.checkCollision();
+        this.m_player.updateCollision(this.m_computerBall);
+        //this.m_computer.updateCollision();
 
-        this.m_ball.update();
+        if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+            this.m_computer.fire(300, 300, 20);
+            this.m_eTurn = 0;
+        }
+        this.m_ball.update(dt);
+        this.m_computerBall.update(dt);
+
         if (this.isPower)
             this.m_fPower += this.m_fPlusPower * dt;
         if (this.m_fPower >= this._fMaxPower) {
@@ -196,19 +208,17 @@ var MainGame = cc.LayerColor.extend({
             this.m_fPower = 0;
             this.m_fPlusPower = -this.m_fPlusPower;
         }
-
         this.m_sRedPowerBar.setPercentage(this.m_fPower * 50 / this._fMaxPower);
-        //this.m_redHealthBar.setPercentage(this.m_power * 4);
-        this.m_sHealthBar1.setScaleX(this.m_player1.m_iHP);
-        this.m_sHealthBar2.setScaleX(this.m_player2.m_iHP);
-
+        this.m_sHealthBar1.setScaleX(this.m_player.m_iHP);
+        this.m_sHealthBar2.setScaleX(this.m_computer.m_iHP);
         this.m_lPower.setString("power : " + this.m_fPower.toFixed(2).toString());
-        this.m_lPoint1.setString("Hp1 : " + this.m_player1.m_iHP.toString());
-        this.m_lPoint2.setString("Hp2 : " + this.m_player2.m_iHP.toString());
+        this.m_lPoint1.setString("Hp1 : " + this.m_player.m_iHP.toString());
+        this.m_lPoint2.setString("Hp2 : " + this.m_computer.m_iHP.toString());
+        
         this.m_lAngle.setString("Angle : " + this.m_ball.m_fAngle.toFixed(0).toString());
     },
     onTouchesBegan: function (touches, event) {
-        if (this.m_ball.getPosition().y >= 0)
+        if (this.m_computerBall.m_enabled == true || this.m_ball.m_enabled == true)
             return;
         this.isPower = true;
     },
@@ -219,14 +229,12 @@ var MainGame = cc.LayerColor.extend({
         if (!this.isPower)
             return;
         var location = touches[0].getLocation();
-        if (this.m_eTurn == Enum.ETurn.Player1) {
-            this.m_player1.fire(location.x, location.y, this.m_fPower);
-            this.m_eTurn = Enum.ETurn.Player2;
+        if (this.m_eTurn == 0) {
+            this.m_player.fire(location.x, location.y, this.m_fPower);
+            // goi 1 ham, hàm nay tien hanh truyen location, m_fPower, truyen co va cham hay k, neu co truyen pos va cham
+            this.m_eTurn = 1;
         }
-        else {
-            this.m_player2.fire(location.x, location.y, this.m_fPower);
-            this.m_eTurn = Enum.ETurn.Player1;
-        }
+
         this.m_fPower = 0;
         this.isPower = false;
     }

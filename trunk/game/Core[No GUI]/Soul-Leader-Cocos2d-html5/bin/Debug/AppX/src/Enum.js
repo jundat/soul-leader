@@ -1,7 +1,7 @@
 ﻿function Enum() { }
 Enum.ETurn = {
-    Player1: 0,
-    Player2: 1
+    Player: 0,
+    Computer: 1
 }
 Enum.EBall = {
     Blue: 0,
