@@ -1,28 +1,5 @@
-/****************************************************************************
- Copyright (c) 2010-2012 cocos2d-x.org
- Copyright (c) 2008-2010 Ricardo Quesada
- Copyright (c) 2011      Zynga Inc.
 
- http://www.cocos2d-x.org
 
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
-
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
-
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.
- ****************************************************************************/
 function Enum() { }
 Enum.ETurn = {
     Player: 0,
@@ -36,25 +13,57 @@ Enum.EBall = {
 }
 
 
-
-
 var MainGame = cc.LayerColor.extend({
     m_fPower: 0.0,
     isPower: false,
     _fMaxPower: 25,
     m_fPlusPower: 15,
     m_eTurn: 0,
+    m_computer:null,
+    SendData: function(data) {
+        socket.emit('SendData', data);
+        alert('Da send data: ', JSON.stringify(data));
+    },
+
+    ReceiveData: function (data) {
+        console.log(data);
+        //{x: 0, y: 1, z: 2}
+        alert('Da nhan data', JSON.stringify(data));
+        
+        //if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+            //this.m_computer.fire(500, 500, 20);
+            //this.m_eTurn = 0;
+        
+            this.a = cc.LabelTTF.create("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "Arial", 38);
+            this.a.setPosition(cc.p(100, 100));
+            this.a.setFontFillColor(new cc.Color3B(255, 0, 0))
+            this.addChild(this.a);
+
+        //}
+    },
+
     init: function () {
-        this._super(new cc.Color4B(255, 0, 0, 255));
+        //NODE JS
+        socket.on('SendData', this.ReceiveData);
+        //this.SendData({x: 0, y: 1, z: 2});
+
+        //END - NODEJS
+
+        this._super(new cc.Color4B(255, 255, 255, 255));
         var size = cc.Director.getInstance().getWinSize();
         this.setTouchEnabled(true);
         this.schedule(this.update);
+
+        //this.a = cc.LabelTTF.create("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "Arial", 38);
+        //this.a.setPosition(cc.p(100, 100));
+        //this.a.setFontFillColor(new cc.Color3B(255, 0, 0))
+        //this.addChild(this.a);
 
         //background
         this.m_sBG = cc.Sprite.create(s_tBackground);
         this.m_sBG.setPosition(cc.p(size.width / 2, size.height / 2));
         this.m_sBG.setAnchorPoint(cc.p(0.5, 0.5));
-        this.addChild(this.m_sBG);
+        //this.addChild(this.m_sBG);
 
         //ball
         this.m_ball = new CBall();
@@ -191,10 +200,6 @@ var MainGame = cc.LayerColor.extend({
         this.m_player.updateCollision(this.m_computerBall);
         //this.m_computer.updateCollision();
 
-        if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
-            this.m_computer.fire(300, 300, 20);
-            this.m_eTurn = 0;
-        }
         this.m_ball.update(dt);
         this.m_computerBall.update(dt);
 
@@ -231,6 +236,9 @@ var MainGame = cc.LayerColor.extend({
         var location = touches[0].getLocation();
         if (this.m_eTurn == 0) {
             this.m_player.fire(location.x, location.y, this.m_fPower);
+
+            this.SendData({ LocationX: location.x, LocationY: location.y, Power: this.m_fPower });
+
             // goi 1 ham, hàm nay tien hanh truyen location, m_fPower, truyen co va cham hay k, neu co truyen pos va cham
             this.m_eTurn = 1;
         }
