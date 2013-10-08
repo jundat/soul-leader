@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TIEUNUN-PC</Machine>
+    <WindowsUser>10520_000</WindowsUser>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\box2d\box2d.js">
+      <PackagePath>box2d\box2d.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\chipmunk\chipmunk.js">
+      <PackagePath>chipmunk\chipmunk.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCAction.js">
+      <PackagePath>cocos2d\actions\CCAction.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionCamera.js">
+      <PackagePath>cocos2d\actions\CCActionCamera.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionCatmullRom.js">
+      <PackagePath>cocos2d\actions\CCActionCatmullRom.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionEase.js">
+      <PackagePath>cocos2d\actions\CCActionEase.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionGrid.js">
+      <PackagePath>cocos2d\actions\CCActionGrid.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionGrid3D.js">
+      <PackagePath>cocos2d\actions\CCActionGrid3D.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionInstant.js">
+      <PackagePath>cocos2d\actions\CCActionInstant.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionInterval.js">
+      <PackagePath>cocos2d\actions\CCActionInterval.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionManager.js">
+      <PackagePath>cocos2d\actions\CCActionManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionPageTurn3D.js">
+      <PackagePath>cocos2d\actions\CCActionPageTurn3D.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionProgressTimer.js">
+      <PackagePath>cocos2d\actions\CCActionProgressTimer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionTiledGrid.js">
+      <PackagePath>cocos2d\actions\CCActionTiledGrid.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\actions\CCActionTween.js">
+      <PackagePath>cocos2d\actions\CCActionTween.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\base_nodes\CCAtlasNode.js">
+      <PackagePath>cocos2d\base_nodes\CCAtlasNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\base_nodes\CCdomNode.js">
+      <PackagePath>cocos2d\base_nodes\CCdomNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\base_nodes\CCNode.js">
+      <PackagePath>cocos2d\base_nodes\CCNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCCamera.js">
+      <PackagePath>cocos2d\CCCamera.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCConfiguration.js">
+      <PackagePath>cocos2d\CCConfiguration.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCDirector.js">
+      <PackagePath>cocos2d\CCDirector.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCDrawingPrimitives.js">
+      <PackagePath>cocos2d\CCDrawingPrimitives.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCLoader.js">
+      <PackagePath>cocos2d\CCLoader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\CCScheduler.js">
+      <PackagePath>cocos2d\CCScheduler.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\cocoa\CCAffineTransform.js">
+      <PackagePath>cocos2d\cocoa\CCAffineTransform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\cocoa\CCGeometry.js">
+      <PackagePath>cocos2d\cocoa\CCGeometry.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\cocoa\CCNS.js">
+      <PackagePath>cocos2d\cocoa\CCNS.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\cocoa\CCSet.js">
+      <PackagePath>cocos2d\cocoa\CCSet.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\cocos2d_externs.js">
+      <PackagePath>cocos2d\cocos2d_externs.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\draw_nodes\CCDrawNode.js">
+      <PackagePath>cocos2d\draw_nodes\CCDrawNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\effects\CCGrabber.js">
+      <PackagePath>cocos2d\effects\CCGrabber.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\effects\CCGrid.js">
+      <PackagePath>cocos2d\effects\CCGrid.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\aabb.js">
+      <PackagePath>cocos2d\kazmath\aabb.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\GL\mat4stack.js">
+      <PackagePath>cocos2d\kazmath\GL\mat4stack.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\GL\matrix.js">
+      <PackagePath>cocos2d\kazmath\GL\matrix.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\mat3.js">
+      <PackagePath>cocos2d\kazmath\mat3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\mat4.js">
+      <PackagePath>cocos2d\kazmath\mat4.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\plane.js">
+      <PackagePath>cocos2d\kazmath\plane.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\quaternion.js">
+      <PackagePath>cocos2d\kazmath\quaternion.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\ray2.js">
+      <PackagePath>cocos2d\kazmath\ray2.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\utility.js">
+      <PackagePath>cocos2d\kazmath\utility.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\vec2.js">
+      <PackagePath>cocos2d\kazmath\vec2.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\vec3.js">
+      <PackagePath>cocos2d\kazmath\vec3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\kazmath\vec4.js">
+      <PackagePath>cocos2d\kazmath\vec4.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\keyboard_dispatcher\CCKeyboardDelegate.js">
+      <PackagePath>cocos2d\keyboard_dispatcher\CCKeyboardDelegate.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\keyboard_dispatcher\CCKeyboardDispatcher.js">
+      <PackagePath>cocos2d\keyboard_dispatcher\CCKeyboardDispatcher.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\label_nodes\CCLabelAtlas.js">
+      <PackagePath>cocos2d\label_nodes\CCLabelAtlas.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\label_nodes\CCLabelBMFont.js">
+      <PackagePath>cocos2d\label_nodes\CCLabelBMFont.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\label_nodes\CCLabelTTF.js">
+      <PackagePath>cocos2d\label_nodes\CCLabelTTF.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\layers_scenes_transitions_nodes\CCLayer.js">
+      <PackagePath>cocos2d\layers_scenes_transitions_nodes\CCLayer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\layers_scenes_transitions_nodes\CCScene.js">
+      <PackagePath>cocos2d\layers_scenes_transitions_nodes\CCScene.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\layers_scenes_transitions_nodes\CCTransition.js">
+      <PackagePath>cocos2d\layers_scenes_transitions_nodes\CCTransition.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\layers_scenes_transitions_nodes\CCTransitionPageTurn.js">
+      <PackagePath>cocos2d\layers_scenes_transitions_nodes\CCTransitionPageTurn.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\layers_scenes_transitions_nodes\CCTransitionProgress.js">
+      <PackagePath>cocos2d\layers_scenes_transitions_nodes\CCTransitionProgress.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\menu_nodes\CCMenu.js">
+      <PackagePath>cocos2d\menu_nodes\CCMenu.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\menu_nodes\CCMenuItem.js">
+      <PackagePath>cocos2d\menu_nodes\CCMenuItem.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\misc_nodes\CCClippingNode.js">
+      <PackagePath>cocos2d\misc_nodes\CCClippingNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\misc_nodes\CCMotionStreak.js">
+      <PackagePath>cocos2d\misc_nodes\CCMotionStreak.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\misc_nodes\CCProgressTimer.js">
+      <PackagePath>cocos2d\misc_nodes\CCProgressTimer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\misc_nodes\CCRenderTexture.js">
+      <PackagePath>cocos2d\misc_nodes\CCRenderTexture.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\particle_nodes\CCParticleBatchNode.js">
+      <PackagePath>cocos2d\particle_nodes\CCParticleBatchNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\particle_nodes\CCParticleExamples.js">
+      <PackagePath>cocos2d\particle_nodes\CCParticleExamples.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\particle_nodes\CCParticleSystem.js">
+      <PackagePath>cocos2d\particle_nodes\CCParticleSystem.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\particle_nodes\CCParticleSystemQuad.js">
+      <PackagePath>cocos2d\particle_nodes\CCParticleSystemQuad.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\physics_nodes\CCPhysicsDebugNode.js">
+      <PackagePath>cocos2d\physics_nodes\CCPhysicsDebugNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\physics_nodes\CCPhysicsSprite.js">
+      <PackagePath>cocos2d\physics_nodes\CCPhysicsSprite.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\AppControl.js">
+      <PackagePath>cocos2d\platform\AppControl.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\base64.js">
+      <PackagePath>cocos2d\platform\base64.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCAccelerometer.js">
+      <PackagePath>cocos2d\platform\CCAccelerometer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCApplication.js">
+      <PackagePath>cocos2d\platform\CCApplication.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCClass.js">
+      <PackagePath>cocos2d\platform\CCClass.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCCommon.js">
+      <PackagePath>cocos2d\platform\CCCommon.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCConfig.js">
+      <PackagePath>cocos2d\platform\CCConfig.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCEGLView.js">
+      <PackagePath>cocos2d\platform\CCEGLView.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCFileUtils.js">
+      <PackagePath>cocos2d\platform\CCFileUtils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCImage.js">
+      <PackagePath>cocos2d\platform\CCImage.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCMacro.js">
+      <PackagePath>cocos2d\platform\CCMacro.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCSAXParser.js">
+      <PackagePath>cocos2d\platform\CCSAXParser.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\CCTypes.js">
+      <PackagePath>cocos2d\platform\CCTypes.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\gzip.js">
+      <PackagePath>cocos2d\platform\gzip.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\jsloader.js">
+      <PackagePath>cocos2d\platform\jsloader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\miniFramework.js">
+      <PackagePath>cocos2d\platform\miniFramework.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\Sys.js">
+      <PackagePath>cocos2d\platform\Sys.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\ZipUtils.js">
+      <PackagePath>cocos2d\platform\ZipUtils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\platform\zlib.min.js">
+      <PackagePath>cocos2d\platform\zlib.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\shaders\CCGLProgram.js">
+      <PackagePath>cocos2d\shaders\CCGLProgram.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\shaders\CCGLStateCache.js">
+      <PackagePath>cocos2d\shaders\CCGLStateCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\shaders\CCShaderCache.js">
+      <PackagePath>cocos2d\shaders\CCShaderCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\shaders\CCShaders.js">
+      <PackagePath>cocos2d\shaders\CCShaders.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCAnimation.js">
+      <PackagePath>cocos2d\sprite_nodes\CCAnimation.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCAnimationCache.js">
+      <PackagePath>cocos2d\sprite_nodes\CCAnimationCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCSprite.js">
+      <PackagePath>cocos2d\sprite_nodes\CCSprite.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCSpriteBatchNode.js">
+      <PackagePath>cocos2d\sprite_nodes\CCSpriteBatchNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCSpriteFrame.js">
+      <PackagePath>cocos2d\sprite_nodes\CCSpriteFrame.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\sprite_nodes\CCSpriteFrameCache.js">
+      <PackagePath>cocos2d\sprite_nodes\CCSpriteFrameCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCNotificationCenter.js">
+      <PackagePath>cocos2d\support\CCNotificationCenter.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCPNGReader.js">
+      <PackagePath>cocos2d\support\CCPNGReader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCPointExtension.js">
+      <PackagePath>cocos2d\support\CCPointExtension.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCTGAlib.js">
+      <PackagePath>cocos2d\support\CCTGAlib.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCTIFFReader.js">
+      <PackagePath>cocos2d\support\CCTIFFReader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCUserDefault.js">
+      <PackagePath>cocos2d\support\CCUserDefault.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\CCVertex.js">
+      <PackagePath>cocos2d\support\CCVertex.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\component\CCComponent.js">
+      <PackagePath>cocos2d\support\component\CCComponent.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\component\CCComponentContainer.js">
+      <PackagePath>cocos2d\support\component\CCComponentContainer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\support\TransformUtils.js">
+      <PackagePath>cocos2d\support\TransformUtils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\textures\CCTexture2D.js">
+      <PackagePath>cocos2d\textures\CCTexture2D.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\textures\CCTextureAtlas.js">
+      <PackagePath>cocos2d\textures\CCTextureAtlas.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\textures\CCTextureCache.js">
+      <PackagePath>cocos2d\textures\CCTextureCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\text_input_node\CCIMEDispatcher.js">
+      <PackagePath>cocos2d\text_input_node\CCIMEDispatcher.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\text_input_node\CCTextFieldTTF.js">
+      <PackagePath>cocos2d\text_input_node\CCTextFieldTTF.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCParallaxNode.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCParallaxNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCTileMapAtlas.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCTileMapAtlas.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCTMXLayer.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCTMXLayer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCTMXObjectGroup.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCTMXObjectGroup.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCTMXTiledMap.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCTMXTiledMap.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\tileMap_parallax_nodes\CCTMXXMLParser.js">
+      <PackagePath>cocos2d\tileMap_parallax_nodes\CCTMXXMLParser.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\touch_dispatcher\CCMouseDispatcher.js">
+      <PackagePath>cocos2d\touch_dispatcher\CCMouseDispatcher.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\touch_dispatcher\CCTouchDelegateProtocol.js">
+      <PackagePath>cocos2d\touch_dispatcher\CCTouchDelegateProtocol.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\touch_dispatcher\CCTouchDispatcher.js">
+      <PackagePath>cocos2d\touch_dispatcher\CCTouchDispatcher.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\touch_dispatcher\CCTouchHandler.js">
+      <PackagePath>cocos2d\touch_dispatcher\CCTouchHandler.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\CocosDenshion\SimpleAudioEngine.js">
+      <PackagePath>CocosDenshion\SimpleAudioEngine.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d.js">
+      <PackagePath>cocos2d.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\animation\CCArmatureAnimation.js">
+      <PackagePath>extensions\CCArmature\animation\CCArmatureAnimation.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\animation\CCProcessBase.js">
+      <PackagePath>extensions\CCArmature\animation\CCProcessBase.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\animation\CCTween.js">
+      <PackagePath>extensions\CCArmature\animation\CCTween.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\CCArmature.js">
+      <PackagePath>extensions\CCArmature\CCArmature.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\CCBone.js">
+      <PackagePath>extensions\CCArmature\CCBone.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\datas\CCDatas.js">
+      <PackagePath>extensions\CCArmature\datas\CCDatas.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCBatchNode.js">
+      <PackagePath>extensions\CCArmature\display\CCBatchNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCDecorativeDisplay.js">
+      <PackagePath>extensions\CCArmature\display\CCDecorativeDisplay.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCDisplayFactory.js">
+      <PackagePath>extensions\CCArmature\display\CCDisplayFactory.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCDisplayManager.js">
+      <PackagePath>extensions\CCArmature\display\CCDisplayManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCShaderNode.js">
+      <PackagePath>extensions\CCArmature\display\CCShaderNode.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\display\CCSkin.js">
+      <PackagePath>extensions\CCArmature\display\CCSkin.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\physics\CCColliderDetector.js">
+      <PackagePath>extensions\CCArmature\physics\CCColliderDetector.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\physics\CCPhysicsWorld.js">
+      <PackagePath>extensions\CCArmature\physics\CCPhysicsWorld.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCArmatureDefine.js">
+      <PackagePath>extensions\CCArmature\utils\CCArmatureDefine.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCDataReaderHelper.js">
+      <PackagePath>extensions\CCArmature\utils\CCDataReaderHelper.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCSpriteFrameCacheHelper.js">
+      <PackagePath>extensions\CCArmature\utils\CCSpriteFrameCacheHelper.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCTransformHelp.js">
+      <PackagePath>extensions\CCArmature\utils\CCTransformHelp.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCTweenFunction.js">
+      <PackagePath>extensions\CCArmature\utils\CCTweenFunction.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CCUtilMath.js">
+      <PackagePath>extensions\CCArmature\utils\CCUtilMath.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCArmature\utils\CSArmatureDataManager.js">
+      <PackagePath>extensions\CCArmature\utils\CSArmatureDataManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBAnimationManager.js">
+      <PackagePath>extensions\CCBReader\CCBAnimationManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBKeyframe.js">
+      <PackagePath>extensions\CCBReader\CCBKeyframe.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBReader.js">
+      <PackagePath>extensions\CCBReader\CCBReader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBReaderUtil.js">
+      <PackagePath>extensions\CCBReader\CCBReaderUtil.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBRelativePositioning.js">
+      <PackagePath>extensions\CCBReader\CCBRelativePositioning.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBSequence.js">
+      <PackagePath>extensions\CCBReader\CCBSequence.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCBValue.js">
+      <PackagePath>extensions\CCBReader\CCBValue.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCControlLoader.js">
+      <PackagePath>extensions\CCBReader\CCControlLoader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCNodeLoader.js">
+      <PackagePath>extensions\CCBReader\CCNodeLoader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCNodeLoaderLibrary.js">
+      <PackagePath>extensions\CCBReader\CCNodeLoaderLibrary.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCBReader\CCSpriteLoader.js">
+      <PackagePath>extensions\CCBReader\CCSpriteLoader.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\CCEditBox.js">
+      <PackagePath>extensions\CCEditBox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControl.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControl.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlButton.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlButton.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlColourPicker.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlColourPicker.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlHuePicker.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlHuePicker.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlPotentiometer.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlPotentiometer.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlSlider.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlSlider.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlStepper.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlStepper.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlSwitch.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlSwitch.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCControlUtils.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCControlUtils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCInvocation.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCInvocation.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCMenuPassive.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCMenuPassive.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCControlExtension\CCScale9Sprite.js">
+      <PackagePath>extensions\GUI\CCControlExtension\CCScale9Sprite.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCScrollView\CCScrollView.js">
+      <PackagePath>extensions\GUI\CCScrollView\CCScrollView.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCScrollView\CCSorting.js">
+      <PackagePath>extensions\GUI\CCScrollView\CCSorting.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\GUI\CCScrollView\CCTableView.js">
+      <PackagePath>extensions\GUI\CCScrollView\CCTableView.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\plugins\SocialFacebook.js">
+      <PackagePath>extensions\PluginX\plugins\SocialFacebook.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\plugins\SocialQQWeibo.js">
+      <PackagePath>extensions\PluginX\plugins\SocialQQWeibo.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\plugins\SocialQzone.js">
+      <PackagePath>extensions\PluginX\plugins\SocialQzone.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\plugins\SocialTwitter.js">
+      <PackagePath>extensions\PluginX\plugins\SocialTwitter.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\plugins\SocialWeibo.js">
+      <PackagePath>extensions\PluginX\plugins\SocialWeibo.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\Config.js">
+      <PackagePath>extensions\PluginX\protocols\Config.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\PluginFactory.js">
+      <PackagePath>extensions\PluginX\protocols\PluginFactory.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\PluginManager.js">
+      <PackagePath>extensions\PluginX\protocols\PluginManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\PluginProtocol.js">
+      <PackagePath>extensions\PluginX\protocols\PluginProtocol.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\PluginUtils.js">
+      <PackagePath>extensions\PluginX\protocols\PluginUtils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\protocols\ProtocolSocial.js">
+      <PackagePath>extensions\PluginX\protocols\ProtocolSocial.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\cocos2d.js">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\cocos2d.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\main.js">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\src\myApp.js">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\src\myApp.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\src\MySocialManager.js">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\src\MySocialManager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\src\resource.js">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\src\resource.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\main.js">
+      <PackagePath>main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\Enum.js">
+      <PackagePath>src\Enum.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\Ball.js">
+      <PackagePath>src\Ball.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\FactoryAnimate.js">
+      <PackagePath>src\FactoryAnimate.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\MainGameScene.js">
+      <PackagePath>src\MainGameScene.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\myApp.js">
+      <PackagePath>src\myApp.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\Player.js">
+      <PackagePath>src\Player.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\src\resource.js">
+      <PackagePath>src\resource.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\build.xml">
+      <PackagePath>build.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\cocos2d\build.xml">
+      <PackagePath>cocos2d\build.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\index.html">
+      <PackagePath>index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\index.html">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\background.png">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\CloseNormal.png">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\CloseNormal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\CloseSelected.png">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\CloseSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\CloseNormal.png">
+      <PackagePath>res\CloseNormal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\CloseSelected.png">
+      <PackagePath>res\CloseSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\HelloWorld.png">
+      <PackagePath>res\HelloWorld.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Background.png">
+      <PackagePath>res\xvn\Background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball.png">
+      <PackagePath>res\xvn\Ball.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-blue-Selected.png">
+      <PackagePath>res\xvn\Ball\Ball-blue-Selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-blue.png">
+      <PackagePath>res\xvn\Ball\Ball-blue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-green-Selected.png">
+      <PackagePath>res\xvn\Ball\Ball-green-Selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-green.png">
+      <PackagePath>res\xvn\Ball\Ball-green.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-red-Selected.png">
+      <PackagePath>res\xvn\Ball\Ball-red-Selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-red.png">
+      <PackagePath>res\xvn\Ball\Ball-red.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-yellow-Selected.png">
+      <PackagePath>res\xvn\Ball\Ball-yellow-Selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Ball-yellow.png">
+      <PackagePath>res\xvn\Ball\Ball-yellow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\player.png">
+      <PackagePath>res\xvn\Ball\player.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Player.png">
+      <PackagePath>res\xvn\Player.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\facebook.gif">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\facebook.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\qqweibo.gif">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\qqweibo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\qzone.gif">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\qzone.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\snweibo.gif">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\snweibo.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\extensions\PluginX\samples\HelloSocial\res\twitter.gif">
+      <PackagePath>extensions\PluginX\samples\HelloSocial\res\twitter.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\favicon.ico">
+      <PackagePath>res\favicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\res\xvn\Ball\Player.plist">
+      <PackagePath>res\xvn\Ball\Player.plist</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\10520_000\Desktop\Soul-Leader-Cocos2d-html5\Soul-Leader-Cocos2d-html5\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20602</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

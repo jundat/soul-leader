@@ -24,8 +24,6 @@
         var dirX = Math.cos(this.m_fAngle);
         var dirY = Math.sin(this.m_fAngle);
 
-        //this.m_computerBall.initWithFile(s_tBallBlue);        
-
         var startX = this.getPosition().x + dirX * this.m_computerBall.m_width * 2;
         var startY = this.getPosition().y + dirY * this.m_computerBall.m_height * 2;
 
