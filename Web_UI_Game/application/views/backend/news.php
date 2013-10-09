@@ -9,9 +9,10 @@
     <div class="user_item">
         <div class="control">
             <p>
-                <a href="<?php echo $backend; ?>add_news"><img src="<?php echo base_url(); ?>public/backend/images/add_news.png"/>
+                <a href="<?php echo $backend; ?>add_news"><img src="<?php echo base_url(); ?>public/backend/images/add_article.png"/>
                 </a>
             </p>
+            <p><a href="<?php echo $backend; ?>add_news">Add News</a></p>
         </div>
         <div class="control">
             <p>
@@ -19,7 +20,7 @@
                 </a>
             </p>
             <p>
-                <a href="<?php echo $backend; ?>removed_news">news Removed
+                <a href="<?php echo $backend; ?>removed_news">News Removed
                 </a>
             </p>
         </div>
