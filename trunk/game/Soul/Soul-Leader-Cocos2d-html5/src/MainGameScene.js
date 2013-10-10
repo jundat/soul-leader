@@ -32,6 +32,7 @@ var MainGame = cc.LayerColor.extend({
 
     //End-Jundat
 
+    //other player call to fire
     computerFire: function (data) {
         if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
             this.m_computer.fire(data.x, data.y, data.p);
