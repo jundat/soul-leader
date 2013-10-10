@@ -291,8 +291,10 @@ function NodeJSClient(parent) {
         //check your turn
         if (NODE_CLIENT.username == data.players[data.turn].username) {
             NODE_CLIENT.parent.m_eTurn = 0; //you first
+            alert('Your play first :)');
         } else {
             NODE_CLIENT.parent.m_eTurn = 1; //other first
+            alert('You play second :(');
         }
     }
 
