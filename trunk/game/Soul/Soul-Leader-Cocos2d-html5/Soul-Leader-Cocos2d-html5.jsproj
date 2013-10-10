@@ -281,7 +281,6 @@
     <Content Include="res\xvn\green_health_bar.png" />
     <Content Include="res\xvn\red_power_bar.png" />
     <Content Include="res\xvn\Player.png" />
-    <Content Include="src\client.js" />
     <Content Include="src\ComputerBall.js" />
     <Content Include="src\Computer.js" />
     <Content Include="src\Enum.js" />

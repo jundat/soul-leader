@@ -53,7 +53,7 @@ function FormatJsonString(json) {
 }
 
 
-function Log(json)
+function Log(data)
 {
     var str = JSON.stringify(data);
     var fomartedStr = FormatJsonString(str);
