@@ -17,7 +17,7 @@
             'src/global.js',
 
             'src/socket.io.js', //NODE JS
-            'src/client.js',
+            'src/NodeJSClient.js',
 
             'src/resource.js',
             'src/MainGameScene.js',

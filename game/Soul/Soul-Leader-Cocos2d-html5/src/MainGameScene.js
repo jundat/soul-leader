@@ -19,9 +19,10 @@ var MainGame = cc.LayerColor.extend({
     isPower: false,
     _fMaxPower: 25,
     m_fPlusPower: 15,
-    m_eTurn: 0,
+    m_eTurn: 0, //player first, computer 2nd
     
     //Jundat
+    nodeJSClient: null,
 
     m_sBG: null,
     m_ball: null,
@@ -31,23 +32,11 @@ var MainGame = cc.LayerColor.extend({
 
     //End-Jundat
 
-
-    OnReceiveData: function (data) {
-        console.log('Receive Data', data);
-
-        //if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
-        this.m_computer.fire(data.x, data.y, data.p);
-        
-        //    this.m_eTurn = 0;
-        //}
-
-        /////////////////////////////////////////////////////////////////////////
-    },
-
-    SendData: function (data) {
-        //alert('send data', data);
-        console.log('Send data', data);
-        socket.emit('SendData', data);
+    computerFire: function (data) {
+        if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+            this.m_computer.fire(data.x, data.y, data.p);
+            this.m_eTurn = 0;
+        }
     },
 
     init: function () {
@@ -82,9 +71,6 @@ var MainGame = cc.LayerColor.extend({
         this.m_computer.setPosition(cc.p(1100, 100));
         this.m_computer.init(this.m_computerBall);
         this.m_computer.setScaleX(-1);
-
-        g_computer = this.m_computer;
-
         this.addChild(this.m_computer);
 
         //heal point player label
@@ -150,11 +136,16 @@ var MainGame = cc.LayerColor.extend({
 
 
         //NODE JS
-        socket.on('SendData', this.OnReceiveData);
+        this.nodeJSClient = new NodeJSClient(this);
+
+        this.nodeJSClient.connectSuccessHandler = function () {
+            this.CreateRandomMatch();
+        };
+
+        this.nodeJSClient.Connect('127.0.0.1', 5000);
 
 
         //END - NODE JS
-
 
         return true;
     },
@@ -236,6 +227,7 @@ var MainGame = cc.LayerColor.extend({
         
         this.m_lAngle.setString("Angle : " + this.m_ball.m_fAngle.toFixed(0).toString());
     },
+
     onTouchesBegan: function (touches, event) {
         if (this.m_computerBall.m_enabled == true || this.m_ball.m_enabled == true)
             return;
@@ -252,13 +244,12 @@ var MainGame = cc.LayerColor.extend({
             this.m_player.fire(location.x, location.y, this.m_fPower);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            console.log('Fire');
-            this.SendData({ x: location.x, y: location.y, p: this.m_fPower });
+            this.nodeJSClient.Fire({ x: location.x, y: location.y, p: this.m_fPower });
 
             // goi 1 ham, hàm nay tien hanh truyen location, m_fPower, truyen co va cham hay k, neu co truyen pos va cham
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //this.m_eTurn = 1;
+            this.m_eTurn = 1;
         }
 
         this.m_fPower = 0;
