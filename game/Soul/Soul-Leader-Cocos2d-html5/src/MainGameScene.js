@@ -13,7 +13,6 @@ Enum.EBall = {
     Yellow: 3
 }
 
-var g_computer;
 
 var MainGame = cc.LayerColor.extend({
     m_fPower: 0.0,
@@ -21,14 +20,23 @@ var MainGame = cc.LayerColor.extend({
     _fMaxPower: 25,
     m_fPlusPower: 15,
     m_eTurn: 0,
+    
+    //Jundat
+
+    m_sBG: null,
+    m_ball: null,
+    m_computerBall: null,
+    m_player: null,
     m_computer: null,
+
+    //End-Jundat
 
 
     OnReceiveData: function (data) {
         console.log('Receive Data', data);
 
         //if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
-        g_computer.fire(data.x, data.y, data.p);
+        this.m_computer.fire(data.x, data.y, data.p);
         
         //    this.m_eTurn = 0;
         //}
