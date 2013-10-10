@@ -287,8 +287,10 @@
     <Content Include="src\Enum.js" />
     <Content Include="src\Ball.js" />
     <Content Include="src\FactoryAnimate.js" />
+    <Content Include="src\global.js" />
     <Content Include="src\MainGameScene.js" />
     <Content Include="src\myApp.js" />
+    <Content Include="src\NodeJSClient.js" />
     <Content Include="src\Player.js" />
     <Content Include="src\resource.js" />
     <Content Include="src\socket.io.js" />

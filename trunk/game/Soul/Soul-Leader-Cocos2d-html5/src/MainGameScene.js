@@ -1,5 +1,6 @@
 
 
+
 function Enum() { }
 Enum.ETurn = {
     Player: 0,
@@ -12,6 +13,7 @@ Enum.EBall = {
     Yellow: 3
 }
 
+var g_computer;
 
 var MainGame = cc.LayerColor.extend({
     m_fPower: 0.0,
@@ -19,51 +21,38 @@ var MainGame = cc.LayerColor.extend({
     _fMaxPower: 25,
     m_fPlusPower: 15,
     m_eTurn: 0,
-    m_computer:null,
-    SendData: function(data) {
-        socket.emit('SendData', data);
-        alert('Da send data: ', JSON.stringify(data));
+    m_computer: null,
+
+
+    OnReceiveData: function (data) {
+        console.log('Receive Data', data);
+
+        //if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+        g_computer.fire(data.x, data.y, data.p);
+        
+        //    this.m_eTurn = 0;
+        //}
+
+        /////////////////////////////////////////////////////////////////////////
     },
 
-    ReceiveData: function (data) {
-        console.log(data);
-        //{x: 0, y: 1, z: 2}
-        alert('Da nhan data', JSON.stringify(data));
-        
-        //if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
-            //this.m_computer.fire(500, 500, 20);
-            //this.m_eTurn = 0;
-        
-            this.a = cc.LabelTTF.create("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "Arial", 38);
-            this.a.setPosition(cc.p(100, 100));
-            this.a.setFontFillColor(new cc.Color3B(255, 0, 0))
-            this.addChild(this.a);
-
-        //}
+    SendData: function (data) {
+        //alert('send data', data);
+        console.log('Send data', data);
+        socket.emit('SendData', data);
     },
 
     init: function () {
-        //NODE JS
-        socket.on('SendData', this.ReceiveData);
-        //this.SendData({x: 0, y: 1, z: 2});
-
-        //END - NODEJS
-
-        this._super(new cc.Color4B(255, 255, 255, 255));
+        this._super(new cc.Color4B(255, 0, 0, 255));
         var size = cc.Director.getInstance().getWinSize();
         this.setTouchEnabled(true);
         this.schedule(this.update);
-
-        //this.a = cc.LabelTTF.create("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "Arial", 38);
-        //this.a.setPosition(cc.p(100, 100));
-        //this.a.setFontFillColor(new cc.Color3B(255, 0, 0))
-        //this.addChild(this.a);
 
         //background
         this.m_sBG = cc.Sprite.create(s_tBackground);
         this.m_sBG.setPosition(cc.p(size.width / 2, size.height / 2));
         this.m_sBG.setAnchorPoint(cc.p(0.5, 0.5));
-        //this.addChild(this.m_sBG);
+        this.addChild(this.m_sBG);
 
         //ball
         this.m_ball = new CBall();
@@ -85,6 +74,9 @@ var MainGame = cc.LayerColor.extend({
         this.m_computer.setPosition(cc.p(1100, 100));
         this.m_computer.init(this.m_computerBall);
         this.m_computer.setScaleX(-1);
+
+        g_computer = this.m_computer;
+
         this.addChild(this.m_computer);
 
         //heal point player label
@@ -148,6 +140,14 @@ var MainGame = cc.LayerColor.extend({
         this.addChild(this.m_sHealthBar1);
         this.addChild(this.m_sHealthBar2);
 
+
+        //NODE JS
+        socket.on('SendData', this.OnReceiveData);
+
+
+        //END - NODE JS
+
+
         return true;
     },
 
@@ -200,6 +200,12 @@ var MainGame = cc.LayerColor.extend({
         this.m_player.updateCollision(this.m_computerBall);
         //this.m_computer.updateCollision();
 
+//         if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+//             this.m_computer.fire(300, 300, 20);
+//             this.m_eTurn = 0;
+//         }
+
+
         this.m_ball.update(dt);
         this.m_computerBall.update(dt);
 
@@ -237,10 +243,14 @@ var MainGame = cc.LayerColor.extend({
         if (this.m_eTurn == 0) {
             this.m_player.fire(location.x, location.y, this.m_fPower);
 
-            this.SendData({ LocationX: location.x, LocationY: location.y, Power: this.m_fPower });
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            console.log('Fire');
+            this.SendData({ x: location.x, y: location.y, p: this.m_fPower });
 
             // goi 1 ham, hàm nay tien hanh truyen location, m_fPower, truyen co va cham hay k, neu co truyen pos va cham
-            this.m_eTurn = 1;
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //this.m_eTurn = 1;
         }
 
         this.m_fPower = 0;

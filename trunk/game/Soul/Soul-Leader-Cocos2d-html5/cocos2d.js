@@ -14,6 +14,8 @@
         engineDir: 'cocos2d/',
         //SingleEngineFile:'',
         appFiles: [
+            'src/global.js',
+
             'src/socket.io.js', //NODE JS
             'src/client.js',
 

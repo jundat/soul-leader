@@ -58,70 +58,15 @@ var match;  //playing match
 var matchStatus;    //status in playing match
 
 
-function formatJsonString(json) {
-    var input = json;
-    var output = "";
-    var tabCounter = 0;
 
-    for (var i = 0; i < input.length; i++) {
-        var c = input[i];
-
-        switch (c) {
-            case '[': //xuống dòng +TAB
-            case '{': //xuống dòng +TAB
-                tabCounter++;
-                output += c;
-                output += '\n';
-                for (var j = tabCounter - 1; j >= 0; j--) {
-                    output += '\t';
-                };
-                break;
-
-            case ',': //xuống dòng =TAB
-                output += c;
-                output += '\n';
-                for (var j = tabCounter - 1; j >= 0; j--) {
-                    output += '\t';
-                };
-                break;
-
-            case ']': //xuống dòng -TAB
-            case '}': //xuống dòng -TAB
-                tabCounter--;
-                output += '\n';
-                for (var j = tabCounter - 1; j >= 0; j--) {
-                    output += '\t';
-                };
-                output += c;
-                break;
-
-            default:
-                output += c;
-                break;
-        }
-    };
-
-    return output;
-}
-
-function show(data) {
-    console.log(data);
-//     var str = JSON.stringify(data);
-//     var fomartedStr = formatJsonString(str);
-// 
-//     document.getElementById('log').value = fomartedStr;
-}
+//Các hàm nhận dữ liệu ------------------
+//handle receive data event
 
 
-//handle event ------------------------------------------------------------
-
-
-//hello when start connect
+//Khi game chạy lên, nó sẽ gọi connect ở trên
+//Sau khi connect thành công, thì sever gửi 1 message về, và hàm này nhận được nó
 socket.on('ConnectSuccess', function (data) {
     show(data);
-
-    var userbox = 'jundat'; //document.getElementById('username');
-    userbox.value = 'user_' + (new Date()).getMilliseconds();
     UserOnline();
 });
 
@@ -264,6 +209,7 @@ socket.on('SendMatchResult', function (data) {
 });
 
 
+//Các hàm gửi dữ liệu ---------------------------------
 //send event -------------------------------------------------------
 
 function UserOnline() {
