@@ -9,7 +9,7 @@ class User extends CI_Controller{
         
         $this->load->helper(array("url", "date", "my_data"));
         $this->load->library(array("form_validation", "my_layout", "session", "my_auth", "email"));
-        $this->load->setLayout("frontend/template");
+        $this->my_layout->setLayout("frontend/template");
         
         $this->load->database();
         $this->load->model("muser");    
@@ -18,7 +18,7 @@ class User extends CI_Controller{
     // Trang chu
     function index() {
         if(!$this->my_auth->is_Login()){
-            redirect(base_url()."home/verify/login");
+            redirect(base_url()."Chome/verify/login");
             exit();
         }else{
             $userid = $this->my_auth->user_id;
@@ -34,7 +34,7 @@ class User extends CI_Controller{
     function register() {
         // Neu login thi khong duoc dang ki
         if($this->my_auth->is_Login()){
-            redirect(base_url()."home/user");
+            redirect(base_url()."Chome/user");
             exit();
         }
         
@@ -96,7 +96,7 @@ class User extends CI_Controller{
                     if($this->muser->addUser($add)){
 
                         $userid = mysql_insert_id();
-                        $link_active = base_url()."home/user/active/?userid=".$userid."&key=".md5($salt);
+                        $link_active = base_url()."Chome/user/active/?userid=".$userid."&key=".md5($salt);
                         $message  = "Please follow this link to active your acount <br/>".
                         $message .= "Link : <a href=".$link_active.">".$link_active."</a><br/>";
                         $message .= "username : ".$add['username']."<br/>";
@@ -112,7 +112,7 @@ class User extends CI_Controller{
                         $this->my_email->sendmail();
 
                         $this->session->set_userdata(array($this->_register => TRUE));
-                        redirect(base_url()."home/user/register_complete");
+                        redirect(base_url()."Chome/user/register_complete");
                     }
                 }
 
@@ -124,7 +124,7 @@ class User extends CI_Controller{
 
             //--- Neu Login thi khong khong bao
             if($this->my_auth->is_Login()){
-                redirect(base_url()."home/user");
+                redirect(base_url()."Chome/user");
                 exit();
             }
             
@@ -136,7 +136,7 @@ class User extends CI_Controller{
             }
             else
             {
-                redirect(base_url()."home/verify/login"); 
+                redirect(base_url()."Chome/verify/login"); 
             }
     }
 //---- Quên m?t kh?u
@@ -144,7 +144,7 @@ class User extends CI_Controller{
         
         //--- Neu Login thi khong duoc vao trang nay
         if($this->my_auth->is_Login()){
-            redirect(base_url()."home/user");
+            redirect(base_url()."Chome/user");
             exit();
         }
 
@@ -184,7 +184,7 @@ class User extends CI_Controller{
                 $this->my_email->sendmail();
 
                 $this->session->set_userdata(array($this->_fgpassword => TRUE));
-                redirect(base_url()."home/user/fg_complete");
+                redirect(base_url()."Chome/user/fg_complete");
                 
              }else{
                  $data['error'] = "You hasn't been actived your account, please check your email again !";
@@ -202,7 +202,7 @@ class User extends CI_Controller{
             $this->my_layout->view("frontend/report",$data);
             $this->session->unset_userdata($this->_fgpassword);
         }else{
-            redirect(base_url()."home/verify/login");
+            redirect(base_url()."Chome/verify/login");
         }
     }
     
@@ -211,7 +211,7 @@ class User extends CI_Controller{
         
         //--- Neu Login thi khong active
         if($this->my_auth->is_Login()){
-            redirect(base_url()."home/user");
+            redirect(base_url()."Chome/user");
             exit();
         }
         
@@ -303,7 +303,7 @@ class User extends CI_Controller{
          *
          *
          */
-        $rule1="^[0-9]{3}\.[0-9]{2}\.[0-9]{8}$";
+        /*$rule1="^[0-9]{3}\.[0-9]{2}\.[0-9]{8}$";
         $rule2="^\([0-9]{3}\)\.\([0-9]{2}\)\.[0-9]{8}$";
         if(eregi($rule1,$phone) || eregi($rule2,$phone) ){
                 return TRUE;
@@ -312,7 +312,7 @@ class User extends CI_Controller{
                 $error = "The phone numser is not avaliable ! It's must be 084.08.37610475 or (084).(08).37610475 or (084.08).7610475";
                 $this->form_validation->set_message("validPhone",$error);
                 return FALSE;
-        }
+        }*/
     }
 } 
  ?>
