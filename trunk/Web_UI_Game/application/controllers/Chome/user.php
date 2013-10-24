@@ -39,7 +39,7 @@ class User extends CI_Controller{
         }
         
         $this->form_validation->set_rules("full_name", "Full name", "required|min_length[6]");
-        $this->form_validation->set_rules("user_name", "Username", "required|max_length[25]|callback_checkUser");
+        $this->form_validation->set_rules("user_name", "User name", "required|max_length[25]|callback_checkUser");
         $this->form_validation->set_rules("password", "Password", "required|mathches[repassword]");
         $this->form_validation->set_rules("email", "Email", "required|valid_email|callback_checkEmail");
         $this->form_validation->set_rules("address", "Address", "required");
