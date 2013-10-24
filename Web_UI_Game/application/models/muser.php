@@ -79,7 +79,7 @@ class muser extends CI_Model{
             $query = $this->db->get($this->_table);
         }
         else{//user for add
-            $this->db->where("username", $username);
+            $this->db->where("user_name", $username);
             $query = $this->db->get($this->_table);
         }
         

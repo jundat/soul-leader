@@ -27,7 +27,7 @@
 			<!-- Begin block download_download -->  
 			<h1><a href="#">Trang chủ</a></h1>
 			<div id="download">
-				<a href="#" class="PlayNow" id="typePlayNow" >Chơi ngay</a>
+				<a href="<?php echo base_url(); ?>Chome/user" class="PlayNow" id="typePlayNow" >Chơi ngay</a>
 				<a href="<?php echo base_url(); ?>Chome/user/register" class="Register2" id="ppregister_link">Đăng ký</a>
 				<a href="#" class="Pay notTrack">Nạp thẻ</a>
 			</div>
@@ -43,7 +43,7 @@
 					<div class="FrmDN">
 					
 					<!----------------------------- DANG NHAP ------------------------------->
-						<form action="#" method="post" name="frmLogin" id="frmLogin" onsubmit="return checkingtop();">
+						<form action="<?php echo base_url(); ?>Chome/verify/login" method="post" name="frmLogin" id="frmLogin" onsubmit="return checkingtop();">
 							<div class="TextBoxDN">
 								<input type="text" value="username" class="BgTextBox" id="username" name="u" onfocus="if(this.value == 'username') {this.value=''}" onblur="if(this.value == ''){this.value ='username'}">
 								<input type="password" value="password" class="BgTextBox" id="password" name="p" onfocus="if(this.value == 'password') {this.value=''}" onblur="if(this.value == ''){this.value ='password'}">
@@ -54,7 +54,7 @@
 					
 					</div>
 					<ul class="Link">
-						<li><a href="#" class="notTrack">Quên mật khẩu</a></li>
+						<li><a href="<?php echo base_url() ?>Chome/user/fg_password" class="notTrack">Quên mật khẩu</a></li>
 					</ul>
 				</div>
 			</div>
