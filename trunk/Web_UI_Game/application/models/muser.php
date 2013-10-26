@@ -150,7 +150,7 @@ class muser extends CI_Model{
     function checkLogin($username, $password) {
         $u = $username;
         $p = md5($password);
-        $this->db->where("username", $u);
+        $this->db->where("user_name", $u);
         $this->db->where("password", $p);
         $query = $this->db->get($this->_table);
         if($query->num_rows() == 0){
