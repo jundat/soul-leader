@@ -77,7 +77,7 @@
 						<ul id="img">
 							<li class="ActiveBanner" style="opacity: 1;">
 								<a href="#" >
-									<img src="images/VuaPhaLuoi.jpg" height="200" width="210" alt="Vua phá lưới">
+									<img src="<?php echo base_url(); ?>public/frontend/images/VuaPhaLuoi.jpg" height="200" width="210" alt="Vua phá lưới">
 								</a>
 							</li>
 						</ul>
