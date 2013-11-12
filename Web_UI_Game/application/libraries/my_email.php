@@ -15,9 +15,9 @@ class MY_Email extends CI_Email {
      
      function config($data){
         $this->_mail=array(
-                            "from_sender"       => "saigon21.com@gmail.com",
-                            "name_sender"       => "MMC-2.0",
-                            "subject_sender"    => "Active acount Manager Member with CodeIgniter 2.0",
+                            "from_sender"       => "taikhoankiemtien92@gmail.com",
+                            "name_sender"       => "LoveGive",
+                            "subject_sender"    => "Active acount Manager Member with CodeIgniter 2.1.4",
                          );
 
         
@@ -31,8 +31,8 @@ class MY_Email extends CI_Email {
             $config['smtp_host']    = 'ssl://smtp.gmail.com';
             $config['smtp_port']    = '465';
             $config['smtp_timeout'] = '7';
-            $config['smtp_user']    = '...'; // d?a ch? gmail
-            $config['smtp_pass']    = '...'; // pass gmail
+            $config['smtp_user']    = 'taikhoankiemtien92@gmail.com'; // ten email
+            $config['smtp_pass']    = '123456789hiep'; // pass gmail
             $config['charset']    = 'utf-8';
             $config['newline']    = "\r\n";
             $config['mailtype'] = 'html'; // or html

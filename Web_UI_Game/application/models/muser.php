@@ -13,7 +13,7 @@ class muser extends CI_Model{
         $this->db->select('*');
         $this->db->from($this->_table);
         $this->db->limit($off, $limit);
-        $this->db->order_by("user_id", "asc");
+        $this->db->order_by("userid", "asc");
         $query = $this->db->get();
         $data = $query->result_array();
         return $data;    
@@ -21,7 +21,7 @@ class muser extends CI_Model{
     
     // Lay thong tin 1 record qua id
     function getInfo($id) {
-        $this->db->where("user_id", $id);
+        $this->db->where("userid", $id);
         $query = $this->db->get($this->_table);
         
         if($query)
@@ -52,14 +52,14 @@ class muser extends CI_Model{
     // xoa user
     function deleteUser($id) {
         if($id != 1){
-            $this->db->where("user_id", $id);
+            $this->db->where("userid", $id);
             $this->db->delete($this->_table);
         }    
     }
     
     // cap nhat user
     function updateUser($data, $id) {
-        $this->db->where("user_id", $id);
+        $this->db->where("userid", $id);
         if($this->db->update($this->_table, $data))
             return TRUE;
         else
@@ -74,12 +74,12 @@ class muser extends CI_Model{
     // Kiem tra username hop le
     function getUser($username, $id) {
         if(isset($id)){// use for update
-            $this->db->where("user_name", $username);
-            $this->db->where("user_id !=", $id);
+            $this->db->where("username", $username);
+            $this->db->where("userid !=", $id);
             $query = $this->db->get($this->_table);
         }
         else{//user for add
-            $this->db->where("user_name", $username);
+            $this->db->where("username", $username);
             $query = $this->db->get($this->_table);
         }
         
@@ -93,8 +93,8 @@ class muser extends CI_Model{
     
     // da kich hoat
     function actived($userid) {
-        $this->db->select("user_id, active");
-        $this->db->where("user_id", $userid);
+        $this->db->select("userid, active");
+        $this->db->where("userid", $userid);
         $query = $this->db->get($this->_table);
         $info = $query->row_array();
         if($info){
@@ -112,7 +112,7 @@ class muser extends CI_Model{
     // kiem tra userid va key
     function checkActive($userid, $key) {
         if($userid != "" && $key != ""){
-            $this->db->where("user_id", $userid);
+            $this->db->where("userid", $userid);
             $this->db->where("md5(salf)", $key);
             $query = $this->db->get($this->_table);
             if($query->num_rows() != 0){
@@ -130,7 +130,7 @@ class muser extends CI_Model{
         if(isset($id) && $id != ""){
             //use for update
             $this->db->where("email", $email);
-            $this->db->where("user_id != ", $id);
+            $this->db->where("userid != ", $id);
             $query = $this->db->get($this->_table);
         }else{
             //use for add
@@ -150,7 +150,7 @@ class muser extends CI_Model{
     function checkLogin($username, $password) {
         $u = $username;
         $p = md5($password);
-        $this->db->where("user_name", $u);
+        $this->db->where("username", $u);
         $this->db->where("password", $p);
         $query = $this->db->get($this->_table);
         if($query->num_rows() == 0){

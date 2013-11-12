@@ -36,7 +36,7 @@ class Verify extends CI_Controller{
              
              if($session)
              {
-                 if(!$this->my_auth->is_Active($session['user_id'])){
+                 if(!$this->my_auth->is_Active($session['userid'])){
                     
                     $data['error'] = "Please check mail and active your account !";
                     $this->load->view("frontend/login",$data);
@@ -44,8 +44,8 @@ class Verify extends CI_Controller{
                  else
                  {
                       $data = array(
-                                    "user_name"  => $session['user_name'],
-                                    "user_id"    => $session['user_id'],
+                                    "username"  => $session['username'],
+                                    "userid"    => $session['userid'],
                                     "level"  => $session['level'],
                                 );
                                 

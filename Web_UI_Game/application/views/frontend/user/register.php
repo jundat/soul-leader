@@ -7,10 +7,10 @@
                         "value" => set_value("full_name")
                     );
     $user_name = array(
-                        'name'        => 'user_name',
+                        'name'        => 'username',
                         'id'          => 'fname',
                         'size'        => '30',
-                        'value'       => set_value('user_name'),
+                        'value'       => set_value('username'),
                     );
 
     $password = array(
