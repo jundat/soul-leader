@@ -5,7 +5,7 @@ if(!defined('BASEPATH')){
 class Admin extends CI_Controller{
     function __construct() {
         parent::__construct();   
-        $this->load->model('Madmin');              
+        $this->load->model('muser');              
         $this->load->library('form_validation');
         $this->load->library('session');
         $this->load->helper('url');
@@ -24,7 +24,7 @@ class Admin extends CI_Controller{
         }else{
             extract($_POST);
             
-            $user_id = $this->Madmin->login($username, $password);
+            $user_id = $this->muser->checkLogin($username, $password);
             
             if(!$user_id){
                 //login failed error

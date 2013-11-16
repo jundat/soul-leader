@@ -5,10 +5,11 @@
 	<head><meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
 
 <title><?php echo $content; ?></title>
+
 <!-- start : page css here -->
 
 <link rel="stylesheet" href="<?php echo $path; ?>css/stylesheet.css" type="text/css" media="screen"/>
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo $path ;?>css/menu.css">
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $path ;?>css/stylesheet.css">
 
 <!-- end : page css here -->
 
@@ -32,8 +33,11 @@
         </div>
         <!-- end: header -->
         <!-- start: menu -->
-        <div id="menu">
-		  <?php $this->load->view('frontend/menu');?>
+        <div id="boxNav">
+            <ul id="nav">
+            <?php $this->load->view('frontend/menu');?>
+            </ul>
+		  
 	    </div>
         <!-- end: menu -->
         <!-- start: slideshow -->
