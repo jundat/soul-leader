@@ -319,7 +319,7 @@ class User extends CI_Controller{
                 
                 if($check['active']==1)
                 {
-                    $data['report'] = "Account has been actived, <a href='".base_url()."home/verify/login'>please login</a> !";
+                    $data['report'] = "Account has been actived, <a href='".base_url()."Chome/verify/login'>please login</a> !";
                     $this->session->unset_userdata($this->_register);
                 }
                 else
@@ -330,7 +330,7 @@ class User extends CI_Controller{
                                     "active"      => 1,
                                 );
                     $this->muser->updateUser($update,$userid);
-                    $data['report'] = "Account has been actived, <a href='".base_url()."home/verify/login'>please login</a> !";   
+                    $data['report'] = "Account has been actived, <a href='".base_url()."Chome/verify/login'>please login</a> !";   
                 }
             
             }
