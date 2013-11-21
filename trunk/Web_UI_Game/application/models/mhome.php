@@ -62,7 +62,7 @@ class Mhome extends CI_Model{
     function save_add_news() {
         $this->form_validation->set_rules('news_name', 'News Name', 'required|xss_clean');
         $this->form_validation->set_rules('news_content', 'News Content', 'required|xss_clean');
-        $this->form_validation->set_rules('news_sourse', 'News Sourse', 'required|xss_clean');
+        $this->form_validation->set_rules('news_source', 'News Source', 'required|xss_clean');
         if($this->form_validation->run() == FALSE){
             return FALSE;
         }else{
@@ -91,7 +91,7 @@ class Mhome extends CI_Model{
             $news_data_array = array(
                 'news_name'=>$this->input->post('news_name'),
                 'news_content'=>$this->input->post('news_content'),
-                'news_sourse' => $this->input->post('news_sourse'),
+                'news_source' => $this->input->post('news_source'),
                 'news_image'=> $news_image,
                 'news_view'=> 0,
                 'news_like'=> 0,
@@ -107,7 +107,7 @@ class Mhome extends CI_Model{
     function save_edit_news() {
         $this->form_validation->set_rules('news_name', 'News Name', 'required|xss_clean');
         $this->form_validation->set_rules('news_content', 'News Content', 'required|xss_clean');
-        $this->form_validation->set_rules('news_sourse', 'News Sourse', 'required|xss_clean');
+        $this->form_validation->set_rules('news_source', 'News Source', 'required|xss_clean');
         if($this->form_validation->run()== false){
             return FALSE;
         }else {
@@ -135,7 +135,7 @@ class Mhome extends CI_Model{
             $data = array(
                 'news_name' =>$this->input->post('news_name'),
                 'news_content' => $this->input->post('news_content'),
-                'news_sourse'=> $this->input->post('news_sourse'),
+                'news_source'=> $this->input->post('news_source'),
                 'news_image'=>$news_image,
                 
             );

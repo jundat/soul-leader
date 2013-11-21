@@ -15,7 +15,7 @@
         <input type="file" name="news_image"/><br />
     
         <label>Author</label>
-        <input type="text" name="news_sourse" class="news_sourse" value="<?php echo set_value('news_sourse'); ?>"/><br /><br />
+        <input type="text" name="news_source" class="news_source" value="<?php echo set_value('news_source'); ?>"/><br /><br />
         <input type="submit" name="submit" value="Save"/><a href="<?php echo $backend; ?>news" class="back">Back</a>
     </form>
 </div>
