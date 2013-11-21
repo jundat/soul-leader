@@ -31,7 +31,7 @@
 </div>
 
 <?php
-    $this->table->set_heading(array('Image', 'Title', 'Content', 'Post_at', 'View', 'Like','Sourse', 'Edit', 'Remove'));
+    $this->table->set_heading(array('Image', 'Title', 'Content', 'Post_at', 'View', 'Like','Soure', 'Edit', 'Remove'));
     $tmpl = array('table_open'=>'<table id="table_admin">');
     
     $this->table->set_template($tmpl);
@@ -43,10 +43,10 @@
         $post = array('data'=>unix_to_human((int)$a['news_post']), 'class'=>'news a_post');
         $view = array('data'=>$a['news_view'], 'class'=>'news a_view');
         $like = array('data'=>$a['news_like'], 'class'=>'news a_like');
-        $sourse = array('data'=>$a['news_sourse'], 'class'=>'news a_sourse');       
+        $source = array('data'=>$a['news_source'], 'class'=>'news a_source');       
         $edit  	 	 = array('data'=>'<a href="'.$backend.'edit_news/'.$a['news_id'].'"><img src="'.$backendimg.'edit4.png" widht="23" height="23"></a>', 'class'=>'news a_edit');
 		$remove 	 = array('data'=>'<a href="'.$backend.'func_remove_news/'.$a['news_id'].'"><img src="'.$backendimg.'remove_red.png" widht="23" height="23" ></a>', 'class'=>'news a_remove');
-        $this->table->add_row(array($image, $title, $content, $post, $view, $like, $sourse, $edit, $remove));
+        $this->table->add_row(array($image, $title, $content, $post, $view, $like, $source, $edit, $remove));
     }
     echo $this->table->generate();
      

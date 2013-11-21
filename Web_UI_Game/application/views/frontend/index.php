@@ -8,8 +8,10 @@
 
 <!-- start : page css here -->
 
-<link rel="stylesheet" href="<?php echo $path; ?>css/stylesheet.css" type="text/css" media="screen"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $path ;?>css/stylesheet.css">
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/menu.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/footer.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/style.css"/>
 
 <!-- end : page css here -->
 
@@ -18,7 +20,7 @@
 <body >
 	
 <div id="wrapper">
-    <div id="main">
+    <div id="container">
         <!-- start: header -->
         <div id="header">
             <div class="logo">
