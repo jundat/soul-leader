@@ -72,6 +72,8 @@ var CPlayer = cc.Sprite.extend({
             m_computerBall.setVisible(false);
             
             this.m_iHP -= m_computerBall.m_fDam;
+            if (this.m_iHP <= 0)
+                this.m_iHP = 0;
             var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
             var initSprite = cc.CallFunc.create(
             function () {

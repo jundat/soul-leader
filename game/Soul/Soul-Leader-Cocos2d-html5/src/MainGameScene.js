@@ -40,6 +40,10 @@ var MainGame = cc.LayerColor.extend({
         }
     },
 
+    changeComputerBall: function (data) {
+        this.m_computerBall.changeBall(data);
+    },
+
     init: function () {
         this._super(new cc.Color4B(255, 0, 0, 255));
         var size = cc.Director.getInstance().getWinSize();
@@ -164,6 +168,7 @@ var MainGame = cc.LayerColor.extend({
             s_tBallGreenSelected,
             function () {
                 this.m_ball.changeBall(Enum.EBall.Green);
+                
             },
             this);
         var menuItem3 = cc.MenuItemImage.create(
