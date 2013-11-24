@@ -185,6 +185,20 @@ function NodeJSClient(parent) {
     };
 
 
+    //Change Position
+    //Send only data
+    this.ChangePosition = function (deltaX, deltaY) {
+        var data = {
+            matchId: this.match.matchId,
+            username: this.username,
+            deltaX: deltaX,
+            deltaY: deltaY
+        };
+
+        this.socket.emit('ChangePosition', data);
+    };
+
+
 
 
     //Init and receive data ----------------------------------------------------
@@ -412,6 +426,21 @@ function NodeJSClient(parent) {
     }
 
 
+    /*
+        {
+            matchId: matchId,
+            username: new_username,
+            deltaX: deltaX,
+            deltaY: deltaY
+        }
+    */
+    this._change_position = function (data) {
+        Log(data);
+        NODE_CLIENT.parent.changeComputerPosition(data.deltaX, deltaY);
+    }
+
+
+
     //Init all default handler
     //After call Connect
     this.Init = function () {
@@ -429,6 +458,7 @@ function NodeJSClient(parent) {
         this.socket.on('ChangeTurn', this._change_turn);
         this.socket.on('SendMatchResult', this._send_match_result);
         this.socket.on('ChangeBallType', this._change_ball_type);
+        this.socket.on('ChangePosition', this._change_position);
     }
 
     NODE_CLIENT = this;

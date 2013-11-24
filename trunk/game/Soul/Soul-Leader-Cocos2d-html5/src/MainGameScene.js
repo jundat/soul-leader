@@ -39,11 +39,22 @@ var MainGame = cc.LayerColor.extend({
         }
     },
 
+
+    //Call ChangePosition(deltaX, deltaY)
+    //if you want to change position
+    //receive here
+    //when other player change his position
+    changeComputerPosition: function(deltaX, deltaY) {
+        //your code here
+        alert('Your opponent changes position');
+    },
+
     //you change pos
     playerMoveX: function (_x) {
         var tempX = this.m_player.getPosition().x;
         var tempY = this.m_player.getPosition().y;
         var bonusX = tempX + _x;
+
         //alert(this.nodeJSClient.isPlayFirst);
 
         if (this.nodeJSClient.isPlayFirst == true) {
@@ -59,7 +70,7 @@ var MainGame = cc.LayerColor.extend({
         this.m_player.setPosition(cc.p(bonusX, tempY));
     },
 
-    //you change ball type
+
     changePlayerBall: function (ballType) {
         this.nodeJSClient.ChangeBallType(ballType);
     },
