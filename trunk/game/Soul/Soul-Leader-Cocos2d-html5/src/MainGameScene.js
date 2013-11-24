@@ -250,6 +250,9 @@ var MainGame = cc.LayerColor.extend({
         this.m_lPoint2.setString("Hp2 : " + this.m_computer.m_iHP.toString());
         
         this.m_lAngle.setString("Angle : " + this.m_ball.m_fAngle.toFixed(0).toString());
+
+        if (this.m_computer.m_iHP <= 0)
+            this.nodeJSClient.SendMatchResult();
     },
 
     onTouchesBegan: function (touches, event) {
