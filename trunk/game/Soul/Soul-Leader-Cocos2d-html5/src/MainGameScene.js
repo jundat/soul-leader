@@ -1,6 +1,5 @@
 
 
-
 function Enum() { }
 Enum.ETurn = {
     Player: 0,
@@ -76,13 +75,13 @@ var MainGame = cc.LayerColor.extend({
 
         //player
         this.m_player = new CPlayer();
-        this.m_player.setPosition(cc.p(200, 100));
+        this.m_player.setPosition(cc.p(PLAYER_LEFT.x, PLAYER_LEFT.y));
         this.m_player.init(this.m_ball);
         this.addChild(this.m_player);
 
         //computer
         this.m_computer = new CPlayer();
-        this.m_computer.setPosition(cc.p(1100, 100));
+        this.m_computer.setPosition(cc.p(PLAYER_RIGHT.x, PLAYER_RIGHT.y));
         this.m_computer.init(this.m_computerBall);
         this.m_computer.setScaleX(-1);
         this.addChild(this.m_computer);

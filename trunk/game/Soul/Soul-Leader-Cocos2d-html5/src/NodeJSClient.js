@@ -317,8 +317,8 @@ function NodeJSClient(parent) {
             alert('Your play first :)');
         } else {
             NODE_CLIENT.parent.m_eTurn = 1; //other first
-            NODE_CLIENT.parent.m_computer.setPosition(cc.p(200, 100));
-            NODE_CLIENT.parent.m_player.setPosition(cc.p(1100, 100));
+            NODE_CLIENT.parent.m_computer.setPosition(cc.p(PLAYER_LEFT.x, PLAYER_LEFT.y));
+            NODE_CLIENT.parent.m_player.setPosition(cc.p(PLAYER_RIGHT.x, PLAYER_RIGHT.y));
             NODE_CLIENT.parent.m_computer.setRotationY(180);
             NODE_CLIENT.parent.m_player.setRotationY(180);
 
