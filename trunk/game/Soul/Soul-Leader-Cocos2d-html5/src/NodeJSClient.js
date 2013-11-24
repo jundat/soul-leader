@@ -294,6 +294,9 @@ function NodeJSClient(parent) {
             alert('Your play first :)');
         } else {
             NODE_CLIENT.parent.m_eTurn = 1; //other first
+            NODE_CLIENT.parent.m_computer.setPosition(cc.p(200, 100));
+            NODE_CLIENT.parent.m_player.setPosition(cc.p(1100, 100));
+
             alert('You play second :(');
         }
     }
