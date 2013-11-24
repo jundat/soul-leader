@@ -40,8 +40,9 @@ var MainGame = cc.LayerColor.extend({
         }
     },
 
-    changeComputerBall: function (data) {
-        this.m_computerBall.changeBall(data);
+    //opponent change ball type
+    changeComputerBall: function (ballType) {
+        this.m_computerBall.changeBall(ballType);
     },
 
     init: function () {
