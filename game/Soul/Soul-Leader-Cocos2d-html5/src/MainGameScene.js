@@ -39,6 +39,25 @@ var MainGame = cc.LayerColor.extend({
         }
     },
 
+    //you change pos
+    playerMoveX: function (_x) {
+        var tempX = this.m_player.getPosition().x;
+        var tempY = this.m_player.getPosition().y;
+        var bonusX = tempX + _x;
+        //alert(this.nodeJSClient.isPlayFirst);
+
+        if (this.nodeJSClient.isPlayFirst == true) {
+            if ((bonusX > (1366 / 2 - 150)) || (bonusX < 100)) {
+                return;
+            }
+        }
+        else {
+            if ((bonusX < (1366 - (1366 / 2 - 150))) || (bonusX > (1366 - 100))) {
+                return;
+            }
+        }
+        this.m_player.setPosition(cc.p(bonusX, tempY));
+    },
 
     //you change ball type
     changePlayerBall: function (ballType) {
@@ -56,6 +75,7 @@ var MainGame = cc.LayerColor.extend({
         this._super(new cc.Color4B(255, 0, 0, 255));
         var size = cc.Director.getInstance().getWinSize();
         this.setTouchEnabled(true);
+        this.setKeyboardEnabled(true);
         this.schedule(this.update);
 
         //background
@@ -217,6 +237,7 @@ var MainGame = cc.LayerColor.extend({
     },
 
     update: function (dt) {
+        document.getElementById("gameCanvas").focus();
         this.m_player.updateCollision(this.m_computerBall);
         this.m_computer.updateCollision(this.m_ball);
 
@@ -280,6 +301,26 @@ var MainGame = cc.LayerColor.extend({
 
         this.m_fPower = 0;
         this.isPower = false;
+    },
+
+    onKeyUp: function (e) {
+
+    },
+    onKeyDown: function (e) {
+        if (e === cc.KEY.left) {
+            if (this.m_eTurn == 0) {
+
+                this.playerMoveX(-10);
+                this.m_player.setRotationY(180);
+            }
+        }
+        else if (e === cc.KEY.right) {
+            if (this.m_eTurn == 0) {
+
+                this.playerMoveX(10);
+                this.m_player.setRotationY(0);
+            }
+        }
     }
 });
 

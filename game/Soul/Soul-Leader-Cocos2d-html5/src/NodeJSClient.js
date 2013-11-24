@@ -7,7 +7,7 @@ function NodeJSClient(parent) {
 
     //reference to MainGame
     this.parent = parent;
-
+    this.isPlayFirst = false;
 
     //connect socket
     this.socket = null;
@@ -315,6 +315,7 @@ function NodeJSClient(parent) {
         if (NODE_CLIENT.username == data.players[data.turn].username) {
             NODE_CLIENT.parent.m_eTurn = 0; //you first
             alert('Your play first :)');
+            NODE_CLIENT.isPlayFirst = true;
         } else {
             NODE_CLIENT.parent.m_eTurn = 1; //other first
             NODE_CLIENT.parent.m_computer.setPosition(cc.p(PLAYER_LEFT.x, PLAYER_LEFT.y));
@@ -323,6 +324,7 @@ function NodeJSClient(parent) {
             NODE_CLIENT.parent.m_player.setRotationY(180);
 
             alert('You play second :(');
+            NODE_CLIENT.isPlayFirst = false;
         }
     }
 
