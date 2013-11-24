@@ -43,7 +43,7 @@ var MainGame = cc.LayerColor.extend({
 
     //you change ball type
     changePlayerBall: function (ballType) {
-
+        this.nodeJSClient.ChangeBallType(ballType);
     },
 
     //opponent change ball type
@@ -169,29 +169,36 @@ var MainGame = cc.LayerColor.extend({
             s_tBallBlue,
             s_tBallBlueSelected,
             function () {
+                Log("change ball type: " + Enum.EBall.Blue);
                 this.m_ball.changeBall(Enum.EBall.Blue);
+                this.changePlayerBall(Enum.EBall.Blue);
             },
             this);
         var menuItem2 = cc.MenuItemImage.create(
             s_tBallGreen,
             s_tBallGreenSelected,
             function () {
+                Log("change ball type: " + Enum.EBall.Green);
                 this.m_ball.changeBall(Enum.EBall.Green);
-                
+                this.changePlayerBall(Enum.EBall.Green);                
             },
             this);
         var menuItem3 = cc.MenuItemImage.create(
             s_tBallRed,
             s_tBallRedSelected,
             function () {
+                Log("change ball type: " + Enum.EBall.Red);
                 this.m_ball.changeBall(Enum.EBall.Red);
+                this.changePlayerBall(Enum.EBall.Red);
             },
             this);
         var menuItem4 = cc.MenuItemImage.create(
             s_tBallYellow,
             s_tBallYellowSelected,
             function () {
+                Log("change ball type: " + Enum.EBall.Yellow);
                 this.m_ball.changeBall(Enum.EBall.Yellow);
+                this.changePlayerBall(Enum.EBall.Yellow);
             },
             this);
 
