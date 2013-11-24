@@ -40,10 +40,18 @@ var MainGame = cc.LayerColor.extend({
         }
     },
 
+
+    //you change ball type
+    changePlayerBall: function (ballType) {
+
+    },
+
     //opponent change ball type
     changeComputerBall: function (ballType) {
         this.m_computerBall.changeBall(ballType);
     },
+
+
 
     init: function () {
         this._super(new cc.Color4B(255, 0, 0, 255));
