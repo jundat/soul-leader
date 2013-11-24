@@ -175,7 +175,13 @@ function NodeJSClient(parent) {
 
     //Change ball type
     this.ChangeBallType = function (ballType) {
-        this.socket.emit("ChangeBallType", ballType);
+        var data = {
+            matchId: this.match.matchId,
+            username: this.username,
+            ballType: ballType //old_username
+        };
+
+        this.socket.emit('ChangeBallType', data);
     };
 
 
