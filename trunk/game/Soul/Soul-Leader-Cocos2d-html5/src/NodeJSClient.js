@@ -296,6 +296,8 @@ function NodeJSClient(parent) {
             NODE_CLIENT.parent.m_eTurn = 1; //other first
             NODE_CLIENT.parent.m_computer.setPosition(cc.p(200, 100));
             NODE_CLIENT.parent.m_player.setPosition(cc.p(1100, 100));
+            NODE_CLIENT.parent.m_computer.setRotationY(180);
+            NODE_CLIENT.parent.m_player.setRotationY(180);
 
             alert('You play second :(');
         }
