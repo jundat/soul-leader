@@ -68,7 +68,7 @@ var MainGame = cc.LayerColor.extend({
         this.addChild(this.m_player);
 
         //computer
-        this.m_computer = new Computer();
+        this.m_computer = new CPlayer();
         this.m_computer.setPosition(cc.p(1100, 100));
         this.m_computer.init(this.m_computerBall);
         this.m_computer.setScaleX(-1);
@@ -198,6 +198,8 @@ var MainGame = cc.LayerColor.extend({
 
     update: function (dt) {
         this.m_player.updateCollision(this.m_computerBall);
+        this.m_computer.updateCollision(this.m_ball);
+
         //this.m_computer.updateCollision();
 
 //         if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
