@@ -90,8 +90,10 @@ function NodeJSClient(parent) {
 
 
 
+    /////////////////////////////////////////////////////////////////////////////////
     //Các hàm gửi dữ liệu ---------------------------------
     //send data functions -------------------------------------------------------
+    /////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -171,6 +173,14 @@ function NodeJSClient(parent) {
     }
 
 
+    //Change ball type
+    this.ChangeBallType = function (ballType) {
+        this.socket.emit("ChangeBallType", ballType);
+    };
+
+
+
+
     //Init and receive data ----------------------------------------------------
 
 
@@ -188,8 +198,15 @@ function NodeJSClient(parent) {
     }
 
 
-    //Các hàm nhận dữ liệu ------------------
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////
+    //Các hàm nhận dữ liệu --------------------------------------------------------
     //handle receive data event
+    /////////////////////////////////////////////////////////////////////////////////
 
 
     //Khi game chạy lên, nó sẽ gọi connect ở trên
@@ -374,6 +391,19 @@ function NodeJSClient(parent) {
     }
 
 
+    /*
+        {
+            matchId: matchId,
+            username: new_username,
+            ballType: ballType
+        }
+    */
+    this._change_ball_type = function (data) {
+        Log(data);
+        NODE_CLIENT.parent.changeComputerBall(data.ballType);
+    }
+
+
     //Init all default handler
     //After call Connect
     this.Init = function () {
@@ -390,6 +420,7 @@ function NodeJSClient(parent) {
         this.socket.on('Fire', this._fire);
         this.socket.on('ChangeTurn', this._change_turn);
         this.socket.on('SendMatchResult', this._send_match_result);
+        this.socket.on('ChangeBallType', this._change_ball_type);
     }
 
     NODE_CLIENT = this;
