@@ -1,5 +1,12 @@
 ﻿//global 
 
+var SCREEN_WIDTH = window.innerWidth;
+var SCREEN_HEIGHT = window.innerHeight;
+
+var PLAYER_LEFT = { x: 200, y: 200 };
+var PLAYER_RIGHT = { x: SCREEN_WIDTH - 200, y: 200 };
+
+
 
 
 //glbal functions
