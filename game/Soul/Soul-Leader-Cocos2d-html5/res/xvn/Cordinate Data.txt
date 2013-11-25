@@ -1,0 +1,50 @@
+SCREEN_WIDTH = 1366
+SCREEN_HEIGHT = 668
+
+
+1. Power bar:
+file: power_bar.png 
+size: (1, 19)
+pos: (686, 668 - 639)
+len: 900
+
+2. Hp bar:
+file: hp_bar.png
+size: (1, 30)
+pos: 
+	LEFT (250, 668-25)
+	RIGHT (1116, 668-25)
+len: 200
+
+3. Avartar
+size: (128, 128)
+pos: 
+	LEFT (74, 668-74)
+	RIGHT (1292, 668-74)
+
+4. Weapon
+Two type of weapon:
+- Ball_blue
+- Bullet
+File: 
+	Ball_blue.png (Big)
+	Bullet.png (Small)
+File icon hiển thị để chọn:
+	icon_ball_blue.png (64, 64)
+		icon_ball_blue_press.png
+	icon_bullet.png (64, 64)
+		icon_bullet_press.png
+
+size: (64, 64)
+LEFT:
+	pos: 
+		(110, 668 - 630)
+		(190, 668 - 630)
+
+RIGHT:
+	pos:
+		(1180, 668-630)
+		(1260, 668-630)
+
+	
+
