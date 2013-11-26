@@ -64,6 +64,16 @@ class Admin extends CI_Controller{
                     $data['content'] = 'removed_news';
                     break;
                 case 'func_save_add_news':
+                    # Variables de sesion de KCFinder, deben declararse al hacer LogIn con un usuario
+                    $_SESSION['KCFINDER'] = array();
+                    $_SESSION['KCFINDER']['disabled'] = false;
+                     
+                    # Al hacer LogOut deberíamos cambiar disabled a true: $_SESSION['KCFINDER']['disabled'] = true;
+                  
+                    $this->load->library('ckeditor', array('instanceName' => 'CKEDITOR1','basePath' => base_url()."public/backend/ckeditor/", 'outPut' => true));
+             
+                    # Cargamos la vista
+                    $this->load->view('form_view', null);
                     if($this->Mhome->save_add_news()){
                         $data['message'] = 'news was added successfully';
                     }else{
@@ -72,7 +82,8 @@ class Admin extends CI_Controller{
                     
                     $data['content'] = 'news';
                     break;
-                case 'func_save_edit_news': 
+                case 'func_save_edit_news':
+                     
                     if($this->Mhome->save_edit_news()){
                         $data['message'] = 'news was saved successfully';
                     }else{
