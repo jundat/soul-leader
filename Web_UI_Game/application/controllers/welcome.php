@@ -1,27 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+session_start(); # Aqui para que inicie la sesión
 class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
+    function index()     {   
+     
+        # Variables de sesion de KCFinder, deben declararse al hacer LogIn con un usuario
+        $_SESSION['KCFINDER'] = array();
+        $_SESSION['KCFINDER']['disabled'] = false;
+         
+        # Al hacer LogOut deberíamos cambiar disabled a true: $_SESSION['KCFINDER']['disabled'] = true;
+      
+        $this->load->library('ckeditor', array('instanceName' => 'CKEDITOR1','basePath' => base_url()."public/backend/ckeditor/", 'outPut' => true));
+ 
+        # Cargamos la vista
+        $this->load->view('form_view', null);
+     }
+ 
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
