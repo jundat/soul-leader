@@ -29,13 +29,13 @@
 
         this.m_computerBall.setVisible(true);
         this.m_computerBall.set(startX, startY, dirX, dirY, distance, power);
-        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
+        /*var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
         var initSprite = cc.CallFunc.create(
         function () {
             this.initWithFile(s_tPlayer);
         },
         this);
-        this.runAction(cc.Sequence.create(animate, initSprite));
+        this.runAction(cc.Sequence.create(animate, initSprite));*/
     },
     
     updatecollision: function () {

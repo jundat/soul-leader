@@ -54,15 +54,15 @@ var CBall = cc.Sprite.extend({
         switch (type) {
             case Enum.EBall.Blue:
                 m_eType = type;
-                this.initWithFile(s_tBallBlue);
+                this.initWithFile(s_wep2);
                 this.m_fDam = 1;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;
                 break;
             case Enum.EBall.Green:
                 m_eType = type;
-                this.initWithFile(s_tBallGreen);
-                this.m_fDam = 2;
+                this.initWithFile(s_wep4);
+                this.m_fDam = 3;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;
                 break;
