@@ -30,13 +30,17 @@
                   $config['base_url'] = base_url().'/home/layout/news/';
                   $config['total_rows'] = $this->Mhome->get_total_rows_news();
                   // $config['use_page_numbers'] = TRUE;// hien thi so trang dung
-                  $config['per_page'] = 3;
+                  $config['per_page'] = 10;
                   $config['uri_segment'] = 4;
                   
                   $this->pagination->initialize($config);
                   
                   $data['news'] = $this->Mhome->get_news($config['per_page'], $param);
                   $data['sidebar'] = $this->Mhome->get_last_news();
+                  break;
+                case 'news_detail'   :
+                  $data['news']          = $this->Mhome->get_news();         
+                  $data['article']       = $this->Mhome->get_article($param);
                   break;
             }
             

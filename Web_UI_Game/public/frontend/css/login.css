@@ -41,3 +41,96 @@ fieldset{
 	font-size: 12px;
 	color: #FFF;
 }
+
+#header {
+    margin: 77px auto 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+}
+
+.WrapperOutContent{
+    background: url("../images/bg-toploop.gif") repeat-y scroll 265px 0 transparent;
+    
+}
+
+.Content{
+    background: url("../images/bg-top.jpg") no-repeat scroll left top transparent;
+    left: 265px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width:860px;
+}
+
+.LeftContent{
+    background: url("../images/bg-dangnhap.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 342px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    position: relative;
+    width: 540px;
+}
+
+.frm_dangnhap{
+    left: 25px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 120px;
+    width: 305px;
+    z-index: 31;
+}
+
+.frm_dangnhap label{
+    color: #000000;
+    float: left;
+    font-weight: bold;
+    padding: 0 7px 0 0;
+    text-align: right;
+    width: 118px;
+}
+
+.frm_dangnhap input.txt_box{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 30px;
+    margin: 0 0 8px !important;
+    padding: 2px 0 2px 3px;
+    width: 175px;
+}
+
+.frm_button {
+    left: 340px;
+    margin:0;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    width: 130px;
+    z-index: 32;
+}
+
+input.ChoiNgay
+{
+    background: url("../images/choingay.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 101px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 130px;
+
+}
+
+.BgBoxEvent{
+    background: url("../images/bg-banner.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 325px;
+    margin: 12px 0 0 10px;
+    width: 250px;
+}
+

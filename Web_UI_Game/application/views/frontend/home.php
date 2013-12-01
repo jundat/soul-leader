@@ -26,7 +26,7 @@
 			
 			<!-- Begin block download_download -->  
 			<h1><a href="#">Trang chủ</a></h1>
-			<div id="download">soul-leader
+			<div id="download">
 				<a href="<?php echo base_url(); ?>Chome/user" class="PlayNow" id="typePlayNow" >Chơi ngay</a>
 				<a href="<?php echo base_url(); ?>Chome/user/register" class="Register2" id="ppregister_link">Đăng ký</a>
 				<a href="#" class="Pay notTrack">Nạp thẻ</a>
@@ -35,7 +35,7 @@
 			
 			<div class="ShowNhanVat"> 
 				<a href="#" id="linkVuKhi"> 
-					<img src="images/super-boomerang.png" id="show-img">
+					<img src="<?php echo base_url(); ?>public/frontend/images/super-boomerang.png" id="show-img">
 				</a>
 			</div>
 			<div class="DangNhap Home fixPNG">
@@ -83,6 +83,47 @@
 						</ul>
 					</div>
 					<!-- End block banner-event-variation-2_banner-event -->
+                    
+                    <div class="TimKiem">
+                        <h2 class="TitleTimKiem">Tìm kiếm</h2>
+                        <form method="get" action="/tim-kiem1/search.html">
+                        <input id="Keyword" class="BgTextbox" type="text" value="Thông tin tìm kiếm" name="Keyword">
+                        <input id="search" class="SearchBtn" type="submit" value="Tìm" name="search">
+                        </form>
+                    </div>
+                    
+                    <!-- BLOCK SU KIEN TRONG NGAY -->
+                    <div class="BlockSuKienNgay">
+                        <h2 class="TitleSuKienNgay">Hôm nay có sự kiện</h2>
+                        <ul class="ListEvent">
+                            <?php  
+                                        foreach ($lastnews as $lnew) {
+                                            //if($lnew['news_id'] % 2 == 0){
+                                                echo '
+                                            <li class="li-post-box">
+                                                
+                                                    <a class="New TitleEvent" title="<strong>'.$lnew['news_name'].'</strong>" href="'.$frontend.'news_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
+                                                     <div class="DetailNews">                                              
+                                            </li>';                                    
+                                            
+                                            //}                            
+                                        }
+                                        ?>
+                        </ul>
+                    </div>
+                    
+                    
+                    <!-- CALENDAR -->
+                    <div id="MTkyOTV8NDB8ZXZlbnR8NDYwfGhvbWV8Y2FsZW5kYXJ8UEhQ" class="Calendar">
+                    </div>
+                    
+                    <div class="SidebarAds">
+                        <div>
+                            <a target="_blank" title="Vui game" href="http://vuigame.vn" onclick="_gaq.push(['_trackEvent','Vui Game', 'Banner220x80', 'Homepage',1]);">
+                            <img alt="Vui game" src="http://img.zing.vn/gn/skin/gunny-072012/images/vui-game.jpg">
+                            </a>
+                        </div>
+                    </div>
 				</div>
 				<!--end sidebar-->
 				
@@ -113,41 +154,30 @@
                                     </li>
                                     
                                   </ul>  
-								<a class="News" href="<?php $frontend ?>news">Tin tức</a>
+								<a class="News" href="<?php echo $frontend ?>news">Tin tức</a>
                                 <a class="ViewMore" title="Xem thêm" href="<?php echo $frontend; ?>news">Xem thêm</a>
 								<ul class="ListNews" id="MTkzNTZ8NHxuZXdzfDUwMnxob21lLWFiMnx0aW4tdHVjfFBIUA">
     									<?php  
                                         foreach ($lastnews as $lnew) {
-                                            if($lnew['news_id'] % 2 == 0){
+                                            //if($lnew['news_id'] % 2 == 0){
                                                 echo '
                                             <li class="li-post-box">
-                                                 <a href="'.$frontend.'new_detail/'.$lnew['news_id'].'">
-                                                    <img src="'.$frontendimg.$lnew['news_image'].'" 
-                                                    alt="'.$lnew['news_image'].'" >
-                                                 </a>
-                                                 <h2>
-                                                    <a title="'.$lnew['news_name'].'" href="'.$frontend.'new_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
-                                                </h2>
-                                                <h3>
+                                                
+                                                    <a class="New" title="<strong>'.$lnew['news_name'].'</strong>" href="'.$frontend.'news_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
+                                                     <div class="DetailNews">
+                                                    <div class="Images">
+                                                        <a href="'.$frontend.'news_detail/'.$lnew['news_id'].'">
+                                                             <img src="'.base_url().'public/images/'.$lnew['news_image'].'"
+                                                             alt="'.$lnew['news_image'].'" width="100" height="44">
+                                                         </a>
+                                                        
+                                                    </div>
                                                     <p>'. word_limiter($lnew['news_content'],15).'.... </p>
-                                                </h3>
+                                                </div>
+                                                 
                                             </li>';                                    
                                             
-                                            }else {
-                                                 echo '                                
-                                            <li class="li-post-box li-post-box-sp">
-                                                 <a href="'.$frontend.'new_detail/'.$lnew['news_id'].'">
-                                                    <img src="'.$frontendimg.$lnew['news_image'].'" 
-                                                    alt="'.$lnew['news_image'].'" >
-                                                 </a>
-                                                 <h2>
-                                                    <a title="'.$lnew['news_name'].'" href="'.$frontend.'new_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
-                                                </h2>
-                                                <h3>
-                                                    <p>'. word_limiter($lnew['news_content'],15).'.... </p>
-                                                </h3>
-                                            </li>';
-                                            }                               
+                                            //}                            
                                         }
                                 ?> 
 								</ul>
@@ -174,9 +204,40 @@
                             <h2 class="TitleEvent" title="Sự kiện đang diễn ra">Sự kiện đang diễn ra</h2>
                             <a class="ViewMoreEvent" title="Sự kiện đang diễn ra" href="/su-kien/danh-sach.html">Sự kiện đang diễn ra</a>
                             <a class="ViewMore" title="Xem thêm" href="/su-kien/danh-sach.html">Xem thêm</a>
+                            <div class="BlockEvent In-game_0">
+                                <?php  
+                                        foreach ($lastnews as $lnew) {
+                                            //if($lnew['news_id'] % 2 == 0){
+                                                echo '
+                                            <li class="li-post-box">
+                                                
+                                                    <a class="New" title="<strong>'.$lnew['news_name'].'</strong>" href="'.$frontend.'news_detail/'.$lnew['news_id'].'">'.$lnew['news_name'].'</a>
+                                                     <div class="DetailNews">
+                                                    <div class="Images">
+                                                        <a href="'.$frontend.'news_detail/'.$lnew['news_id'].'">
+                                                             <img src="'.base_url().'public/images/'.$lnew['news_image'].'"
+                                                             alt="'.$lnew['news_image'].'" width="100" height="44">
+                                                         </a>
+                                                        
+                                                    </div>
+                                                    <p>'. word_limiter($lnew['news_content'],15).'.... </p>
+                                                </div>
+                                                 
+                                            </li>';                                    
+                                            
+                                            //}                            
+                                        }
+                                ?> 
+                            </div>
                         </div>
-                        <!-- end Block su kien -->
+                        <!-- end Block su kien -->                     
                         
+                        <!-- start BLock ho tro -->                        
+                        <div class="BlockNews BlockHoTro">
+                            <a class="HoTro2 notTrack" onclick="_gaq.push(['_trackEvent','HoTro', 'Button Image', 'Homepage',1]);" target="_blank" href="http://hotro1.zing.vn/gunny/san-pham_162.html">Hotline 1900561558 </a>
+                            <a class="LichSuGiaoDich" onclick="_gaq.push(['_trackEvent','Lich su giao dich', 'Button Image', 'Homepage']);" href="/tin-tuc/chi-tiet.bi-kip-luyen-ga.huong-dan-xem-lich-su-giao-dich-trong-game.4261.html" title="Tự xem Log giao dịch của nhân vật">Tự xem Log giao dịch của nhân vật</a>
+                        </div>
+                        <!-- end BLock ho tro -->
                         
 						
 					</div>
@@ -184,60 +245,33 @@
 					<!--sidebar 2-->
 					<div id="sidebarContent">
 						<ul class="WoW">
-                            <li class="">
-                                <a class="LongThuong" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/long-thuong-chien.png" title="Long Thương Chiến" href="http://gunny.zing.vn/huong-dan/vu-khi.html#thuong">Long Thương chiến </a>
-                            </li>
-                            <li>
-                                <a class="Bua" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/bua-Minotaure.png" title="Búa" href="http://gunny.zing.vn/huong-dan/vu-khi.html#bua">Búa </a>
-                            </li>
-                            <li class="">
-                                <a class="SBoomerang" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/super-boomerang.png" title="Super Boomerang" href="http://gunny.zing.vn/huong-dan/vu-khi.html#boomerang">Super Boomerang </a>
-                            </li>
-                            <li class="">
-                                <a class="LuuDan" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-luu-dan.png" title="WoW Lựu đạn" href="http://gunny.zing.vn/huong-dan/vu-khi.html#dan">WoW Lựu đạn </a>
-                            </li>
-                            
-                            <li class="">
-                                <a class="LuGach" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-lu-gach.png" title="WoW Lu gạch" href="http://gunny.zing.vn/huong-dan/vu-khi.html#gach">WoW Lu gạch </a>
-                            </li>
-                            <li class="Active">
-                                <a class="SamSet" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-sam-set.png" title="WoW Sấm sét" href="http://gunny.zing.vn/huong-dan/vu-khi.html#sam">WoW Sấm sét </a>
-                            </li>
-                            <li class="">
-                                <a class="Phao" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-phao.png" title="Wow pháo" href="http://gunny.zing.vn/huong-dan/vu-khi.html#phao">WoW pháo </a>
-                            </li>
-                            <li>
-                                <a class="PhiTieu" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-phi-tieu.png" title="WoW Phi tiêu" href="http://gunny.zing.vn/huong-dan/vu-khi.html#phi">WoW Phi tiêu </a>
-                            </li>
-                            <li class="">
-                                <a class="TuThuoc" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/karaoke.png" title="WoW Karaoke" href="http://gunny.zing.vn/huong-dan/vu-khi.html#karaoke">WoW Karaoke</a>
-                            </li>
-                            <li class="">
-                                <a class="TraiCay" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/kem.png" title="WoW Kem" href="http://gunny.zing.vn/huong-dan/vu-khi.html#kem">WoW Kem</a>
-                            </li>
-                            <li>
-                                <a class="Tivi" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/xehoi.png" title="WoW Xe hơi" href="http://gunny.zing.vn/huong-dan/vu-khi.html#xehoi">WoW Xe hơi</a>
-                            </li>
-                            <li>
-                                <a class=" NotScroll VuKhi" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/sungnuoc.png" title="WoW Súng nước" href="http://gunny.zing.vn/huong-dan/vu-khi.html#sungnuoc">WoW Súng nước</a>
-                            </li>
-							<img src="images/vu-khi-hover.jpg">
+                            <a href="#" id="linkVuKhi"> 
+					           <img src="<?php echo base_url(); ?>public/frontend/images/vu-khi-hover.jpg" id="show-img">
+			             	</a>
 						</ul>
                         
-                        <ul class="BlockTN">
-                            <li>
-                            <a class="ThuCung" title="Thú cưng" href="http://gunny.zing.vn/huong-dan/thu-cung.html">Thú cưng</a>
-                            </li>
-                            <li>
-                            <a class="ChauBau" title="Châu báu" href="http://gunny.zing.vn/su-kien/mini/phien-ban-moi-chau-bau-than-ga.bai-viet.543.html">Châu báu</a>
-                            </li>
-                            <li>
-                            <a class="BoTrangBi" title="Bộ trang bị" href="http://gunny.zing.vn/su-kien/mini/cac-set-trang-bi-cua-gunny.bai-viet.569.html">Bộ trang bị</a>
-                            </li>
-                            <li>
-                            <a class="TinhNang" title="Tính năng khác" href="http://gunny.zing.vn/huong-dan/me-cung.html">Tính năng khác</a>
-                            </li>
-                            </ul>
+                                                
+                        <div class="ThuVien">
+                            <div class="TitleThuVien">Thư Viện
+                            </div>
+                            <div class="ListThuVien">
+                                <a title="Hình trong game" href="/thu-vien/danh-sach.hinh-trong-game.html">
+                                <img class="HinhTrongGame" width="100" height="74" src="http://img.zing.vn/gn/skin/gunny-072012/images/hinh-trong-game.jpg">
+                                </a>
+                                
+                                <a title="Hình nền" href="/thu-vien/danh-sach.hinh-nen.html">
+                                <img class="HinhNen" width="100" height="74" src="http://img.zing.vn/gn/skin/gunny-072012/images/hinh-nen.jpg">
+                                </a>
+                                <a target="_blank" title="Clip" href="http://www.youtube.com/user/GunnyChannel">
+                                <img width="214" height="117" src="http://img.zing.vn/gn/skin/gunny-072012/images/clip-video.jpg">
+                                </a>
+                                <a target="_blank" title="Clip" href="http://www.youtube.com/user/GunnyChannel">
+                                <img width="214" height="117" src="http://img.zing.vn/gn/skin/gunny-072012/images/clip-video.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        
+                                  
 					</div>
 					<!--end sidebar 2-->
 				</div>

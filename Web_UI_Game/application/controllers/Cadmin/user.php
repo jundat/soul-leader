@@ -58,12 +58,8 @@ class User extends CI_Controller{
     //---- Thêm user
     function add()
     {
-        $this->form_validation->set_rules("full_name","Full name","required|min_length[6]");
         $this->form_validation->set_rules("username","Username","required|max_length[25]|callback_checkUser");
-        $this->form_validation->set_rules("password","Password","required|matches[repassword]");
-        $this->form_validation->set_rules("email","Email","required|valid_email|callback_checkEmail");
-        $this->form_validation->set_rules("address","Address","required");
-        $this->form_validation->set_rules("phone","Phone number","required|callback_validPhone");
+        $this->form_validation->set_rules("password","Password","required|matches[repassword]");        
         $this->form_validation->set_rules("gender","Gender","required");
         
         $data['error'] = "";
@@ -75,17 +71,14 @@ class User extends CI_Controller{
         {
                 $salt = create_random_string(5);
                 $add = array(
-                        "full_name" => $this->input->post("full_name"),
+                       
                         "username"  => $this->input->post("username"),
-                        "salt"      => $salt,
+                       
                         "password"  => md5($this->input->post("password")),
-                        "email"     => $this->input->post("email"),
-                        "address"   => $this->input->post("address"),
-                        "phone"   => $this->input->post("phone"),
+                       
                         "level"     => $_POST['level'],
                         "gender"    => $_POST['gender'],
-                        "add_date"  => date("Y-m-d H:i:s"),
-                        "active"    => 0, // chua kich hoat
+                       
                 );
                 
                 //--- Gui mail kich hoat neu add thanh cong
@@ -129,12 +122,10 @@ class User extends CI_Controller{
             
             if(isset($_POST['ok']))
             {
-                $this->form_validation->set_rules("full_name","Full name","required|min_length[6]");
+               
                 $this->form_validation->set_rules("username","Username","required|max_length[25]|callback_checkUser");
                 $this->form_validation->set_rules("password","Password","matches[repassword]");
-                $this->form_validation->set_rules("email","Email","required|valid_email|callback_checkEmail");
-                $this->form_validation->set_rules("address","Address","required");
-                $this->form_validation->set_rules("phone","Phone number","required|callback_validPhone");
+               
                 $this->form_validation->set_rules("gender","Gender","required");
 
                 $data['error'] = "";
@@ -145,14 +136,11 @@ class User extends CI_Controller{
                 }else{
                     
                       $update = array(
-                                    "full_name" => $this->input->post("full_name"),
+                                    
                                     "username"  => $this->input->post("username"),
-                                    "email"     => $this->input->post("email"),
-                                    "address"   => $this->input->post("address"),
-                                    "phone"     => $this->input->post("phone"),
+                                    
                                     "level"     => $_POST['level'],
-                                    "gender"    => $_POST['gender'],
-                                    "update_date"  => date("Y-m-d H:i:s"),
+                                    "gender"    => $_POST['gender']
                                  );
                       if($this->input->post("password")!="")
                       {
@@ -219,26 +207,7 @@ class User extends CI_Controller{
         }
     }
 
-    function validPhone($phone){
-        /*
-         *  S? h?p l? :
-            -   084.08.37610471 : true
-            -  (084).(08).37610471 : true
-            -  (084.08).7610471 : false
-         *
-         * 
-         */
-        $rule1="^[0-9]{3}\.[0-9]{2}\.[0-9]{8}$";
-        $rule2="^\([0-9]{3}\)\.\([0-9]{2}\)\.[0-9]{8}$";
-        if(eregi($rule1,$phone) || eregi($rule2,$phone) ){
-                return TRUE;
-        }
-        else{
-                $error = "The phone numser is not avaliable ! It's must be 084.08.37610475 or (084).(08).37610475 or (084.08).7610475";
-                $this->form_validation->set_message("validPhone",$error);
-                return FALSE;
-        }
-    }
+   
     
 }
 ?>

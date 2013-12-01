@@ -17,6 +17,14 @@ class Mhome extends CI_Model{
         return $query->result_array();
     }
     
+    // 
+    function get_article($article_id){
+		$this->db->where('news_id', $article_id);
+		$this->db->where('news_del', 0);		
+		$query = $this->db->get('news');
+		return $query->row_array();
+	}
+    
     // lay tong so tin tuc
     function get_total_rows_news() {
         $this->db->select('news_id');
@@ -37,7 +45,7 @@ class Mhome extends CI_Model{
     function get_last_news(){
         $this->db->where('news_del', 0);
         $this->db->order_by('news_post', 'desc');
-        $this->db->limit(2);
+        $this->db->limit(3);
         $query = $this->db->get('news');
         return $query->result_array();
     }

@@ -69,6 +69,14 @@ html>body .Wrapper
 	margin:0 auto;
 }
 
+#wrapperLogin
+{
+	width:100%;
+	overflow:hidden;
+	background:url(../images/bg-wrapper.jpg) no-repeat center top;
+	margin:0 auto;
+}
+
 #container
 {
 	width:1000px;
@@ -372,6 +380,7 @@ a.HuongDan:hover
 	display:block;
 	text-indent:-9999px;
 }
+
 
 .DangNhap .Content
 {
@@ -1924,7 +1933,7 @@ ul#nav li.Active ul li.Hilite a.NoLine:link,ul#nav li.Active ul li.Hilite a.NoLi
 .BlockSuKien
 {
 	margin-bottom:0;
-	height:280px;
+	height:320px;
 	display:block;
 }
 
@@ -2289,7 +2298,7 @@ ul.SocialNav li a.FB:hover,ul.SocialNav li.Active a.FB:link,ul.SocialNav li.Acti
 .BlockSuKienNgay
 {
 	width:220px;
-	height:128px;
+	height:150px;
 	margin:10px 0 0;
 }
 
@@ -2304,7 +2313,7 @@ ul.SocialNav li a.FB:hover,ul.SocialNav li.Active a.FB:link,ul.SocialNav li.Acti
 .BlockSuKienNgay ul.ListEvent
 {
 	float:left;
-	height:90px;
+	height:120px;
 	overflow:hidden;
 	width:220px;
 }
@@ -2518,7 +2527,7 @@ ul.SocialNav li a.FB:hover,ul.SocialNav li.Active a.FB:link,ul.SocialNav li.Acti
 .BlockNews ul.ListNews li .DetailNews
 {
 	width:410px;
-	height:62px;
+	height:48px;
 	overflow:hidden;
 	margin-left:2px;
 	padding-top:1px;
@@ -2528,15 +2537,15 @@ ul.SocialNav li a.FB:hover,ul.SocialNav li.Active a.FB:link,ul.SocialNav li.Acti
 .BlockNews ul.ListNews li .DetailNews .Images
 {
 	float:left;
-	width:114px;
-	height:62px;
+	width:100px;
+	height:45px;
 	overflow:hidden;
 }
 
 .BlockNews ul.ListNews li .DetailNews .Images a
 {
 	width:100px;
-	height:58px;
+	height:45px;
 	display:block;
 	background:0;
 	border:1px solid #a38f6a;

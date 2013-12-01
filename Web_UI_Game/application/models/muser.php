@@ -30,17 +30,7 @@ class muser extends CI_Model{
             return FALSE;    
     }
     
-    // Lay thong tin qua email
-    function getInfoByEmail($email) {
-        $this->db->where("email", $email);
-        $query = $this->db->get($this->_table);
-        if($query)
-            return $query->row_array();
-        else
-            return FALSE;      
-    
-    }
-    
+       
     // Them user moi
     function addUser($data) {
         if($this->db->insert($this->_table, $data))
@@ -80,61 +70,6 @@ class muser extends CI_Model{
         }
         else{//user for add
             $this->db->where("username", $username);
-            $query = $this->db->get($this->_table);
-        }
-        
-        if($query->num_rows() != 0){
-            return FALSE;
-        }else{
-            return TRUE;
-        }
-    
-    }
-    
-    // da kich hoat
-    function actived($userid) {
-        $this->db->select("userid, active");
-        $this->db->where("userid", $userid);
-        $query = $this->db->get($this->_table);
-        $info = $query->row_array();
-        if($info){
-            if($info['active'] == 1)
-                return TRUE;
-            else 
-                return FALSE;
-         
-        }
-        else{
-            return FALSE;
-        }    
-    }
-    
-    // kiem tra userid va key
-    function checkActive($userid, $key) {
-        if($userid != "" && $key != ""){
-            $this->db->where("userid", $userid);
-            $this->db->where("md5(salf)", $key);
-            $query = $this->db->get($this->_table);
-            if($query->num_rows() != 0){
-                return $query->row_array();
-            }else{
-                return FALSE;
-            }
-        }else{
-            return FALSE;
-        }    
-    }
-    
-    // kiem tra email
-    function checkEmail($email, $id="") {
-        if(isset($id) && $id != ""){
-            //use for update
-            $this->db->where("email", $email);
-            $this->db->where("userid != ", $id);
-            $query = $this->db->get($this->_table);
-        }else{
-            //use for add
-            $this->db->where("email", $email);
             $query = $this->db->get($this->_table);
         }
         

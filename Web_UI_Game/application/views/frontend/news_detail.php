@@ -30,7 +30,7 @@
                 <p style="padding: 0 20px 0 0;
                     font-size: 14px; font-weight: bold;
                     font-style: italic;
-                    text-align: right;">Ngu?n Internet</p>
+                    text-align: right;">Ngu·ªìn Internet</p>
                 
             </div>
            <!-- end: content -->
@@ -39,11 +39,11 @@
            <!-- end: news-share -->
            <!-- start: news-share -->
            <div class="news-relatedpost">
-            <h1>C·c tin kh·c:</h1>
+            <h1>Tin T·ª©c kh√°c:</h1>
             <?php 
                 foreach ($news as $new) {
                     if($new['news_id'] != $article['news_id']){
-                        echo '<ul><li><a href="'.$frontend.'new_detail/'.$new['news_id'].'">'.$new['new_daily_name'].'</a></li></ul>';
+                        echo '<ul><li><a href="'.$frontend.'new_detail/'.$new['news_id'].'">'.$new['news_name'].'</a></li></ul>';
                     }
                 
                 } 
