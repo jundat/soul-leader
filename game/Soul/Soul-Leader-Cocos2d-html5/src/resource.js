@@ -18,6 +18,13 @@ var s_tExplosion = "res/xvn/explosion.png";
 var s_tPowerBar2 = "res/xvn/red_power_bar.png";
 var s_tPowerBar = "res/xvn/blue_power_bar.png"
 var s_tHealthBar = "res/xvn/green_health_bar.png";
+var s_wep1 = "res/xvn/icon_ball_blue_press.png";
+var s_wep2 = "res/xvn/icon_ball_blue.png";
+var s_wep3 = "res/xvn/icon_bullet_press.png";
+var s_wep4 = "res/xvn/icon_bullet.png";
+
+var s_avatarMale = "res/xvn/big_boy_avatar.png";
+var s_avatarFemale = "res/xvn/big_girl_avatar.png";
 
 var g_resources = [
 
@@ -40,8 +47,10 @@ var g_resources = [
     //image
     { src: s_HelloWorld },
     { src: s_CloseNormal },
-    { src: s_CloseSelected }
+    { src: s_CloseSelected },
 
+    { src: s_avatarMale },
+    { src: s_avatarFemale }
     //plist
 
     //fnt

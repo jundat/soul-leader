@@ -20,6 +20,11 @@ var CPlayer = cc.Sprite.extend({
         var dx = targetX - this.getPosition().x;
         var dy = targetY - this.getPosition().y;
         this.m_fAngle = Math.atan2(dy, dx);
+        Log("angle" + this.m_fAngle);
+        if (GisFirst)
+            this.m_fAngle = 45;
+        else
+            this.m_fAngle = 45;
         var distance = Math.sqrt(dx * dx + dy * dy);
         var dirX = Math.cos(this.m_fAngle);
         var dirY = Math.sin(this.m_fAngle);
@@ -30,13 +35,13 @@ var CPlayer = cc.Sprite.extend({
 
         this.m_ball.setVisible(true);
         this.m_ball.set(startX, startY, dirX, dirY, distance, power);
-        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
+        /*var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
         var initSprite = cc.CallFunc.create(
         function () {
             this.initWithFile(s_tPlayer);
         },
         this);
-        this.runAction(cc.Sequence.create(animate, initSprite));
+        this.runAction(cc.Sequence.create(animate, initSprite));*/
     },
 
     updateCollision: function (m_computerBall) {
@@ -74,13 +79,13 @@ var CPlayer = cc.Sprite.extend({
             this.m_iHP -= m_computerBall.m_fDam;
             if (this.m_iHP <= 0)
                 this.m_iHP = 0;
-            var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
+            /*var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/Ball/Player.plist", "Ball_", 4, 0.1);
             var initSprite = cc.CallFunc.create(
             function () {
                 this.initWithFile(s_tPlayer);
             },
             this);
-            this.runAction(cc.Sequence.create(animate, initSprite));
+            this.runAction(cc.Sequence.create(animate, initSprite));*/
         }
     }
 });

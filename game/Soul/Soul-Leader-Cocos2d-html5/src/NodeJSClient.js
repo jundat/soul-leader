@@ -14,7 +14,8 @@ function NodeJSClient(parent) {
 
     //username of this user
     this.username = 'user' + Math.floor(Math.random() * 1000);
-
+    this.gender = "male";
+    
     /*
         {
             username: username,
@@ -24,7 +25,11 @@ function NodeJSClient(parent) {
         }
     */
     this.user = null;
-
+    this.opponent =
+        {
+            username: "player2",
+            gender: "female",
+        }
 
     /*
         {
@@ -327,18 +332,29 @@ function NodeJSClient(parent) {
 
         //check your turn
         if (NODE_CLIENT.username == data.players[data.turn].username) {
+            NODE_CLIENT.parent.menuItem1.setPosition(cc.p(110, 668 - 630));
+            NODE_CLIENT.parent.menuItem2.setPosition(cc.p(190, 668 - 630));
             NODE_CLIENT.parent.m_eTurn = 0; //you first
             alert('Your play first :)');
             NODE_CLIENT.isPlayFirst = true;
+            GisFirst = true;
         } else {
+            NODE_CLIENT.parent.menuItem1.setPosition(cc.p(1180, 668 - 630));
+            NODE_CLIENT.parent.menuItem2.setPosition(cc.p(1260, 668 - 630));
             NODE_CLIENT.parent.m_eTurn = 1; //other first
             NODE_CLIENT.parent.m_computer.setPosition(cc.p(PLAYER_LEFT.x, PLAYER_LEFT.y));
             NODE_CLIENT.parent.m_player.setPosition(cc.p(PLAYER_RIGHT.x, PLAYER_RIGHT.y));
             NODE_CLIENT.parent.m_computer.setRotationY(180);
             NODE_CLIENT.parent.m_player.setRotationY(180);
 
+            NODE_CLIENT.parent.m_sHealthBar2.setPosition(cc.p(250 - 100, 668 - 25));
+            NODE_CLIENT.parent.m_sHealthBar1.setPosition(cc.p(1116 - 100, 668 - 25));
+            NODE_CLIENT.parent.m_lPoint2.setPosition(cc.p(250 - 30, 600));
+            NODE_CLIENT.parent.m_lPoint1.setPosition(cc.p(1145, 600));
             alert('You play second :(');
             NODE_CLIENT.isPlayFirst = false;
+            GisFirst = false;
+
         }
     }
 
