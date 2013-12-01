@@ -18,25 +18,22 @@
 
 </head>
 <body >
-	
-<div id="wrapper">
+
+</div>	
+<div id="wrapper-sub">
     <div id="container">
-        <a class="NguoiChoiMoi" href="#" >Choi m?i</a>
+        <a class="NguoiChoiMoi" href="#" >Choi m·ªõi</a>
 			
 			<!-- Begin block download_download -->  
-			<h1><a href="#">Trang ch?</a></h1>
-			<div id="download">soul-leader
-				<a href="<?php echo base_url(); ?>Chome/user" class="PlayNow" id="typePlayNow" >Choi ngay</a>
-				<a href="<?php echo base_url(); ?>Chome/user/register" class="Register2" id="ppregister_link">–ang k˝</a>
-				<a href="#" class="Pay notTrack">N?p th?</a>
+			<h1><a href="#">Trang ch·ªß</a></h1>
+			<div id="download">
+				<a href="<?php echo base_url(); ?>Chome/user" class="PlayNow" id="typePlayNow" >Ch∆°i ngay</a>
+				<a href="<?php echo base_url(); ?>Chome/user/register" class="Register2" id="ppregister_link">√êƒÉng k√Ω</a>
+				<a href="#" class="Pay notTrack">N·∫°p Th·∫ª</a>
 			</div>
 			<!-- End block download_download -->
 			
-			<div class="ShowNhanVat"> 
-				<a href="#" id="linkVuKhi"> 
-					<img src="images/super-boomerang.png" id="show-img">
-				</a>
-			</div>
+			
 			<div class="DangNhap Home fixPNG">
 				<div class="Content">
 					<div class="FrmDN">
@@ -53,7 +50,7 @@
 					
 					</div>
 					<ul class="Link">
-						<li><a href="<?php echo base_url() ?>Chome/user/fg_password" class="notTrack">QuÍn m?t kh?u</a></li>
+						<li><a href="<?php echo base_url() ?>Chome/user/fg_password" class="notTrack">Qu√™n m·∫≠t kh·∫©u</a></li>
 					</ul>
 				</div>
 			</div>
@@ -65,124 +62,93 @@
 		  
 	    </div>
         <!-- end: menu -->
-        <!-- start: slideshow -->
-        <div id="slideshow">
+        
+        <!-- Box EVENT -->
+        <div id="boxEvent">
         </div>
-        <!-- end: slideshow -->
-        <div class="clear"></div>
+        
+        <!-- HEADER -->
+        <div id="header">
+        </div>
+        <!-- HEADER -->       
+       
         
         <!-- start: content -->
-        <div id="main">
-			
-				<!--sidebar-->
-				<div id="sidebar">
-					<!-- Begin block banner-event-variation-2_banner-event -->
-					<div id="boxEvent"> 
-						<ul id="img">
-							<li class="ActiveBanner" style="opacity: 1;">
-								<a href="#" >
-									<img src="<?php echo base_url(); ?>public/frontend/images/VuaPhaLuoi.jpg" height="200" width="210" alt="Vua ph· lu?i">
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- End block banner-event-variation-2_banner-event -->
-				</div>
-				<!--end sidebar-->
-				
-				<!--mainContent-->
-				<div id="mainContent">
-					<div id="insideMainContent">
-                    
-                            <div id="feature-post">
-                            
-                            </div>
-                            <div class="clear"></div>
-                                <div id="article">
-                                    <div id="article-content">
-                                    <div class="breadcrumb">		
-                    				 You are here:&nbsp;&nbsp;  Home&nbsp;>>&nbsp;<?php echo $content ;?>
-                    			    </div>    
-                                    	     
-                            		  <?php $this->load->view('frontend/'.$content) ;?>     	       
-                                    
-                                    
-                                    </div>
-                                 <!-- Start: sidebar -->
-                                    <div id="sidebar">
-                                        <?php $this->load->view('frontend/sidebar');?>
-                                    </div>
-                            <!-- end: sidebar -->
-                                </div>
-                                
-                            
+        <div id="wrapperMain" class="fixPNG">        
+			<div id="main">
+                <div class="MainTop">
+                    <!--sidebar-->
+    				<div id="sidebar">
+    					<div class="SidebarContent fixPNG">
+                            <a class="HuongDan fixPNG" title="H∆∞·ªõng d·∫´n ng∆∞·ªùi ch∆°i m·ªõi" target="_blank" onclick="_gaq.push(['_trackEvent','Huongdan', 'Button Image', 'Subpage']);" href="http://gunny.zing.vn/huong-dan/mam-non.html">H∆∞·ªõng d·∫´n </a>
                         </div>
                         
-                        
-						
-					
-					
-					<!--sidebar 2-->
-					<div id="sidebarContent">
-						<ul class="WoW">
-                            <li class="">
-                                <a class="LongThuong" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/long-thuong-chien.png" title="Long Thuong Chi?n" href="http://gunny.zing.vn/huong-dan/vu-khi.html#thuong">Long Thuong chi?n </a>
-                            </li>
-                            <li>
-                                <a class="Bua" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/bua-Minotaure.png" title="B˙a" href="http://gunny.zing.vn/huong-dan/vu-khi.html#bua">B˙a </a>
-                            </li>
-                            <li class="">
-                                <a class="SBoomerang" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/super-boomerang.png" title="Super Boomerang" href="http://gunny.zing.vn/huong-dan/vu-khi.html#boomerang">Super Boomerang </a>
-                            </li>
-                            <li class="">
-                                <a class="LuuDan" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-luu-dan.png" title="WoW L?u d?n" href="http://gunny.zing.vn/huong-dan/vu-khi.html#dan">WoW L?u d?n </a>
+                        <div class="SidebarTop">
+                            <h2 class="TitleTinTuc fixPNG">Tin t·ª©c</h2>
+                        </div>
+    					
+                        <ul id="sidenav-menu">
+                            <li class="Hilite Active">
+                                <a title="Tin t·ª©c" href="<?php echo $frontend ?>news">Tin t·ª©c</a>
                             </li>
                             
-                            <li class="">
-                                <a class="LuGach" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-lu-gach.png" title="WoW Lu g?ch" href="http://gunny.zing.vn/huong-dan/vu-khi.html#gach">WoW Lu g?ch </a>
-                            </li>
-                            <li class="Active">
-                                <a class="SamSet" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-sam-set.png" title="WoW S?m sÈt" href="http://gunny.zing.vn/huong-dan/vu-khi.html#sam">WoW S?m sÈt </a>
-                            </li>
-                            <li class="">
-                                <a class="Phao" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-phao.png" title="Wow ph·o" href="http://gunny.zing.vn/huong-dan/vu-khi.html#phao">WoW ph·o </a>
-                            </li>
                             <li>
-                                <a class="PhiTieu" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/wow-phi-tieu.png" title="WoW Phi tiÍu" href="http://gunny.zing.vn/huong-dan/vu-khi.html#phi">WoW Phi tiÍu </a>
+                                <a title="S·ª± ki·ªán" href="<?php echo $frontend ?>news">S·ª± ki·ªán</a>
                             </li>
-                            <li class="">
-                                <a class="TuThuoc" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/karaoke.png" title="WoW Karaoke" href="http://gunny.zing.vn/huong-dan/vu-khi.html#karaoke">WoW Karaoke</a>
-                            </li>
-                            <li class="">
-                                <a class="TraiCay" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/kem.png" title="WoW Kem" href="http://gunny.zing.vn/huong-dan/vu-khi.html#kem">WoW Kem</a>
-                            </li>
-                            <li>
-                                <a class="Tivi" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/xehoi.png" title="WoW Xe hoi" href="http://gunny.zing.vn/huong-dan/vu-khi.html#xehoi">WoW Xe hoi</a>
-                            </li>
-                            <li>
-                                <a class=" NotScroll VuKhi" rel="http://img.zing.vn/gn/skin/gunny-072012/images/nhan-vat/sungnuoc.png" title="WoW S˙ng nu?c" href="http://gunny.zing.vn/huong-dan/vu-khi.html#sungnuoc">WoW S˙ng nu?c</a>
-                            </li>
-							<img src="images/vu-khi-hover.jpg">
-						</ul>
-                        
-                        <ul class="BlockTN">
-                            <li>
-                            <a class="ThuCung" title="Th˙ cung" href="http://gunny.zing.vn/huong-dan/thu-cung.html">Th˙ cung</a>
-                            </li>
-                            <li>
-                            <a class="ChauBau" title="Ch‚u b·u" href="http://gunny.zing.vn/su-kien/mini/phien-ban-moi-chau-bau-than-ga.bai-viet.543.html">Ch‚u b·u</a>
-                            </li>
-                            <li>
-                            <a class="BoTrangBi" title="B? trang b?" href="http://gunny.zing.vn/su-kien/mini/cac-set-trang-bi-cua-gunny.bai-viet.569.html">B? trang b?</a>
-                            </li>
-                            <li>
-                            <a class="TinhNang" title="TÌnh nang kh·c" href="http://gunny.zing.vn/huong-dan/me-cung.html">TÌnh nang kh·c</a>
-                            </li>
-                            </ul>
-					</div>
-					<!--end sidebar 2-->
-				</div>
+                            
+                            <div class="SearchSub">
+                                <div class="TimKiem Tim2">
+                                    <h2 class="TitleTimKiem">T√¨m ki·∫øm</h2>
+                                    <form method="get" action="/tim-kiem1/search.html">
+                                    <input id="Keyword" class="BgTextbox" type="text" value="Th√¥ng tin t√¨m ki·∫øm" name="Keyword">
+                                    <input id="search" class="SearchBtn" type="submit" value="T√¨m" name="search">
+                                    </form>
+                                </div>
+                            </div>
+                        </ul>
+    				</div>
+    				<!--end sidebar-->
+				
+    				<!--mainContentSUB-->
+    				<div id="mainContentSub">
+                        <div id="static">
+                            <div class="StaticTopPanel">
+                                <h2 class="TitleMain">Tin t·ª©c</h2>
+                                <p id="breadcrumbs">
+                                    <a title="Trang ch·ªß" href="<?php echo base_url(); ?>">Trang ch·ªß</a>
+                                    > Tin t·ª©c & S·ª± ki·ªán >
+                                    <span>Tin t·ª©c</span>
+                                </p>
+                            </div>
+                            
+                                                       
+                            <div class="StaticOuter">
+                                <div class="StaticInner">
+                                    <div class="StaticMain">
+                                        
+                                        <div class="PagingWrapper">
+                                        
+                                        </div>
+                                        <div id="article-content">
+                                            <!--<div class="breadcrumb">		
+                            				 You are here:&nbsp;&nbsp;  Home&nbsp;>>&nbsp;<?php echo $content ;?>
+                            			    </div>    
+                                        	    --!> 
+                                		      <?php $this->load->view('frontend/'.$content) ;?>      
+                                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            
+                        </div>
+    					
+    				</div>
 				<!--end mainContent-->
+                </div>
+                
+                </div>
+				
 			</div>
         
         <!-- end: content -->
