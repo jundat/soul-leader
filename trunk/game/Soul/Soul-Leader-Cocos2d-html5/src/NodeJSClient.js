@@ -110,6 +110,11 @@ function NodeJSClient(parent) {
     }
 
     //Get user's infomation
+    /*
+    {
+        username: username
+    }
+    */
     this.GetUser = function () {
         this.socket.emit('GetUser', {
             username: this.username
@@ -267,6 +272,18 @@ function NodeJSClient(parent) {
 
 
     //GetUser
+    /*
+    Return:
+    {
+        username: username,
+        password: password,
+        gender: gender,
+        coin: coin,
+        state: 'offline',
+        playingMatch: null,
+        socketId: 'socket85859'
+    }
+    */
     this._get_user = function (data) {
         Log(data);
     }
