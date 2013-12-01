@@ -1,0 +1,233 @@
+
+/*------------------------------------------------------    
+                     Common
+--------------------------------------------------------*/  
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:Arial,sans-serif;
+}
+
+.clear {clear: both;}
+
+#header {
+    height: 189px;
+    width: 100%;   
+}
+
+#menu {
+    padding:0px;
+    margin:0px;
+    clear: both; 
+    background: #8B4513;
+}
+
+#content{margin: 10px;}
+
+#footer{margin-top: 10px;color: #FFE4B5;  padding-left: 300px; background:#8B4513 ;  }
+
+/*------------------------------------------------------    
+                     Header
+--------------------------------------------------------*/
+
+#header .timer {
+    font-size: 10px;
+    color:#0b476d;
+    text-align: right;
+    font-weight: bold;
+    padding: 6px 5px 0px 0px;
+}
+
+#header .logo_text .logo {
+    padding:5px 0px 0px 30px;
+    width: 140px;
+    float: left;
+}
+
+.text { padding:40px 0px 0px 0px;
+    width: 830px;    
+    float: right;
+}
+
+.big_text{
+    font-weight:  bold;
+    text-transform:  uppercase;
+    color: #06507e;
+    font-size: 18px; 
+    padding-bottom: 10px;
+}
+
+#header .text .user_area {
+    text-align: right;
+    padding: 0px 10px 0px 0px;    
+}
+
+#header .text .user_area a{
+    color: #0a4077;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#header .text .user_area a:hover {
+    color: #db7109;
+}
+
+/*------------------------------------------------------    
+                Menu
+--------------------------------------------------------*/
+
+#menu .menu_container {
+    height: 48px;
+    width: 100%;    
+}
+
+#menu .menu_container ul {
+    list-style: none;
+    float: left;
+    line-height: 20px;
+}
+
+#menu .menu_container ul li {
+    display: inline;
+    float: left;
+    position: relative;
+    height: 48px;
+}
+
+#menu .menu_container ul li ul li a {
+    color: #084369;    
+}
+
+#menu .menu_container ul li a{
+    display: block;
+    float: left;
+    padding: 0px 20px;
+    height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 1px 4px #32373a;
+}
+
+#menu .menu_container ul li a:hover {
+    color:yellow;    
+}
+
+/*------------------------------------------------------    
+                Default_Content
+--------------------------------------------------------*/  
+
+.admin_item {
+    padding: 10px;
+    min-height: 500px;
+    width: 98%;
+    text-align: center;
+    padding-top:0px;
+}
+
+.item {
+    text-align:  center;
+    height: 200px;
+    width: 120px;
+    float: left;
+    padding: 20px;
+    padding-left:90px;
+}
+
+.item p a {
+    text-decoration: none;
+    color: #06507E;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------    
+                    Product_Content & remove,edit,add product page 
+                    Article_Content
+--------------------------------------------------------*/  
+
+
+.user_item {
+    margin:15px 15px 0px ;  
+    height: 30px;
+    width: 18%;
+    float: right;
+    text-align:  right;
+}
+
+.control {
+    right: 10px;
+    width: 80px;
+    float: left;
+    text-align: center;
+}
+
+.control a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #06507E;
+    text-align: center;
+    font-weight: bold;
+}
+.show_user {
+    text-align: left;
+    clear: both;
+}
+
+
+#group{height: 100px;  }
+#message{float: left; width: 400px; height: 80px; margin-left:250px; padding: 10px}
+#table_admin{ border: 1px solid  #0C4A75; color: #0C4A75;  background: #FEFBEC; padding: 5px; width: 950px}
+
+.product{border-top: 1px solid  #0C4A75;  padding: 5px ; }
+.description{width: 50px}
+.post{width: 100px}
+.name{width: 80px}
+.label{font-size: 11px}
+#message_product{ float:left; margin:40px 0px 0px 350px; font-size:20px;font-weight: bold; color: red}
+#textarea1{position: absolute; right: 10px; top: 120px}
+#textarea2{position: absolute; right: 10px; top: 220px}
+.textarea1{position: absolute; right: 10px; top: -10px}
+.textarea2{position: absolute; right: 10px; top: 100px}
+.hai_gio_dem{border: 2px solid #0C4A75; margin: 50px 20px 20px 20px; padding: 10px; height: 400px; background: #FEFBEC; color: #0C4A75; border-radius:7px}
+#hai_gio_dem{border: 2px solid #0C4A75; margin: 50px 20px 20px 20px; padding: 10px; height: 450px; background: #FEFBEC; color: #0C4A75; border-radius:7px}
+.form{ padding: 10px; position: relative;height: 400px}
+.back{margin-left: 100px; color: black ; text-decoration: none; border: 1px solid #0C4A75; border-radius: 4px; background: #FCFCFB; }
+.back:hover{color: red; }
+.textlabel{margin-left: 50px}
+.textname{margin-left: 47px}
+.textcate{margin-left: 36px}
+.textimage{margin-left:102px}
+.textprice{margin-left: 108px}
+.select_cat{margin-left: 80px}
+#select_cat{margin-left: 0px}
+.image_edit{position: absolute; right: 118px; top: -40px; width:240px; height:160px;border: 5px solid red ; border-radius: 20px  }
+
+
+/*------------------------------------------------------    
+                Categories_Content
+--------------------------------------------------------*/
+
+#showcate{margin: -10px; height: 400px; padding: 80px; color: #0C4A75;  background: #FEFBEC}
+#cate_left{float: left; }
+#cate_right{float: left;margin-left: 40px; height: 300px;width: 500px}
+#editcate, #addcate{margin-top:10px; border: 1px solid; padding: 10px}
+#message_cate{font-weight: bold; text-align: center;color: red}
+
+/*------------------------------------------------------    
+                Article_Content
+--------------------------------------------------------*/  
+
+.a_content{width: 200px}
+.a_title{width: 150px}
+.a_post{width: 100px}
+.a_view{width:40px}
+.a_like{width:40px}
+.article{padding: 7px}
+.a_edit{width: 50px}
+#add_article{border: 2px solid #0C4A75; margin: 50px 20px 20px 20px; padding: 10px; height: 730px; background: #FEFBEC; color: #0C4A75; }
+#edit_article{border: 2px solid #0C4A75; margin: 50px 20px 20px 20px; padding: 10px; height: 930px; background: #FEFBEC; color: #0C4A75; }
+        
