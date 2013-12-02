@@ -65,17 +65,11 @@ html>body .Wrapper
 {
 	width:100%;
 	overflow:hidden;
-	background:url(../images/bg-header.jpg) no-repeat center top;
+	background:url(../images/bg-header2.jpg) no-repeat center top;
 	margin:0 auto;
 }
 
-#wrapperLogin
-{
-	width:100%;
-	overflow:hidden;
-	background:url(../images/bg-wrapper.jpg) no-repeat center top;
-	margin:0 auto;
-}
+
 
 #container
 {
@@ -86,7 +80,7 @@ html>body .Wrapper
 
 #container h1
 {
-	background:url(../images/logo.png) no-repeat;
+	background:url(../images/logo2.png) no-repeat;
 	position:absolute;
 	z-index:700;
 	left:380px;

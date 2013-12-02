@@ -1,12 +1,11 @@
 @charset "utf-8";
 body {
-	background-color: #FFF;
-	font-family: Tahoma;
-	color: #2c2c2c;
-	font-size: 12px;
-	font-weight: bold;
-	background-image: url(images/admin_bg_containner.jpg);
-	background-repeat: repeat-x;
+    background: url("../images/bg-toploop.gif") repeat scroll 0 0 transparent;
+    color: #B9B0FF;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
 }
 
 label{
@@ -34,8 +33,7 @@ fieldset{
 	margin-left: auto;
 	background-color: #ff9900;
 }
-.button {
-}
+
 .error {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 12px;
@@ -49,6 +47,13 @@ fieldset{
     z-index: 100;
 }
 
+#wrapperLogin
+{
+	width:100%;
+	overflow:hidden;
+	background:url(../images/bg-wrapper.jpg) no-repeat center top;
+	margin:0 auto;
+}
 .WrapperOutContent{
     background: url("../images/bg-toploop.gif") repeat-y scroll 265px 0 transparent;
     
