@@ -6,7 +6,7 @@
                 </div> 
                 <div class="excerpt">
                     <div> 
-                        <h3><a href="'.$frontend.'news'.$new['news_id'].'">'.$new['news_name'].'</a></h3>                    
+                        <h3><a href="'.$frontend.'news_detail/'.$new['news_id'].'">'.$new['news_name'].'</a></h3>                    
                     </div>
                     <div class="post-info">'.$new['news_post'].'</div>
                     <div class="article-content">'.word_limiter(preg_replace('|<img(.*)src="(.*)"(.*)>|is','',$new['news_content']),20).'
