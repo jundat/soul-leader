@@ -15,7 +15,7 @@ len: 900
 file: hp_bar.png
 size: (1, 30)
 pos: 
-	LEFT (250, 668-25)
+	LEFT (150, 668-25)
 	RIGHT (1116, 668-25)
 len: 200
 
@@ -28,29 +28,28 @@ pos:
 	LEFT (74, 668-74)
 	RIGHT (1292, 668-74)
 
+-------------------------------
 4. Weapon
-Two type of weapon:
-- Ball_blue
-- Bullet
-File: 
-	Ball_blue.png (Big)
-	Bullet.png (Small)
-File icon hiển thị để chọn:
-	icon_ball_blue.png (64, 64)
-		icon_ball_blue_press.png
-	icon_bullet.png (64, 64)
-		icon_bullet_press.png
+LEFT
+	1: shit.png
+		(175, 93)
+	2: nokia.png
+		(250, 93)
+	3: keyboard.png
+		(175, 167)
+	4: monitor.png
+		(125, 167)
+RIGHT
+	1: shit.png
+		(1117, 93)
+	2: nokia.png
+		(1192, 93)
+	3: keyboard.png
+		(1117, 167)
+	4: monitor.png
+		(1192, 167)
 
-size: (64, 64)
-LEFT:
-	pos: 
-		(110, 668 - 630)
-		(190, 668 - 630)
-
-RIGHT:
-	pos:
-		(1180, 668-630)
-		(1260, 668-630)
+	
 
 --------------------------------------------------------------------------------
 ------------------------------------- NEW --------------------------------------

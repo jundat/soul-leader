@@ -29,7 +29,6 @@
             'src/Computer.js',
             
             'src/myApp.js'//add your own files in order here
-            
         ]
     };
 
@@ -70,3 +69,8 @@
         //else if single file specified, load singlefile
     });
 })();
+
+// //resize canvas
+// var mycanvas = document.getElementById("gameCanvas");
+// mycanvas.width = window.innerWidth;
+// mycanvas.height = window.innerHeight;

@@ -258,9 +258,7 @@ cc.GLProgram = cc.Class.extend({
         if (!source || !shader)
             return false;
 
-        //fix error in Chrome v31
-        //var preStr = (type == this._glContext.VERTEX_SHADER) ? "precision highp float;\n" : "precision mediump float;\n";
-        var preStr =  "precision highp float;\n";
+        var preStr = "precision highp float;\n";
 
         source = preStr
             + "uniform mat4 CC_PMatrix;         \n"
