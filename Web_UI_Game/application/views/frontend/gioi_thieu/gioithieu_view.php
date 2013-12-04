@@ -1,15 +1,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="shortcut icon" href="soul-leader/images/gioithieu/favicon.ico" type="image/x-icon" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta property="og:image" content="images/gioithieu/gunn bv y.jpg"/>
-    <meta property="og:image:secure_url" content="images/gioithieu/gunny.jpg" />
-    
     <title>
         Thông tin trò chơi - Giới thiệu Gunny 
     </title>
-    
-    <link href="../css/gioithieu.css" rel="stylesheet" type="text/css" />
+    <!--Load css cua page-->
+    <link href="public/frontend/css/gioithieu.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="wrapperOut">
@@ -19,7 +15,7 @@
             <!--Begin header-->
             <div id="header">		
                 <div class="HomePage">
-                    <a href="http://localhost/soul-leader/Web_UI_Game/home" title="Trang chủ Gunny" >&nbsp;</a>
+                    <a href="http://localhost/soul-leader/Web_UI_Game/home" title="Trang chủ" ></a>
                 </div>
             </div>
             <!-- End header -->
