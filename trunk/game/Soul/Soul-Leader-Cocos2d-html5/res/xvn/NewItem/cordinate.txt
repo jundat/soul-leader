@@ -8,7 +8,7 @@ LEFT
 	3: keyboard.png
 		(175, 167)
 	4: monitor.png
-		(125, 167)
+		(250, 167)
 RIGHT
 	1: shit.png
 		(1117, 93)
