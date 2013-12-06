@@ -2,6 +2,8 @@ var s_HelloWorld = "res/HelloWorld.png";
 var s_CloseNormal = "res/CloseNormal.png";
 var s_CloseSelected = "res/CloseSelected.png";
 var s_tBackground = "res/xvn/Background.png";
+var s_tMenuBackground = "res/xvn/Menu/_menu_review.png";
+
 var s_tPlayer = "res/xvn/Player.png";
 var s_tBallBlue = "res/xvn/Ball/Ball-blue.png";
 var s_tBallBlueSelected = "res/xvn/Ball/Ball-blue-Selected.png";
@@ -18,13 +20,21 @@ var s_tExplosion = "res/xvn/explosion.png";
 var s_tPowerBar2 = "res/xvn/red_power_bar.png";
 var s_tPowerBar = "res/xvn/blue_power_bar.png"
 var s_tHealthBar = "res/xvn/green_health_bar.png";
-var s_wep1 = "res/xvn/icon_ball_blue_press.png";
-var s_wep2 = "res/xvn/icon_ball_blue.png";
-var s_wep3 = "res/xvn/icon_bullet_press.png";
-var s_wep4 = "res/xvn/icon_bullet.png";
+var s_wep1 = "res/xvn/NewItem/shit.png";
+var s_wep2 = "res/xvn/NewItem/nokia.png";
+var s_wep3 = "res/xvn/NewItem/keyboard.png";
+var s_wep4 = "res/xvn/NewItem/monitor.png";
 
-var s_avatarMale = "res/xvn/big_boy_avatar.png";
-var s_avatarFemale = "res/xvn/big_girl_avatar.png";
+
+var s_tBall = "res/xvn/NewItem/unselected_item.png";
+var s_tBallSelected = "res/xvn/NewItem/selected_item.png";
+var s_pChar = "res/xvn/char.plist";
+
+var s_tPlay = "res/xvn/Menu/btnPlay.png";
+var s_tPlaySelected = "res/xvn/Menu/btnPlayPress.png";
+
+var s_tLose = "res/xvn/lose.png";
+var s_tWin = "res/xvn/win.png";
 
 var g_resources = [
 
@@ -49,8 +59,23 @@ var g_resources = [
     { src: s_CloseNormal },
     { src: s_CloseSelected },
 
-    { src: s_avatarMale },
-    { src: s_avatarFemale }
+    { src: s_tBall },
+    { src: s_tBallSelected },
+
+    { src: s_wep1 },
+    { src: s_wep2 },
+    { src: s_wep3 },
+    { src: s_wep4 },
+    { src: s_tMenuBackground },
+    {
+        src: s_pChar
+    },
+
+    { src: s_tPlay },
+    { src: s_tPlaySelected },
+
+    { src: s_tLose },
+    { src: s_tWin },
     //plist
 
     //fnt

@@ -15,7 +15,7 @@ var CBall = cc.Sprite.extend({
     m_height: 0,
     ctor: function () {
         this._super();
-        this.initWithFile(s_tBallBlue);
+        this.initWithFile(s_wep1);
         this.m_width = this.getBoundingBox().width;
         this.m_height = this.getBoundingBox().height;
         this.setVisible(false);
@@ -54,28 +54,28 @@ var CBall = cc.Sprite.extend({
         switch (type) {
             case Enum.EBall.Blue:
                 m_eType = type;
-                this.initWithFile(s_wep2);
+                this.initWithFile(s_wep1);
                 this.m_fDam = 1;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;
                 break;
             case Enum.EBall.Green:
                 m_eType = type;
-                this.initWithFile(s_wep4);
+                this.initWithFile(s_wep2);
                 this.m_fDam = 3;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;
                 break;
             case Enum.EBall.Red:
                 m_eType = type;
-                this.initWithFile(s_tBallRed);
+                this.initWithFile(s_wep3);
                 this.m_fDam = 3;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;
                 break;
             case Enum.EBall.Yellow:
                 m_eType = type;
-                this.initWithFile(s_tBallYellow);
+                this.initWithFile(s_wep4);
                 this.m_fDam = 4;
                 this.m_width = this.getBoundingBox().width;
                 this.m_height = this.getBoundingBox().height;

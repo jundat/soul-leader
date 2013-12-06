@@ -20,15 +20,14 @@ var CPlayer = cc.Sprite.extend({
         var dx = targetX - this.getPosition().x;
         var dy = targetY - this.getPosition().y;
         this.m_fAngle = Math.atan2(dy, dx);
-        Log("angle" + this.m_fAngle);
+        /*Log("angle" + this.m_fAngle);
         if (GisFirst)
-            this.m_fAngle = 45;
+            this.m_fAngle = 0.78;
         else
-            this.m_fAngle = 45;
+            this.m_fAngle = 2.35;*/
         var distance = Math.sqrt(dx * dx + dy * dy);
         var dirX = Math.cos(this.m_fAngle);
         var dirY = Math.sin(this.m_fAngle);
-
         var size = this.m_ball.getBoundingBox();
         var startX = this.getPosition().x + dirX * size.width * 2 ;
         var startY = this.getPosition().y + dirY * size.height * 2;
