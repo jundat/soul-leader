@@ -38,4 +38,4 @@ var cocos2dApp = cc.Application.extend({
 });
 
 
-var myApp = new cocos2dApp(MainGameScene);
+var myApp = new cocos2dApp(MenuScene);

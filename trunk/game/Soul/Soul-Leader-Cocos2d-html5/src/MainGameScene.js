@@ -16,6 +16,8 @@ Enum.EBall = {
 var MainGame = cc.LayerColor.extend({
     menuItem1: null,
     menuItem2: null,
+    menuItem3: null,
+    menuItem4: null,
     m_fPower: 0.0,
     isPower: false,
     _fMaxPower: 25,
@@ -30,16 +32,21 @@ var MainGame = cc.LayerColor.extend({
     m_computerBall: null,
     m_player: null,
     m_computer: null,
+    turnPlay : null,
 
-    m_playerAvatar: null,
-    m_computerAvatar: null,
-
-
+    isEndGame: false,
+    m_lose: null,
+    m_win: null,
     //End-Jundat
 
     //other player call to fire
     computerFire: function (data) {
         if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
+            /*if (GisFirst)
+                this.m_computer.fire(-1, 1, data.p);
+            else
+                this.m_computer.fire(1, 1, data.p);*/
+
             this.m_computer.fire(data.x, data.y, data.p);
             this.m_eTurn = 0;
         }
@@ -52,7 +59,10 @@ var MainGame = cc.LayerColor.extend({
     //when other player change his position
     changeComputerPosition: function (deltaX, deltaY) {
         //your code here
-        alert('Your opponent changes position');
+        //alert('Your opponent changes position');
+        var tempX = deltaX - this.m_computer.getPosition().x;
+        this.m_computer.setPosition(cc.p(deltaX, deltaY));
+        
     },
 
     //you change pos
@@ -74,6 +84,7 @@ var MainGame = cc.LayerColor.extend({
             }
         }
         this.m_player.setPosition(cc.p(bonusX, tempY));
+        this.nodeJSClient.ChangePosition(bonusX, tempY);
     },
 
 
@@ -114,6 +125,10 @@ var MainGame = cc.LayerColor.extend({
         this.m_player = new CPlayer();
         this.m_player.setPosition(cc.p(PLAYER_LEFT.x, PLAYER_LEFT.y));
         this.m_player.init(this.m_ball);
+
+        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/char.plist", "Stand1_", 3, 0.4);
+        this.m_player.runAction(cc.RepeatForever.create(animate));
+
         this.addChild(this.m_player);
 
         //computer
@@ -121,19 +136,30 @@ var MainGame = cc.LayerColor.extend({
         this.m_computer.setPosition(cc.p(PLAYER_RIGHT.x, PLAYER_RIGHT.y));
         this.m_computer.init(this.m_computerBall);
         this.m_computer.setScaleX(-1);
+        var animate = FactoryAnimate.getInstance().createAnimate("res/xvn/char.plist", "Stand2_", 3, 0.4);
+        this.m_computer.runAction(cc.RepeatForever.create(animate));
         this.addChild(this.m_computer);
+
+        this.m_computer.setRotationY(180);
+        this.m_player.setRotationY(0);
 
         //heal point player label
         this.m_lPoint1 = cc.LabelTTF.create(this.m_player.m_iHP.toString(), "Arial", 38);
-        this.m_lPoint1.setPosition(cc.p(250-30, 600));
-        this.m_lPoint1.setFontFillColor(new cc.Color3B(255, 0, 0))
+        this.m_lPoint1.setPosition(cc.p(335 + 130, 668 - 203));
+        this.m_lPoint1.setFontFillColor(new cc.Color3B(255, 0, 0));
         this.addChild(this.m_lPoint1);
 
         //heal point computer label
         this.m_lPoint2 = cc.LabelTTF.create(this.m_computer.m_iHP.toString(), "Arial", 38);
-        this.m_lPoint2.setPosition(cc.p(1145, 600));
-        this.m_lPoint2.setFontFillColor(new cc.Color3B(255, 0, 0))
+        this.m_lPoint2.setPosition(cc.p(811 + 90, 668 - 203));
+        this.m_lPoint2.setFontFillColor(new cc.Color3B(255, 0, 0));
         this.addChild(this.m_lPoint2);
+
+
+        this.turnPlay = cc.LabelTTF.create("", "Arial", 50);
+        this.turnPlay.setPosition(cc.p(size.width/2,size.height/2));
+        this.turnPlay.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.addChild(this.turnPlay);
 
         //power label
         //this.m_lPower = cc.LabelTTF.create(this.m_fPower.toString(), "Arial", 38);
@@ -151,7 +177,7 @@ var MainGame = cc.LayerColor.extend({
         this.menuSetting();
 
         //load plist        
-        //cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/Ball/Player.plist");
+        cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/char.plist");
         cc.SpriteFrameCache.getInstance().addSpriteFrames("res/xvn/explosion.plist");
         /*
         var _sBluePowerBar = cc.Sprite.create(s_tPowerBar);
@@ -194,6 +220,18 @@ var MainGame = cc.LayerColor.extend({
         this.menuItem1.setPosition(cc.p(110, 668 - 630));
         this.menuItem2.setPosition(cc.p(190, 668 - 630));
 
+
+        this.m_lose = cc.Sprite.create(s_tLose);
+        this.m_lose.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.m_lose.setAnchorPoint(cc.p(0.5, 0.5));
+        this.addChild(this.m_lose, 2);
+        this.m_win = cc.Sprite.create(s_tWin);
+        this.m_win.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.m_win.setAnchorPoint(cc.p(0.5, 0.5));
+        this.addChild(this.m_win, 2);
+        this.m_lose.setVisible(false);
+        this.m_win.setVisible(false);
+
         //NODE JS
         this.nodeJSClient = new NodeJSClient(this);
 
@@ -201,26 +239,8 @@ var MainGame = cc.LayerColor.extend({
             this.CreateRandomMatch();
         };
 
-        this.nodeJSClient.Connect('127.0.0.1', 5000);
-        //m_playerAvatar: null,
-        //m_computerAvatar: null,
-        if (this.nodeJSClient.gender == "male")
-        {
-            this.m_playerAvatar = cc.Sprite.create(s_avatarMale);
-        }
-        if (this.nodeJSClient.gender == "female")
-        {
-            this.m_computerAvatar = cc.Sprite.create(s_avatarFemale);
-        }
 
-        if (this.nodeJSClient.opponent.gender == "male")
-        {
-            this.m_playerAvatar = cc.Sprite.create(s_avatarMale);
-        }
-        if (this.nodeJSClient.opponent.gender == "female")
-        {
-            this.m_computerAvatar = cc.Sprite.create(s_avatarFemale);
-        }
+        this.nodeJSClient.Connect('127.0.0.1', 5000);
 
         //END - NODE JS
 
@@ -231,8 +251,8 @@ var MainGame = cc.LayerColor.extend({
 
     menuSetting: function () {
         this.menuItem1 = cc.MenuItemImage.create(
-            s_tBallBlue,
-            s_tBallBlueSelected,
+            s_tBall,
+            s_tBallSelected,
             function () {
                 Log("change ball type: " + Enum.EBall.Blue);
                 this.m_ball.changeBall(Enum.EBall.Blue);
@@ -240,39 +260,45 @@ var MainGame = cc.LayerColor.extend({
             },
             this);
         this.menuItem2 = cc.MenuItemImage.create(
-            s_tBallGreen,
-            s_tBallGreenSelected,
+            s_tBall,
+            s_tBallSelected,
             function () {
                 Log("change ball type: " + Enum.EBall.Green);
                 this.m_ball.changeBall(Enum.EBall.Green);
                 this.changePlayerBall(Enum.EBall.Green);
             },
             this);
-        /*var menuItem3 = cc.MenuItemImage.create(
-            s_tBallRed,
-            s_tBallRedSelected,
+        this.menuItem3 = cc.MenuItemImage.create(
+            s_tBall,
+            s_tBallSelected,
             function () {
                 Log("change ball type: " + Enum.EBall.Red);
                 this.m_ball.changeBall(Enum.EBall.Red);
                 this.changePlayerBall(Enum.EBall.Red);
             },
             this);
-        var menuItem4 = cc.MenuItemImage.create(
-            s_tBallYellow,
-            s_tBallYellowSelected,
+        this.menuItem4 = cc.MenuItemImage.create(
+            s_tBall,
+            s_tBallSelected,
             function () {
                 Log("change ball type: " + Enum.EBall.Yellow);
                 this.m_ball.changeBall(Enum.EBall.Yellow);
                 this.changePlayerBall(Enum.EBall.Yellow);
             },
-            this);*/
+            this);
 
         this.menuItem1.setAnchorPoint(cc.p(0.5, 0.5));
         this.menuItem2.setAnchorPoint(cc.p(0.5, 0.5));
-        //menuItem3.setAnchorPoint(cc.p(0.5, 0.5));
-        //menuItem4.setAnchorPoint(cc.p(0.5, 0.5));
+        this.menuItem3.setAnchorPoint(cc.p(0.5, 0.5));
+        this.menuItem4.setAnchorPoint(cc.p(0.5, 0.5));
 
-        var menu = cc.Menu.create(this.menuItem1, this.menuItem2);
+
+        this.menuItem1.setPosition(cc.p(1117, 668 - 93));
+        this.menuItem2.setPosition(cc.p(1192, 668 - 93));
+        this.menuItem3.setPosition(cc.p(1117, 668 - 167));
+        this.menuItem4.setPosition(cc.p(1192, 668 - 167));
+
+        var menu = cc.Menu.create(this.menuItem1, this.menuItem2, this.menuItem3, this.menuItem4);
         //var menu = cc.Menu.create(menuItem1, menuItem2, menuItem3, menuItem4);
         menu.setPosition(cc.PointZero());
         /*if (this.nodeJSClient.isPlayFirst == true) {
@@ -288,6 +314,21 @@ var MainGame = cc.LayerColor.extend({
 
     update: function (dt) {
         document.getElementById("gameCanvas").focus();
+
+        if (this.m_player.m_iHP <= 0)
+        {
+            this.m_lose.setVisible(true);
+            this.isEndGame = true;
+        }
+
+        if (this.m_computer.m_iHP <= 0)
+        {
+            this.m_win.setVisible(true);
+            this.isEndGame = true;
+        }
+        if (this.isEndGame == true)
+            return;
+
         this.m_player.updateCollision(this.m_computerBall);
         this.m_computer.updateCollision(this.m_ball);
 
@@ -327,6 +368,12 @@ var MainGame = cc.LayerColor.extend({
     },
 
     onTouchesBegan: function (touches, event) {
+        if (this.turnPlay.isVisible)
+            this.turnPlay.setVisible(false);
+        if (this.isEndGame == true)
+        {
+            cc.Director.getInstance().replaceScene(new MenuScene());
+        }
         if (this.m_computerBall.m_enabled == true || this.m_ball.m_enabled == true)
             return;
         this.isPower = true;
@@ -339,6 +386,10 @@ var MainGame = cc.LayerColor.extend({
             return;
         var location = touches[0].getLocation();
         if (this.m_eTurn == 0) {
+            /*if (GisFirst)
+                this.m_player.fire(1, 1, this.m_fPower);
+            else
+                this.m_player.fire(-1, 1, this.m_fPower);*/
             this.m_player.fire(location.x, location.y, this.m_fPower);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -362,14 +413,14 @@ var MainGame = cc.LayerColor.extend({
             if (this.m_eTurn == 0) {
 
                 this.playerMoveX(-10);
-                this.m_player.setRotationY(180);
+                //this.m_player.setRotationY(180);
             }
         }
         else if (e === cc.KEY.right) {
             if (this.m_eTurn == 0) {
 
                 this.playerMoveX(10);
-                this.m_player.setRotationY(0);
+                //this.m_player.setRotationY(0);
             }
         }
     }

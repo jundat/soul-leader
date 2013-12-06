@@ -27,7 +27,7 @@
             'src/FactoryAnimate.js',
             'src/ComputerBall.js',
             'src/Computer.js',
-            
+            'src/MenuScene.js',
             'src/myApp.js'//add your own files in order here
         ]
     };
