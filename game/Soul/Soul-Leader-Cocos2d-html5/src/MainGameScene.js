@@ -239,8 +239,8 @@ var MainGame = cc.LayerColor.extend({
             this.CreateRandomMatch();
         };
 
-
-        this.nodeJSClient.Connect('127.0.0.1', 5000);
+        this.nodeJSClient.Connect();
+        this.nodeJSClient.CreateRandomMatch();
 
         //END - NODE JS
 

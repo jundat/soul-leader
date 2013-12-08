@@ -13,7 +13,7 @@ function NodeJSClient(parent) {
     this.socket = null;
 
     //username of this user
-    this.username = 'user' + Math.floor(Math.random() * 1000);
+    this.username = G_USER_NAME; // 'user' + Math.floor(Math.random() * 1000);
     this.gender = "male";
     
     /*
@@ -76,6 +76,10 @@ function NodeJSClient(parent) {
     //a callback function will be call when connection successful
     this.connectSuccessHandler = null;
 
+    this.SetParent = function(_parent) {
+        this.parent = _parent;
+    }
+
     //-------------------------- PUBLIC FUNCTIONS -----------------------------
 
     //Add a handler to handle an event
@@ -133,6 +137,8 @@ function NodeJSClient(parent) {
 
     //Create a random match
     this.CreateRandomMatch = function () {
+        console.log("send: CreateRandomMatch");
+
         this.socket.emit('CreateRandomMatch', {
             username: this.username
         });
