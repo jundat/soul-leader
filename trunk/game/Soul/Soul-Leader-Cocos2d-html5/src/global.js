@@ -7,6 +7,7 @@ var PLAYER_LEFT = { x: 200, y: 100 };
 var PLAYER_RIGHT = { x: SCREEN_WIDTH - 200, y: 100 };
 var GisFirst = false;
 
+var G_USER_NAME = 'user' + Math.floor(Math.random() * 1000);
 
 
 //glbal functions

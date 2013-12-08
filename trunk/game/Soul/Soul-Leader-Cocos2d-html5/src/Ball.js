@@ -7,7 +7,7 @@ Enum.EBall = {
 }
 var CBall = cc.Sprite.extend({
     m_fSpeed: null,
-    m_fDam: 1,
+    m_fDam: 5, ///////////////////////////////////////////////////////// DAM = 1
     m_fAngle: 1,
     m_eType: Enum.EBall.Blue,
     m_enabled: false,
