@@ -224,11 +224,11 @@ function NodeJSClient(parent) {
     //ip: string, default = 127.0.0.1
     //port: integer, default = 5000
     this.Connect = function (ip, port) {
-        if (ip == undefined) ip = '127.0.0.1';
-        if (port == undefined) port = 5000;
+        //if (ip == undefined) ip = 'https://soulleader-c9-phamtanlong.c9.io'; // '127.0.0.1'; // 
+        //if (port == undefined) port = 15400; // 5000; //
 
-        var strConnect = ip + ':' + port;
-        this.socket = io.connect(strConnect);
+        //var strConnect = ip + ':' + port;
+        this.socket = io.connect(); //(strConnect);
 
         this.Init();
     }
@@ -343,6 +343,7 @@ function NodeJSClient(parent) {
         }
     */
     this._create_random_match = function (data) {
+        console.log("Recieve CreateRandomMatch");
         Log(data);
 
         NODE_CLIENT.match = data;
