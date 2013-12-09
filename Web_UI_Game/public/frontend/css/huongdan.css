@@ -1,0 +1,177 @@
+#top {
+    width: 68px; height: 102px;
+    background: url("../images/huongdan/top.png") no-repeat 0 0;
+    position: fixed; bottom: 10px; right: 10px;
+    cursor: pointer;
+    text-indent: -99999px;
+}
+
+body {
+    font: 13px/20px Tahoma,Arial,Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../images/huongdan/bgd_wrapper_repeat_y.jpg") repeat-y scroll center 0 #CFFFFB;
+    color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background: url("../images/huongdan/bgd_wrapper_repeat_x.jpg") repeat-x scroll 0 0;
+    width: 100%;
+}
+
+.wrapperOut {
+    background: url("../images/huongdan/bgd_wrapper.png") no-repeat scroll center 0;
+    width: 100%;
+}
+
+.wrapperIn {
+    background: url("../images/huongdan/bgd_wrapper_footer.jpg") no-repeat scroll center 100%;
+    width: 100%;
+}
+
+#container {
+    margin: 0 auto;
+    width: 988px;
+}
+
+.left-side {
+    float: left;
+    padding: 0 0 0 13px;
+    width: 242px;
+}
+
+.Left-Nav {
+    clear: both;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------*/
+ul li {
+    color: #333333;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+h5, h6, form, ul, ul li, ol, ol li, dl, dl dt, dl dd {
+    margin: 0;
+    padding: 0;
+}
+
+h5, h6, form, ul, ul li, ol, ol li, dl, dl dt, dl dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ul li, ol, ol li {
+    list-style: none outside none;
+}
+
+h1, h2, h3, h4, h5, h6, p, form, ul, ul li, ol, ol li, dl, dl dt, dl dd, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------*/
+#content {
+    float: left;
+    width: 733px;
+}
+
+#header {
+    height: 229px;
+    overflow: hidden;
+    position: relative;
+}
+
+element.style {
+    overflow-x: hidden;
+}
+
+#MainContent {
+    position: relative;
+    z-index: 1;
+}
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+element.style {
+    left: 678px;
+    position: absolute;
+    top: 400px;
+}
+
+#top {
+    background: url("../images/huongdan/top.png") no-repeat scroll 0 0;
+    display: block;
+    height: 102px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 400px;
+    width: 67px;
+}
+
+#top:hover {
+    background-position: -80px 0;
+}
+
+#topbar {
+    display: block;
+    font-family: Tahoma,Arial,Verdana,sans-serif;
+    height: 40px;
+    position: relative;
+    z-index: 800;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a {
+    outline: 0 none;
+}
+/*--------------------------------------------------------*/
+#static {
+    overflow: hidden;
+    width: 700px;
+}
+
+#top-main-block {
+    height: 50px;
+    margin: 0 0 15px 9px;
+    overflow: hidden;
+    padding: 11px 20px;
+    width: 640px;
+}
+
+#top-main-block .bread-crumb{
+    overflow: hidden;
+}
+
+.StaticInner
+{
+    overflow: hidden;
+}
+/*--------------------------------------------------------*/
+#Footer {
+    clear: both;
+    height: 97px;
+    overflow: hidden;
+    padding: 40px 0 0 320px;
+}
+
+#Footer p {
+    color: #000000;
+    font: 11px/17px Tahoma;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------*/

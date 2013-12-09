@@ -1,9 +1,8 @@
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>
-        Thông tin trò chơi - Giới thiệu Gunny 
+        Giới thiệu trò chơi
     </title>
     <!--Load css cua page-->
     <link href="<?php echo base_url(); ?>public/frontend/css/gioithieu.css" rel="stylesheet" type="text/css" />
@@ -16,7 +15,7 @@
             <!--Begin header-->
             <div id="header">		
                 <div class="HomePage">
-                    <a href="http://localhost/soul-leader/Web_UI_Game/home" title="Trang chủ" ></a>
+                    <a href="<?php echo base_url(); ?>home" title="Trang chủ" ></a>
                 </div>
             </div>
             <!-- End header -->
