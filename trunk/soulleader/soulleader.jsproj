@@ -293,7 +293,6 @@
     <Content Include="src\Player.js" />
     <Content Include="src\resource.js" />
     <Content Include="src\socket.io.js" />
-    <None Include="Soul-Leader-Cocos2d-html5_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
