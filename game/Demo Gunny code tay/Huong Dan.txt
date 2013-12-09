@@ -1,4 +1,0 @@
-1.Chạy bằng VS 2012
-2.Or chạy bằng localhost
-
-Viết thuần html5 + javacript by tiểu nùn đẹp trai
