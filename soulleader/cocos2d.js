@@ -12,11 +12,9 @@
         renderMode: 0,       //Choose of RenderMode: 0(default), 1(Canvas only), 2(WebGL only)
         tag: 'gameCanvas', //the dom element to run cocos2d on
         engineDir: 'cocos2d/',
-        //SingleEngineFile:'',
         appFiles: [
             'src/global.js',
 
-            'src/socket.io.js', //NODE JS
             'src/NodeJSClient.js',
 
             'src/resource.js',
@@ -70,7 +68,3 @@
     });
 })();
 
-// //resize canvas
-// var mycanvas = document.getElementById("gameCanvas");
-// mycanvas.width = window.innerWidth;
-// mycanvas.height = window.innerHeight;
