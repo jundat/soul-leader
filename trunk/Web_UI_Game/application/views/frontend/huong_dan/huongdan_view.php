@@ -1,88 +1,72 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="shortcut icon" href="soul-leader/images/gioithieu/favicon.ico" type="image/x-icon" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta property="og:image" content="images/gioithieu/gunn bv y.jpg"/>
-    <meta property="og:image:secure_url" content="images/gioithieu/gunny.jpg" />
-    
     <title>
         Hướng dẫn trò chơi
     </title>
+    <link href="<?php echo base_url(); ?>public/frontend/css/huongdan.css" rel="stylesheet" type="text/css" />
     
-    <link href="../css/gioithieu.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#MainContent').append('<div id="top">Back To Top</div>');
+            $(window).scroll(function() {
+                if($(window).scrollTop() != 0) {
+                    $('#top').fadeIn();
+                }
+                else {
+                    $('#top').fadeOut();
+                }
+           });
+           
+           $('#top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 500);
+           })
+        });
+    </script>
+    
 </head>
 <body>
-<div id="wrapperOut">
     <div id="wrapper">
-        <div id="main">
-            
-            <!--Begin header-->
-            <div id="header">		
-                <div class="HomePage">
-                    <a href="http://localhost/soul-leader/Web_UI_Game/home" title="Trang ch?" >&nbsp;</a>
-                </div>
-            </div>
-            <!-- End header -->
-            
-            <!--Begin content-->
-            <div id="content">
-                <div id="sidebar">
-                    <!-- Begin menu left-->
-                        <?php
-                            $this->load->view('frontend/gioi_thieu/menu_left');
-                        ?>
-                    <!-- End menu left-->
-                    
-                    <div id="leftBottom">
-                        &nbsp;
+     <div class="wrapperOut">
+          <div class="wrapperIn">
+               <div id="container">
+                    <div class="left-side">
+                        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
                     </div>
-                </div>
-                
-<!-------------------------------------------------------------------------------------------------------------->
-                <!-- Begin main content-->
-                <div id="mainContent">
-                    <!-- Begin login form-->
-                    <div class="BoxLogin">
-                       <?php
-                        $this->load->view('frontend/gioi_thieu/login');
-                       ?>
-                    </div>
-                    <!-- End login form -->
-                    
-                    <div id="static">
-                        <!-- Begin module article-->
-                        <div class="StaticTopPanel">
-                            <h2 class="TitleMain">Thông tin trò choi</h2>
-                            <p id="breadcrumbs"> <a href="/index.html" title="Trang ch?">Trang ch?</a> &gt; <a title="Hu?ng d?n ngu?i m?i" href="/new-user-guide/index.html">Hu?ng d?n ngu?i m?i</a> &gt; <span>Gi?i thi?u</span> &gt; <span>Thông tin trò choi</span></p>
+                    <div id="content">
+                         <div id="header">
                         </div>
-                        
-                        <div class="StaticOuter">
-    		                <div class="StaticInner">
-                                <div class="StaticMain">
-                                    <!--bat dau copy noi dung tin tuc o day -->
-                                    <div class="ContentBlock">
-                                        <?php
-                                            $this->load->view('frontend/gioi_thieu/content');
-                                        ?>
-                                    <!--ket thuc noi dung tin tuc o day -->
+                         <!--End Header-->
+                         <div id="MainContent">   
+                              <div id="static">
+                                <div id="top-main-block">
+                                   <br />
+                                   <br />
+                                   <br />
+                                   <br />
+                                </div>
+                                <div class="StaticInner">
+                                    <div class="StaticMain">
+                                        <div class="ContentBlock">
+                                            <h2>Nội dung phần hướng dẫn</h2>
+                                   	        <p class="ImgCenter"><img src="http://img.zing.vn/gn/images/data/2012-04-24/so-do/so-do-huong-dan-newbies.jpg" alt="Sơ đồ hướng dẫn cơ bản" height="1517" width="500"></p>
+                          		        </div>
                                     </div>
-                            </div>
-                        </div>
+                                </div>
+                              </div>
+                         </div>
                     </div>
-                <!-- End module article -->
-                </div>
-            </div>
-<!-------------------------------------------------------------------------------------------------------------->
-            </div>
-            <!-- End content -->
-            
-            <!-- Begin footer -->
-            <div id="footer">
-                <h3>Nhóm 7 - Công ngh? Web và ?ng d?ng</h3>
-            </div>
-            <!-- End footer -->
-        </div>							
-    </div>
+                    <div id="Footer">
+                        <br />
+                        <br />
+                        <br />
+                        <h3>Nhóm 7 - Công nghệ Web và ứng dụng</h3>
+                    </div>
+               </div>
+          </div>
+     </div>
 </div>
 </body>
 </html>
