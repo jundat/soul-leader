@@ -4,14 +4,13 @@
     <title>
         Hướng dẫn trò chơi
     </title>
-    <link href="<?php echo base_url(); ?>public/frontend/css/huongdan.css" rel="stylesheet" type="text/css" />
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#MainContent').append('<div id="top">Back To Top</div>');
-            $(window).scroll(function() {
+            $('#wrapper').append('<div id="top">Back To Top</div>');
+           $(window).scroll(function() {
                 if($(window).scrollTop() != 0) {
                     $('#top').fadeIn();
                 }
@@ -26,6 +25,7 @@
         });
     </script>
     
+    <link href="<?php echo base_url(); ?>public/frontend/css/huongdan.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="wrapper">
