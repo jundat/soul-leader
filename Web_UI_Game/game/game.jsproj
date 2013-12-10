@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>dbe68435-426c-4772-8f9a-0f2f2540a9a4</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>Soul-Leader-Cocos2d-html5_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="box2d\box2d.js" />
+    <Content Include="build.xml" />
+    <Content Include="chipmunk\chipmunk.js" />
+    <Content Include="cocos2d\actions\CCAction.js" />
+    <Content Include="cocos2d\actions\CCActionCamera.js" />
+    <Content Include="cocos2d\actions\CCActionCatmullRom.js" />
+    <Content Include="cocos2d\actions\CCActionEase.js" />
+    <Content Include="cocos2d\actions\CCActionGrid.js" />
+    <Content Include="cocos2d\actions\CCActionGrid3D.js" />
+    <Content Include="cocos2d\actions\CCActionInstant.js" />
+    <Content Include="cocos2d\actions\CCActionInterval.js" />
+    <Content Include="cocos2d\actions\CCActionManager.js" />
+    <Content Include="cocos2d\actions\CCActionPageTurn3D.js" />
+    <Content Include="cocos2d\actions\CCActionProgressTimer.js" />
+    <Content Include="cocos2d\actions\CCActionTiledGrid.js" />
+    <Content Include="cocos2d\actions\CCActionTween.js" />
+    <Content Include="cocos2d\base_nodes\CCAtlasNode.js" />
+    <Content Include="cocos2d\base_nodes\CCdomNode.js" />
+    <Content Include="cocos2d\base_nodes\CCNode.js" />
+    <Content Include="cocos2d\build.xml" />
+    <Content Include="cocos2d\CCCamera.js" />
+    <Content Include="cocos2d\CCConfiguration.js" />
+    <Content Include="cocos2d\CCDirector.js" />
+    <Content Include="cocos2d\CCDrawingPrimitives.js" />
+    <Content Include="cocos2d\CCLoader.js" />
+    <Content Include="cocos2d\CCScheduler.js" />
+    <Content Include="cocos2d\cocoa\CCAffineTransform.js" />
+    <Content Include="cocos2d\cocoa\CCGeometry.js" />
+    <Content Include="cocos2d\cocoa\CCNS.js" />
+    <Content Include="cocos2d\cocoa\CCSet.js" />
+    <Content Include="cocos2d\cocos2d_externs.js" />
+    <Content Include="cocos2d\draw_nodes\CCDrawNode.js" />
+    <Content Include="cocos2d\effects\CCGrabber.js" />
+    <Content Include="cocos2d\effects\CCGrid.js" />
+    <Content Include="cocos2d\kazmath\aabb.js" />
+    <Content Include="cocos2d\kazmath\GL\mat4stack.js" />
+    <Content Include="cocos2d\kazmath\GL\matrix.js" />
+    <Content Include="cocos2d\kazmath\mat3.js" />
+    <Content Include="cocos2d\kazmath\mat4.js" />
+    <Content Include="cocos2d\kazmath\plane.js" />
+    <Content Include="cocos2d\kazmath\quaternion.js" />
+    <Content Include="cocos2d\kazmath\ray2.js" />
+    <Content Include="cocos2d\kazmath\utility.js" />
+    <Content Include="cocos2d\kazmath\vec2.js" />
+    <Content Include="cocos2d\kazmath\vec3.js" />
+    <Content Include="cocos2d\kazmath\vec4.js" />
+    <Content Include="cocos2d\keyboard_dispatcher\CCKeyboardDelegate.js" />
+    <Content Include="cocos2d\keyboard_dispatcher\CCKeyboardDispatcher.js" />
+    <Content Include="cocos2d\label_nodes\CCLabelAtlas.js" />
+    <Content Include="cocos2d\label_nodes\CCLabelBMFont.js" />
+    <Content Include="cocos2d\label_nodes\CCLabelTTF.js" />
+    <Content Include="cocos2d\layers_scenes_transitions_nodes\CCLayer.js" />
+    <Content Include="cocos2d\layers_scenes_transitions_nodes\CCScene.js" />
+    <Content Include="cocos2d\layers_scenes_transitions_nodes\CCTransition.js" />
+    <Content Include="cocos2d\layers_scenes_transitions_nodes\CCTransitionPageTurn.js" />
+    <Content Include="cocos2d\layers_scenes_transitions_nodes\CCTransitionProgress.js" />
+    <Content Include="cocos2d\menu_nodes\CCMenu.js" />
+    <Content Include="cocos2d\menu_nodes\CCMenuItem.js" />
+    <Content Include="cocos2d\misc_nodes\CCClippingNode.js" />
+    <Content Include="cocos2d\misc_nodes\CCMotionStreak.js" />
+    <Content Include="cocos2d\misc_nodes\CCProgressTimer.js" />
+    <Content Include="cocos2d\misc_nodes\CCRenderTexture.js" />
+    <Content Include="cocos2d\particle_nodes\CCParticleBatchNode.js" />
+    <Content Include="cocos2d\particle_nodes\CCParticleExamples.js" />
+    <Content Include="cocos2d\particle_nodes\CCParticleSystem.js" />
+    <Content Include="cocos2d\particle_nodes\CCParticleSystemQuad.js" />
+    <Content Include="cocos2d\physics_nodes\CCPhysicsDebugNode.js" />
+    <Content Include="cocos2d\physics_nodes\CCPhysicsSprite.js" />
+    <Content Include="cocos2d\platform\AppControl.js" />
+    <Content Include="cocos2d\platform\base64.js" />
+    <Content Include="cocos2d\platform\CCAccelerometer.js" />
+    <Content Include="cocos2d\platform\CCApplication.js" />
+    <Content Include="cocos2d\platform\CCClass.js" />
+    <Content Include="cocos2d\platform\CCCommon.js" />
+    <Content Include="cocos2d\platform\CCConfig.js" />
+    <Content Include="cocos2d\platform\CCEGLView.js" />
+    <Content Include="cocos2d\platform\CCFileUtils.js" />
+    <Content Include="cocos2d\platform\CCImage.js" />
+    <Content Include="cocos2d\platform\CCMacro.js" />
+    <Content Include="cocos2d\platform\CCSAXParser.js" />
+    <Content Include="cocos2d\platform\CCTypes.js" />
+    <Content Include="cocos2d\platform\gzip.js" />
+    <Content Include="cocos2d\platform\jsloader.js" />
+    <Content Include="cocos2d\platform\miniFramework.js" />
+    <Content Include="cocos2d\platform\Sys.js" />
+    <Content Include="cocos2d\platform\ZipUtils.js" />
+    <Content Include="cocos2d\platform\zlib.min.js" />
+    <Content Include="cocos2d\shaders\CCGLProgram.js" />
+    <Content Include="cocos2d\shaders\CCGLStateCache.js" />
+    <Content Include="cocos2d\shaders\CCShaderCache.js" />
+    <Content Include="cocos2d\shaders\CCShaders.js" />
+    <Content Include="cocos2d\sprite_nodes\CCAnimation.js" />
+    <Content Include="cocos2d\sprite_nodes\CCAnimationCache.js" />
+    <Content Include="cocos2d\sprite_nodes\CCSprite.js" />
+    <Content Include="cocos2d\sprite_nodes\CCSpriteBatchNode.js" />
+    <Content Include="cocos2d\sprite_nodes\CCSpriteFrame.js" />
+    <Content Include="cocos2d\sprite_nodes\CCSpriteFrameCache.js" />
+    <Content Include="cocos2d\support\CCNotificationCenter.js" />
+    <Content Include="cocos2d\support\CCPNGReader.js" />
+    <Content Include="cocos2d\support\CCPointExtension.js" />
+    <Content Include="cocos2d\support\CCTGAlib.js" />
+    <Content Include="cocos2d\support\CCTIFFReader.js" />
+    <Content Include="cocos2d\support\CCUserDefault.js" />
+    <Content Include="cocos2d\support\CCVertex.js" />
+    <Content Include="cocos2d\support\component\CCComponent.js" />
+    <Content Include="cocos2d\support\component\CCComponentContainer.js" />
+    <Content Include="cocos2d\support\TransformUtils.js" />
+    <Content Include="cocos2d\textures\CCTexture2D.js" />
+    <Content Include="cocos2d\textures\CCTextureAtlas.js" />
+    <Content Include="cocos2d\textures\CCTextureCache.js" />
+    <Content Include="cocos2d\text_input_node\CCIMEDispatcher.js" />
+    <Content Include="cocos2d\text_input_node\CCTextFieldTTF.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCParallaxNode.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCTileMapAtlas.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCTMXLayer.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCTMXObjectGroup.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCTMXTiledMap.js" />
+    <Content Include="cocos2d\tileMap_parallax_nodes\CCTMXXMLParser.js" />
+    <Content Include="cocos2d\touch_dispatcher\CCMouseDispatcher.js" />
+    <Content Include="cocos2d\touch_dispatcher\CCTouchDelegateProtocol.js" />
+    <Content Include="cocos2d\touch_dispatcher\CCTouchDispatcher.js" />
+    <Content Include="cocos2d\touch_dispatcher\CCTouchHandler.js" />
+    <Content Include="CocosDenshion\SimpleAudioEngine.js" />
+    <Content Include="index.html" />
+    <Content Include="cocos2d.js" />
+    <Content Include="extensions\CCArmature\animation\CCArmatureAnimation.js" />
+    <Content Include="extensions\CCArmature\animation\CCProcessBase.js" />
+    <Content Include="extensions\CCArmature\animation\CCTween.js" />
+    <Content Include="extensions\CCArmature\CCArmature.js" />
+    <Content Include="extensions\CCArmature\CCBone.js" />
+    <Content Include="extensions\CCArmature\datas\CCDatas.js" />
+    <Content Include="extensions\CCArmature\display\CCBatchNode.js" />
+    <Content Include="extensions\CCArmature\display\CCDecorativeDisplay.js" />
+    <Content Include="extensions\CCArmature\display\CCDisplayFactory.js" />
+    <Content Include="extensions\CCArmature\display\CCDisplayManager.js" />
+    <Content Include="extensions\CCArmature\display\CCShaderNode.js" />
+    <Content Include="extensions\CCArmature\display\CCSkin.js" />
+    <Content Include="extensions\CCArmature\physics\CCColliderDetector.js" />
+    <Content Include="extensions\CCArmature\physics\CCPhysicsWorld.js" />
+    <Content Include="extensions\CCArmature\utils\CCArmatureDefine.js" />
+    <Content Include="extensions\CCArmature\utils\CCDataReaderHelper.js" />
+    <Content Include="extensions\CCArmature\utils\CCSpriteFrameCacheHelper.js" />
+    <Content Include="extensions\CCArmature\utils\CCTransformHelp.js" />
+    <Content Include="extensions\CCArmature\utils\CCTweenFunction.js" />
+    <Content Include="extensions\CCArmature\utils\CCUtilMath.js" />
+    <Content Include="extensions\CCArmature\utils\CSArmatureDataManager.js" />
+    <Content Include="extensions\CCBReader\CCBAnimationManager.js" />
+    <Content Include="extensions\CCBReader\CCBKeyframe.js" />
+    <Content Include="extensions\CCBReader\CCBReader.js" />
+    <Content Include="extensions\CCBReader\CCBReaderUtil.js" />
+    <Content Include="extensions\CCBReader\CCBRelativePositioning.js" />
+    <Content Include="extensions\CCBReader\CCBSequence.js" />
+    <Content Include="extensions\CCBReader\CCBValue.js" />
+    <Content Include="extensions\CCBReader\CCControlLoader.js" />
+    <Content Include="extensions\CCBReader\CCNodeLoader.js" />
+    <Content Include="extensions\CCBReader\CCNodeLoaderLibrary.js" />
+    <Content Include="extensions\CCBReader\CCSpriteLoader.js" />
+    <Content Include="extensions\CCEditBox.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControl.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlButton.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlColourPicker.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlHuePicker.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlPotentiometer.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlSlider.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlStepper.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlSwitch.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCControlUtils.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCInvocation.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCMenuPassive.js" />
+    <Content Include="extensions\GUI\CCControlExtension\CCScale9Sprite.js" />
+    <Content Include="extensions\GUI\CCScrollView\CCScrollView.js" />
+    <Content Include="extensions\GUI\CCScrollView\CCSorting.js" />
+    <Content Include="extensions\GUI\CCScrollView\CCTableView.js" />
+    <Content Include="extensions\PluginX\plugins\SocialFacebook.js" />
+    <Content Include="extensions\PluginX\plugins\SocialQQWeibo.js" />
+    <Content Include="extensions\PluginX\plugins\SocialQzone.js" />
+    <Content Include="extensions\PluginX\plugins\SocialTwitter.js" />
+    <Content Include="extensions\PluginX\plugins\SocialWeibo.js" />
+    <Content Include="extensions\PluginX\protocols\Config.js" />
+    <Content Include="extensions\PluginX\protocols\PluginFactory.js" />
+    <Content Include="extensions\PluginX\protocols\PluginManager.js" />
+    <Content Include="extensions\PluginX\protocols\PluginProtocol.js" />
+    <Content Include="extensions\PluginX\protocols\PluginUtils.js" />
+    <Content Include="extensions\PluginX\protocols\ProtocolSocial.js" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\cocos2d.js" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\index.html" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\main.js" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\background.png" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\CloseNormal.png" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\CloseSelected.png" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\facebook.gif" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\qqweibo.gif" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\qzone.gif" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\snweibo.gif" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\res\twitter.gif" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\src\myApp.js" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\src\MySocialManager.js" />
+    <Content Include="extensions\PluginX\samples\HelloSocial\src\resource.js" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="css\default.css" />
+    <Content Include="main.js" />
+    <Content Include="res\favicon.ico" />
+    <Content Include="res\xvn\Background.png" />
+    <Content Include="res\xvn\char.plist" />
+    <Content Include="res\xvn\char.png" />
+    <Content Include="res\xvn\explosion.plist" />
+    <Content Include="res\xvn\explosion.png" />
+    <Content Include="res\xvn\green_health_bar.png" />
+    <Content Include="res\xvn\hp_bar.png" />
+    <Content Include="res\xvn\lose.png" />
+    <Content Include="res\xvn\Menu\bgMenu.png" />
+    <Content Include="res\xvn\Menu\btnPlay.png" />
+    <Content Include="res\xvn\Menu\btnPlayPress.png" />
+    <Content Include="res\xvn\NewItem\keyboard.png" />
+    <Content Include="res\xvn\NewItem\monitor.png" />
+    <Content Include="res\xvn\NewItem\nokia.png" />
+    <Content Include="res\xvn\NewItem\selected_item.png" />
+    <Content Include="res\xvn\NewItem\shit.png" />
+    <Content Include="res\xvn\NewItem\unselected_item.png" />
+    <Content Include="res\xvn\Player.png" />
+    <Content Include="res\xvn\power_bar.png" />
+    <Content Include="res\xvn\win.png" />
+    <Content Include="src\ComputerBall.js" />
+    <Content Include="src\Computer.js" />
+    <Content Include="src\Enum.js" />
+    <Content Include="src\Ball.js" />
+    <Content Include="src\FactoryAnimate.js" />
+    <Content Include="src\global.js" />
+    <Content Include="src\MenuScene.js" />
+    <Content Include="src\MainGameScene.js" />
+    <Content Include="src\myApp.js" />
+    <Content Include="src\NodeJSClient.js" />
+    <Content Include="src\Player.js" />
+    <Content Include="src\resource.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
