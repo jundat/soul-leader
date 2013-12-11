@@ -224,11 +224,10 @@ function NodeJSClient(parent) {
     //ip: string, default = 127.0.0.1
     //port: integer, default = 5000
     this.Connect = function (ip, port) {
-        if (ip == undefined) ip = '127.0.0.1'; // 'https://soulleader-c9-phamtanlong.c9.io'; //
-        if (port == undefined) port = 5000; // 15400; //
-
-        var strConnect = ip + ':' + port;
-        this.socket = io.connect(strConnect);
+        // if (ip == undefined) ip = '127.0.0.1'; // 'https://soulleader-c9-phamtanlong.c9.io'; //
+        // if (port == undefined) port = 5000; // 15400; //
+        // var strConnect = ip + ':' + port;
+        this.socket = io.connect('http://nodejschat-gameuit.rhcloud.com');
 
         this.Init();
     }
