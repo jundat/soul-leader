@@ -2,8 +2,7 @@
   	"name": "ChatGroup",
   	"version": "0.0.1",
   	"dependencies": {
-    	"socket.io": "~0.9.6",
-    	"request": "latest"
+    	"socket.io": "~0.9.6"
   	},
   
   	"engines": {
