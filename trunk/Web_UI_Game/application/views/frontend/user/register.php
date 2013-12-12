@@ -23,7 +23,7 @@
 ?>
 
 <div id="box_entry">
-  	  <h2><span>Thêm Category</span></h2>
+  	  <h2><span>ThÃªm Category</span></h2>
       <div class="error">
         <ul>
             <?php

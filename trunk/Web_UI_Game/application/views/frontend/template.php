@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>[Qu?n l� website]....[]</title>
+<title>[Qu?n lý website]....[]</title>
 <link href="<?php echo base_url()."public/frontend/css/admin.css"; ?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url()."public/frontend/css/paging.css"; ?>" />
 
@@ -12,19 +12,11 @@
 <div id="main">
   <!-- TOP -->
   <div id="top">
-    <h2>MANAGER MEMBER with<span> CodeIgniter 2.0</span></h2>
+    <h2>MANAGER MEMBER WEB GAME<span> Nhóm 7</span></h2>
       <h2 class="line"></h2>
       <div id="login"></div>
   </div>
-  <!-- EOF TOP -->
-  <div id="navigate">
-      <ul>
-       <li><a href="#">Menu 1</a></li>
-       <li><a href="#">Menu 2</a></li>
-       <li><a href="#">Menu 3</a></li>
-       <li><a href="#">Menu 4</a></li>
-      </ul>
-  </div>
+  
   <!--EOF Navigate-->
   <div id="containner"> 
     

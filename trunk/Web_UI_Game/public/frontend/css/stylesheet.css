@@ -70,6 +70,16 @@ html>body .Wrapper
 }
 
 
+#top {
+    background: url("../images/top.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 102px;
+    left: 1192.18px;
+    position: fixed;
+    text-indent: -9999px;
+    top: 400px;
+    width: 68px;
+}
 
 #container
 {

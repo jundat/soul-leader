@@ -14,6 +14,25 @@
 <!-- end: pages css here -->
 
 <!-- file javascript -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#wrapper').append('<div id="top">Back To Top</div>');
+           $(window).scroll(function() {
+                if($(window).scrollTop() != 0) {
+                    $('#top').fadeIn();
+                }
+                else {
+                    $('#top').fadeOut();
+                }
+           });
+           
+           $('#top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 500);
+           })
+        });
+    </script>
 <!-- file javascript -->
 
 
