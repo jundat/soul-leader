@@ -2,7 +2,8 @@
 <?php $path = base_url().'public/frontend/';?>
 <!DOCTYPE html> 
 <html >
-<head><meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
 
 <title><?php echo $content; ?></title>
 
@@ -19,7 +20,7 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#wrapper').append('<div id="top">Back To Top</div>');
+            $('#wrapper-sub').append('<div id="top">Back To Top</div>');
            $(window).scroll(function() {
                 if($(window).scrollTop() != 0) {
                     $('#top').fadeIn();
