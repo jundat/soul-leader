@@ -20,8 +20,8 @@
 <body>
 <?php
     echo form_open(base_url()."Chome/user/fg_password");
-    echo form_fieldset("Qu�n m?t kh?u");
-    echo form_label("Nh?p email : ").form_input($email)."<br/>";
+    echo form_fieldset("Quên mật khẩu");
+    echo form_label("Nhập email : ").form_input($email)."<br/>";
     echo form_label("").form_submit($submit)."<br/>";
     
     //--------------- ERROR

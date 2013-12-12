@@ -25,9 +25,9 @@
 <body>
 <?php
     echo form_open(base_url()."Cadmin/verify/login");
-    echo form_fieldset("�ang nh?p");
-    echo form_label("T�n : ").form_input($username)."<br/>";
-    echo form_label("M?t kh?u : ").form_password($password)."<br/>";
+    echo form_fieldset("Ðang nhập");
+    echo form_label("Tên : ").form_input($username)."<br/>";
+    echo form_label("Mật khẩu : ").form_password($password)."<br/>";
     echo form_label("").form_submit($submit)."<br/>";
     
     //--------------- ERROR

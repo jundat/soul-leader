@@ -27,8 +27,8 @@
 		<input type="file" name="news_image" ><br><br>
 
 		<label>Author</label>
-		<input type="text" name="news_sourse" class="news_sourse" 
-		value="<?php echo $news['news_sourse']; ?>" size="25"> <br> 
+		<input type="text" name="news_source" class="news_source" 
+		value="<?php echo $news['news_source']; ?>" size="25"> <br> 
 		<input type="hidden" name="news_id" value="<?php echo $news['news_id']; ?> "><br>		
 		<input type="submit" name="submit" value="Save"><a href="<?php echo $backend; ?>news" class="back">Back</a> 
 		</form>

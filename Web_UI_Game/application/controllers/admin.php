@@ -95,7 +95,7 @@ class Admin extends CI_Controller{
                     $config['base_url'] = base_url().'index.php/admin/manager/news/';                    
                     $config['total_rows'] = $this->Mhome->get_total_rows_news();
                     // $config['use_page_numbers'] = TRUE;//hien thi so trag dung
-                    $config['per_page'] = 5;
+                    $config['per_page'] = 10;
                     $config['uri_segment'] = 4;
                     
                     $this->pagination->initialize($config);

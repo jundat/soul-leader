@@ -43,7 +43,7 @@
             <?php 
                 foreach ($news as $new) {
                     if($new['news_id'] != $article['news_id']){
-                        echo '<ul><li><a href="'.$frontend.'new_detail/'.$new['news_id'].'">'.$new['news_name'].'</a></li></ul>';
+                        echo '<ul><li><a href="'.$frontend.'news_detail/'.$new['news_id'].'">'.$new['news_name'].'</a></li></ul>';
                     }
                 
                 } 
