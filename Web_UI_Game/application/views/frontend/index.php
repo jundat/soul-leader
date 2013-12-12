@@ -2,7 +2,7 @@
 <?php $path = base_url().'public/frontend/';?>
 <!DOCTYPE html> 
 <html >
-	<head><meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
+<head><meta http-equiv="Content-Type" content="text/htm; charset=UTF-8">
 
 <title><?php echo $content; ?></title>
 
@@ -14,7 +14,27 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $path; ?>css/style.css"/>
 
 <!-- end : page css here -->
-
+<!-- file javascript -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#wrapper').append('<div id="top">Back To Top</div>');
+           $(window).scroll(function() {
+                if($(window).scrollTop() != 0) {
+                    $('#top').fadeIn();
+                }
+                else {
+                    $('#top').fadeOut();
+                }
+           });
+           
+           $('#top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 500);
+           })
+        });
+    </script>
+<!-- file javascript -->
 
 </head>
 <body >
@@ -130,10 +150,7 @@
                                         
                                         </div>
                                         <div id="article-content">
-                                            <!--<div class="breadcrumb">		
-                            				 You are here:&nbsp;&nbsp;  Home&nbsp;>>&nbsp;<?php echo $content ;?>
-                            			    </div>    
-                                        	    --!> 
+                                            
                                 		      <?php $this->load->view('frontend/'.$content) ;?>      
                                                                                 
                                         </div>
