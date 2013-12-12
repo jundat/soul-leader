@@ -1,5 +1,5 @@
 <p>
-    Website game gunny của môn Web và ứng dụng.
+    Website game của môn Web và ứng dụng.
 </p>
 <p>
     Copyright 2013 All Rights Reserved - 

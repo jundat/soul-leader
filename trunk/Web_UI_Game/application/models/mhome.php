@@ -61,6 +61,13 @@ class Mhome extends CI_Model{
         $this->db->update('news', array('news_del'=>1));
     }
     
+    
+    function get_removed_news(){
+		$this->db->where('news_del', 1);
+		$query = $this->db->get('news');
+		return $query->result_array();
+	}
+    
     function delete_new($news_id) {
         $this->db->where('news_id', $news_id);
         $this->db->delete('news');

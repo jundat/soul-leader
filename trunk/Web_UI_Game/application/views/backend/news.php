@@ -14,16 +14,8 @@
             </p>
             <p><a href="<?php echo $backend; ?>add_news">Add News</a></p>
         </div>
-        <div class="control">
-            <p>
-                <a href="<?php echo $backend; ?>removed_news"><img src="<?php echo base_url(); ?>public/backend/images/recycle_bin.png"/>
-                </a>
-            </p>
-            <p>
-                <a href="<?php echo $backend; ?>removed_news">News Removed
-                </a>
-            </p>
-        </div>
+        
+        <!--  -->        
     </div>    
 </div>
 <div class="clear">
