@@ -20,6 +20,12 @@ var s_tPlaySelected = "res/xvn/Menu/btnPlayPress.png";
 
 var s_tLose = "res/xvn/lose.png";
 var s_tWin = "res/xvn/win.png";
+var s_effect4 = "res/music/lose.wav";
+var s_effect3 = "res/music/win.wav";
+var s_effect2 = "res/music/effect2.wav";
+var s_background = "res/music/background.mp3";
+
+var s_tConnecting = "res/xvn/conecting_server.png";
 
 var g_resources = [
     { src: s_tBackground },
@@ -44,4 +50,12 @@ var g_resources = [
 
     { src: s_tLose },
     { src: s_tWin },
+
+    { src: s_background },
+    //effect
+    { src: s_effect2 },
+    { src: s_effect3 },
+    { src: s_effect4 },
+
+    { src: s_tConnecting },
 ];

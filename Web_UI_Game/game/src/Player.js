@@ -48,7 +48,7 @@ var CPlayer = cc.Sprite.extend({
         var rBall = new cc.Rect(m_computerBall.getPosition().x - m_computerBall.getBoundingBox().width / 2 + 7.5, m_computerBall.getPosition().y - m_computerBall.getBoundingBox().height / 2 + 7.5, m_computerBall.getBoundingBox().width - 15, m_computerBall.getBoundingBox().height - 15);
 
         if (cc.rectIntersectsRect(rBall, rPlayer)) {
-            
+            cc.AudioEngine.getInstance().playEffect("res/music/effect2.wav");
             var director = cc.Director.getInstance();
             var scene = director.getRunningScene();
             var layer = scene.getChildByTag(0);
