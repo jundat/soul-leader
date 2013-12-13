@@ -365,6 +365,7 @@ function NodeJSClient(parent) {
             NODE_CLIENT.isPlayFirst = true;
             GisFirst = true;
             NODE_CLIENT.parent.turnPlay.setString("You Play First");
+            this.m_loading.setVisible(false);
         } else {
             NODE_CLIENT.parent.menuItem1.setPosition(cc.p(1117, 668 - 93));
             NODE_CLIENT.parent.menuItem2.setPosition(cc.p(1192, 668 - 93));
@@ -393,6 +394,7 @@ function NodeJSClient(parent) {
             NODE_CLIENT.isPlayFirst = false;
             GisFirst = false;
             NODE_CLIENT.parent.turnPlay.setString("You Play Second");
+            this.m_loading.setVisible(false);
         }
     }
 

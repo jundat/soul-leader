@@ -37,6 +37,8 @@ var MainGame = cc.LayerColor.extend({
     isEndGame: false,
     m_lose: null,
     m_win: null,
+    m_loading: null,
+    turn:null,
     //End-Jundat
 
     //other player call to fire
@@ -46,7 +48,7 @@ var MainGame = cc.LayerColor.extend({
                 this.m_computer.fire(-1, 1, data.p);
             else
                 this.m_computer.fire(1, 1, data.p);*/
-
+            cc.AudioEngine.getInstance().playEffect("res/music/effect2.wav");
             this.m_computer.fire(data.x, data.y, data.p);
             this.m_eTurn = 0;
         }
@@ -105,6 +107,15 @@ var MainGame = cc.LayerColor.extend({
         this.setTouchEnabled(true);
         this.setKeyboardEnabled(true);
         this.schedule(this.update);
+
+        cc.AudioEngine.getInstance().playMusic("res/music/background.mp3", true);
+
+        
+        this.m_loading = cc.Sprite.create(s_tConnecting);
+        this.m_loading.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.m_loading.setAnchorPoint(cc.p(0.5, 0.5));
+        this.addChild(this.m_loading, 2);
+        
 
         //background
         this.m_sBG = cc.Sprite.create(s_tBackground);
@@ -232,6 +243,12 @@ var MainGame = cc.LayerColor.extend({
         this.m_lose.setVisible(false);
         this.m_win.setVisible(false);
 
+        this.turn = cc.LabelTTF.create("Not your turn", "Arial", 50);
+        this.turn.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.turn.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.addChild(this.turn, 2);
+        this.turn.setVisible(false);
+
         //NODE JS
         this.nodeJSClient = new NodeJSClient(this);
 
@@ -243,7 +260,7 @@ var MainGame = cc.LayerColor.extend({
         this.nodeJSClient.CreateRandomMatch();
 
         //END - NODE JS
-
+        this.m_loading.setVisible(false);
 
 
         return true;
@@ -315,16 +332,18 @@ var MainGame = cc.LayerColor.extend({
     update: function (dt) {
         document.getElementById("gameCanvas").focus();
 
-        if (this.m_player.m_iHP <= 0)
+        if (this.m_player.m_iHP <= 0 && this.isEndGame == false)
         {
             this.m_lose.setVisible(true);
             this.isEndGame = true;
+            cc.AudioEngine.getInstance().playEffect("res/music/lose.wav");
         }
 
-        if (this.m_computer.m_iHP <= 0)
+        if (this.m_computer.m_iHP <= 0 && this.isEndGame == false)
         {
             this.m_win.setVisible(true);
             this.isEndGame = true;
+            cc.AudioEngine.getInstance().playEffect("res/music/win.wav");
         }
         if (this.isEndGame == true)
             return;
@@ -386,6 +405,7 @@ var MainGame = cc.LayerColor.extend({
             return;
         var location = touches[0].getLocation();
         if (this.m_eTurn == 0) {
+            cc.AudioEngine.getInstance().playEffect("res/music/effect2.wav");
             /*if (GisFirst)
                 this.m_player.fire(1, 1, this.m_fPower);
             else
@@ -399,6 +419,17 @@ var MainGame = cc.LayerColor.extend({
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             this.m_eTurn = 1;
+        }
+        else
+        {
+            this.turn.setVisible(true);
+            var invi = cc.CallFunc.create(
+            function () {
+                this.turn.setVisible(false);
+            },
+            this);
+
+            this.runAction(cc.Sequence.create(CC.DelayTime.create(2.0), invi));
         }
 
         this.m_fPower = 0;
