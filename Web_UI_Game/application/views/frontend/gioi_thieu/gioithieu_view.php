@@ -6,6 +6,7 @@
     </title>
     <!--Load css cua page-->
     <link href="<?php echo base_url(); ?>public/frontend/css/gioithieu.css" rel="stylesheet" type="text/css" />
+    
 </head>
 <body>
 <div id="wrapperOut">
@@ -41,6 +42,16 @@
                         <!-- Begin module article-->
                         <div class="StaticTopPanel">
                             <h2 class="TitleMain">Thông tin trò chơi</h2>
+                        
+                            <p id="breadcrumbs">
+                                <a title="Trang chủ" href="<?php echo base_url(); ?>">Trang chủ</a>
+                                >
+                                <a href="http://localhost/soul-leader/Web_UI_Game/huong_dan" title="Hướng dẫn người mới">Hướng dẫn người mới</a>
+                                >
+                                <span>Giới thiệu</span>
+                                >
+                                <span>Thông tin trò chơi</span>
+                            </p>
                         </div>
                         <div class="StaticOuter">
     		                <div class="StaticInner">
