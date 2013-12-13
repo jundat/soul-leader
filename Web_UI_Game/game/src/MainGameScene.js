@@ -422,14 +422,16 @@ var MainGame = cc.LayerColor.extend({
         }
         else
         {
-            this.turn.setVisible(true);
-            var invi = cc.CallFunc.create(
-            function () {
-                this.turn.setVisible(false);
-            },
-            this);
+            if (this.m_loading.isVisible == false) {
+                this.turn.setVisible(true);
+                var invi = cc.CallFunc.create(
+                function () {
+                    this.turn.setVisible(false);
+                },
+                this);
 
-            this.runAction(cc.Sequence.create(CC.DelayTime.create(2.0), invi));
+                this.runAction(cc.Sequence.create(CC.DelayTime.create(2.0), invi));
+            }
         }
 
         this.m_fPower = 0;
