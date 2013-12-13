@@ -50,7 +50,6 @@
                                 <div class="StaticInner">
                                     <div class="StaticMain">
                                         <div class="ContentBlock">
-                                            <h2>Nội dung phần hướng dẫn</h2>
                                    	        <p class="ImgCenter"><img src="<?php echo base_url(); ?>public/frontend/images/huongdan/so_do_huong_dan.png" alt="Sơ đồ hướng dẫn cơ bản" height="1517" width="500"></p>
                           		        </div>
                                     </div>
