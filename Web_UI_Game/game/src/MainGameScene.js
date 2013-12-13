@@ -260,7 +260,7 @@ var MainGame = cc.LayerColor.extend({
         this.nodeJSClient.CreateRandomMatch();
 
         //END - NODE JS
-        this.m_loading.setVisible(false);
+        //this.m_loading.setVisible(false);
 
 
         return true;
