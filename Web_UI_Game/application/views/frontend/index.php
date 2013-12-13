@@ -48,7 +48,7 @@
 			<!-- Begin block download_download -->  
 			<h1><a href="#">Trang chủ</a></h1>
 			<div id="download">
-				<a href="<?php echo base_url(); ?>Chome/user" class="PlayNow" id="typePlayNow" >Chơi ngay</a>
+				<a href="<?php echo base_url(); ?>game/index.html" class="PlayNow" id="typePlayNow" >Chơi ngay</a>
 				<a href="<?php echo base_url(); ?>Chome/user/register" class="Register2" id="ppregister_link">Ðăng ký</a>
 				<a href="#" class="Pay notTrack">Nạp Thẻ</a>
 			</div>
