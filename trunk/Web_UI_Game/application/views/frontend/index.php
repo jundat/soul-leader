@@ -43,7 +43,7 @@
 </div>	
 <div id="wrapper-sub">
     <div id="container">
-        <a class="NguoiChoiMoi" href="#" >Choi mới</a>
+        <a class="NguoiChoiMoi" href="http://localhost/soul-leader/Web_UI_Game/huong_dan" >Choi mới</a>
 			
 			<!-- Begin block download_download -->  
 			<h1><a href="#">Trang chủ</a></h1>
