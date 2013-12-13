@@ -99,7 +99,17 @@ var MainGame = cc.LayerColor.extend({
         this.m_computerBall.changeBall(ballType);
     },
 
+    showWin: function() {
+        this.m_win.setVisible(true);
+        this.isEndGame = true;
+        cc.AudioEngine.getInstance().playEffect("res/music/win.wav");
+    },
 
+    showLose: function() {
+        this.m_lose.setVisible(true);
+        this.isEndGame = true;
+        cc.AudioEngine.getInstance().playEffect("res/music/lose.wav");
+    },
 
     init: function () {
         this._super(new cc.Color4B(255, 0, 0, 255));
@@ -110,19 +120,20 @@ var MainGame = cc.LayerColor.extend({
 
         cc.AudioEngine.getInstance().playMusic("res/music/background.mp3", true);
 
-        
-        this.m_loading = cc.Sprite.create(s_tConnecting);
-        this.m_loading.setPosition(cc.p(size.width / 2, size.height / 2));
-        this.m_loading.setAnchorPoint(cc.p(0.5, 0.5));
-        this.addChild(this.m_loading, 2);
-        
-
         //background
         this.m_sBG = cc.Sprite.create(s_tBackground);
         this.m_sBG.setPosition(cc.p(size.width / 2, size.height / 2));
         this.m_sBG.setAnchorPoint(cc.p(0.5, 0.5));
         this.addChild(this.m_sBG);
 
+        //////////////////////////
+        //connecting dialog
+        this.m_loading = cc.Sprite.create(s_tConnecting);
+        this.m_loading.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.m_loading.setAnchorPoint(cc.p(0.5, 0.5));
+        this.m_loading.setVisible(true);
+        this.addChild(this.m_loading, 2);
+        
         //ball
         this.m_ball = new CBall();
         this.addChild(this.m_ball);
@@ -155,21 +166,21 @@ var MainGame = cc.LayerColor.extend({
         this.m_player.setRotationY(0);
 
         //heal point player label
-        this.m_lPoint1 = cc.LabelTTF.create(this.m_player.m_iHP.toString(), "Arial", 38);
+        this.m_lPoint1 = cc.LabelTTF.create(this.m_player.m_iHP.toString(), "Arial", 52);
         this.m_lPoint1.setPosition(cc.p(335 + 130, 668 - 203));
-        this.m_lPoint1.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.m_lPoint1.setFontFillColor(new cc.Color3B(0, 0, 0));
         this.addChild(this.m_lPoint1);
 
         //heal point computer label
-        this.m_lPoint2 = cc.LabelTTF.create(this.m_computer.m_iHP.toString(), "Arial", 38);
+        this.m_lPoint2 = cc.LabelTTF.create(this.m_computer.m_iHP.toString(), "Arial", 52);
         this.m_lPoint2.setPosition(cc.p(811 + 90, 668 - 203));
-        this.m_lPoint2.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.m_lPoint2.setFontFillColor(new cc.Color3B(0, 0, 0));
         this.addChild(this.m_lPoint2);
 
 
-        this.turnPlay = cc.LabelTTF.create("", "Arial", 50);
+        this.turnPlay = cc.LabelTTF.create("", "Arial", 64);
         this.turnPlay.setPosition(cc.p(size.width/2,size.height/2));
-        this.turnPlay.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.turnPlay.setFontFillColor(new cc.Color3B(0, 0, 0));
         this.addChild(this.turnPlay);
 
         //power label
@@ -243,9 +254,9 @@ var MainGame = cc.LayerColor.extend({
         this.m_lose.setVisible(false);
         this.m_win.setVisible(false);
 
-        this.turn = cc.LabelTTF.create("Not your turn", "Arial", 50);
+        this.turn = cc.LabelTTF.create("Not your turn", "Arial", 64);
         this.turn.setPosition(cc.p(size.width / 2, size.height / 2));
-        this.turn.setFontFillColor(new cc.Color3B(255, 0, 0));
+        this.turn.setFontFillColor(new cc.Color3B(0, 0, 0));
         this.addChild(this.turn, 2);
         this.turn.setVisible(false);
 
@@ -260,7 +271,6 @@ var MainGame = cc.LayerColor.extend({
         this.nodeJSClient.CreateRandomMatch();
 
         //END - NODE JS
-        //this.m_loading.setVisible(false);
 
 
         return true;
@@ -387,8 +397,29 @@ var MainGame = cc.LayerColor.extend({
     },
 
     onTouchesBegan: function (touches, event) {
+        //waiting connection
+        if(this.m_loading.isVisible() == true) {
+            return;
+        }
+
+        if (this.isEndGame == false && this.m_eTurn != 0) {
+            
+            this.turn.setVisible(true);
+            this.turnPlay.setVisible(false);
+            var invi = cc.CallFunc.create(
+            function () {
+                this.turn.setVisible(false);
+            },
+            this);
+
+            this.runAction(cc.Sequence.create(cc.DelayTime.create(2.0), invi));
+
+            return;
+        }
+
         if (this.turnPlay.isVisible)
             this.turnPlay.setVisible(false);
+
         if (this.isEndGame == true)
         {
             cc.Director.getInstance().replaceScene(new MenuScene());
@@ -399,6 +430,11 @@ var MainGame = cc.LayerColor.extend({
     },
 
     onTouchesEnded: function (touches, event) {
+        //waiting connection
+        if(this.m_loading.isVisible() == true) {
+            return;
+        }
+
         if (touches[0] == null)
             return;
         if (!this.isPower)
@@ -422,16 +458,6 @@ var MainGame = cc.LayerColor.extend({
         }
         else
         {
-            if (this.m_loading.isVisible == false) {
-                this.turn.setVisible(true);
-                var invi = cc.CallFunc.create(
-                function () {
-                    this.turn.setVisible(false);
-                },
-                this);
-
-                this.runAction(cc.Sequence.create(CC.DelayTime.create(2.0), invi));
-            }
         }
 
         this.m_fPower = 0;

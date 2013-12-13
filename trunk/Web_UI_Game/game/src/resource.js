@@ -25,7 +25,7 @@ var s_effect3 = "res/music/win.wav";
 var s_effect2 = "res/music/effect2.wav";
 var s_background = "res/music/background.mp3";
 
-var s_tConnecting = "res/xvn/conecting_server.png";
+var s_tConnecting = "res/xvn/connecting_server.png";
 
 var g_resources = [
     { src: s_tBackground },

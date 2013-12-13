@@ -227,7 +227,7 @@ function NodeJSClient(parent) {
         // if (ip == undefined) ip = '127.0.0.1'; // 'https://soulleader-c9-phamtanlong.c9.io'; //
         // if (port == undefined) port = 5000; // 15400; //
         // var strConnect = ip + ':' + port;
-        this.socket = io.connect('http://nodejschat-gameuit.rhcloud.com');
+        this.socket = io.connect('http://nodejschat-gameuit.rhcloud.com'); //('http://nodejschat-gameuit.rhcloud.com');
 
         this.Init();
     }
@@ -364,8 +364,8 @@ function NodeJSClient(parent) {
             //alert('Your play first :)');
             NODE_CLIENT.isPlayFirst = true;
             GisFirst = true;
-            NODE_CLIENT.parent.turnPlay.setString("You Play First");
-            this.m_loading.setVisible(false);
+            NODE_CLIENT.parent.turnPlay.setString("You Play First\n<< Left Player");
+            NODE_CLIENT.parent.m_loading.setVisible(false);
         } else {
             NODE_CLIENT.parent.menuItem1.setPosition(cc.p(1117, 668 - 93));
             NODE_CLIENT.parent.menuItem2.setPosition(cc.p(1192, 668 - 93));
@@ -393,8 +393,8 @@ function NodeJSClient(parent) {
             //alert('You play second :(');
             NODE_CLIENT.isPlayFirst = false;
             GisFirst = false;
-            NODE_CLIENT.parent.turnPlay.setString("You Play Second");
-            this.m_loading.setVisible(false);
+            NODE_CLIENT.parent.turnPlay.setString("You Play Second\nRight Player >>");
+            NODE_CLIENT.parent.m_loading.setVisible(false);
         }
     }
 
@@ -463,8 +463,13 @@ function NodeJSClient(parent) {
 
         if (data.win == NODE_CLIENT.username) { //you win
             //alert('You win :D\n' + 'WinCoin: ' + data.winCoin);
+
+            NODE_CLIENT.parent.showWin();
+
         } else { //you lose
             //alert('You lose :(');
+
+            NODE_CLIENT.parent.showLose();
         }
     }
 
