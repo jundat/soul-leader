@@ -41,13 +41,21 @@ var MainGame = cc.LayerColor.extend({
     turn:null,
     //End-Jundat
 
+    // { 
+    //     x: location.x, 
+    //     y: location.y, 
+    //     p: this.m_fPower, 
+    //     myLastPoint: this.m_player.m_iHP,
+    //     yourLastPoint: this.m_computer.m_iHP
+    // }
     //other player call to fire
     computerFire: function (data) {
         if ((this.m_eTurn == 1) && (this.m_ball.getPosition().y <= 0)) {
-            /*if (GisFirst)
-                this.m_computer.fire(-1, 1, data.p);
-            else
-                this.m_computer.fire(1, 1, data.p);*/
+
+            //sync point
+            this.m_player.m_iHP = data.yourLastPoint;
+            this.m_computer.m_iHP = data.myLastPoint;
+
             cc.AudioEngine.getInstance().playEffect("res/music/effect2.wav");
             this.m_computer.fire(data.x, data.y, data.p);
             this.m_eTurn = 0;
@@ -449,7 +457,16 @@ var MainGame = cc.LayerColor.extend({
             this.m_player.fire(location.x, location.y, this.m_fPower);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            this.nodeJSClient.Fire({ x: location.x, y: location.y, p: this.m_fPower });
+            this.nodeJSClient.Fire({ 
+                x: location.x, 
+                y: location.y, 
+                p: this.m_fPower, 
+                myLastPoint: this.m_player.m_iHP,
+                yourLastPoint: this.m_computer.m_iHP
+            });
+
+            //this.m_player.m_iHP.toString();
+            //this.m_computer.m_iHP.toString();
 
             // goi 1 ham, hàm nay tien hanh truyen location, m_fPower, truyen co va cham hay k, neu co truyen pos va cham
 
