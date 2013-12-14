@@ -15,6 +15,7 @@
         appFiles: [
             'src/global.js',
 
+            'src/socket.io.js',
             'src/NodeJSClient.js',
 
             'src/resource.js',
