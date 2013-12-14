@@ -260,9 +260,14 @@
     <Content Include="css\default.css" />
     <Content Include="main.js" />
     <Content Include="res\favicon.ico" />
+    <Content Include="res\music\background.mp3" />
+    <Content Include="res\music\effect2.wav" />
+    <Content Include="res\music\lose.wav" />
+    <Content Include="res\music\win.wav" />
     <Content Include="res\xvn\Background.png" />
     <Content Include="res\xvn\char.plist" />
     <Content Include="res\xvn\char.png" />
+    <Content Include="res\xvn\connecting_server.png" />
     <Content Include="res\xvn\explosion.plist" />
     <Content Include="res\xvn\explosion.png" />
     <Content Include="res\xvn\green_health_bar.png" />
@@ -292,6 +297,7 @@
     <Content Include="src\NodeJSClient.js" />
     <Content Include="src\Player.js" />
     <Content Include="src\resource.js" />
+    <Content Include="src\socket.io.js" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />

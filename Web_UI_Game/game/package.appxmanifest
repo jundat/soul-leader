@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="soulleader" Version="1.0.0.0" Publisher="CN=10520_000" />
+  <Identity Name="trollshooter" Version="1.0.0.1" Publisher="CN=10520_000" />
   <Properties>
-    <DisplayName>Soul Leader</DisplayName>
+    <DisplayName>Troll Shooter</DisplayName>
     <PublisherDisplayName>tieunun</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="index.html">
-      <VisualElements DisplayName="Soul Leader" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Soul Leader" ForegroundText="light" BackgroundColor="#ffffff">
+      <VisualElements DisplayName="Troll Shooter" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Troll Shooter" ForegroundText="light" BackgroundColor="#ffffff">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" />
         <InitialRotationPreference>
