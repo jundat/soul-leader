@@ -285,6 +285,7 @@
     <Content Include="res\xvn\Player.png" />
     <Content Include="res\xvn\power_bar.png" />
     <Content Include="res\xvn\win.png" />
+    <Content Include="Soul-Leader-Cocos2d-html5_TemporaryKey.pfx" />
     <Content Include="src\ComputerBall.js" />
     <Content Include="src\Computer.js" />
     <Content Include="src\Enum.js" />
